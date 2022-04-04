@@ -1,15 +1,15 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
 const mongoose = require('mongoose');
 
-
+// TABLE SCHEMA REQUIRED
 const UserModel = require ("./models/User")
-
 app.use(express.json());
 
 
 // CONNECT TO DB
-mongoose.connect("mongodb+srv://Jessy06:JessyJesse06@cluster0.ppxrt.mongodb.net/Aminteriors?retryWrites=true&w=majority",
+mongoose.connect(process.env.DB_CONNECTION,
 {
 useNewUrlParser : true,
 } );
@@ -17,7 +17,7 @@ useNewUrlParser : true,
 
 // ROUTES
 app.get('/', async (req, res) => {
-    const User = new UserModel({Admin:"false", Pseudo: "user", Password: "userpassword1234", Email:"user@user.com"});
+    const User = new UserModel({Admin:"false", Pseudo: "Test", Password: "Testpassword1234", Email:"Test@user.com"});
    
     try {
         await User.save ();
