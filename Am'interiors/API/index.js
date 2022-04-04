@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const Admin = require('./models/Admin');
 
 
-const AdminModel = require("./models/Admin");
+const UserModel = require ("./models/User")
+
 app.use(express.json());
 
 
@@ -12,17 +12,15 @@ app.use(express.json());
 mongoose.connect("mongodb+srv://Jessy06:JessyJesse06@cluster0.ppxrt.mongodb.net/Aminteriors?retryWrites=true&w=majority",
 {
 useNewUrlParser : true,
-}
-);
-
+} );
 
 
 // ROUTES
 app.get('/', async (req, res) => {
-    const user = new AdminModel ({adminname: 'Joshua', nom: 'Delavigne', prenom: 'Joshua', email: 'joshuadel15@gmail.com', password:'123456789'})
-
+    const User = new UserModel({Admin:"false", Pseudo: "user", Password: "userpassword1234", Email:"user@user.com"});
+   
     try {
-        await Admin.save ();
+        await User.save ();
         res.send("Data inserted")
     } catch(err) {
         console.log(err);
