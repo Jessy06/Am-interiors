@@ -33,7 +33,7 @@ nav {
   font-size: 18px;
 }
 
-Now, the important thing is to make it responsive (for mobile screens), so add a media query:
+/* Now, the important thing is to make it responsive (for mobile screens), so add a media query: */
 @media screen and (max-width: 500px) {
   .list {
       flex-direction: column;

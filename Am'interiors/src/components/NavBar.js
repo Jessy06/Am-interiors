@@ -50,9 +50,9 @@ function NavBar () {
         <br></br>
         <br></br>
   
-        <div id="demoFont">Am'interiors</div>
+      <font size="500">Am'interiors</font>
         
-        <font size="10"><p>Société<br></br>
+        <font size="3"><p>Société<br></br>
         d'aménagement<br></br>
         d'intérieur</p></font>
   
