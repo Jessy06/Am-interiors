@@ -4,7 +4,7 @@ import './App.css'
 
   // Import components
 import NavBar from './components/NavBar';
-import Test from './components/Test';
+
 
   // Import Pages
 import AdminLog from './Pages/AdminLog';
@@ -17,6 +17,7 @@ return (
      <NavBar/>
      <Home/>
       <Routes>
+        <Route path="/" element = {<Home/>}/>
         <Route path="/login" element = { <AdminLog/>}/>
       </Routes>
       </Router>

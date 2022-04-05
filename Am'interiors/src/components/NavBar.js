@@ -38,31 +38,11 @@ function NavBar () {
         )}
     
   
-      <img 
-        //src="https://www.lamaisonsaintgobain.fr/guides-travaux/tout-savoir-sur-l-amenagement-interieur/amenagement-interieur-conseils-et-solutions"
-        src={'./public/images/amenagement-interieur.jpg'}
-        alt="interieur"
-      />
-     
-     
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-  
-      <font size="500">Am'interiors</font>
-        
-        <font size="3"><p>Société<br></br>
-        d'aménagement<br></br>
-        d'intérieur</p></font>
+    
   
         
         <button onClick={toggleNav} className="btn">Sommaire</button>
      
-      <input class="favorite styled"
-         type="button"
-         value="Work With me">
-           </input>
   
            </nav>
     )
