@@ -17,7 +17,7 @@ useNewUrlParser : true,
 
 // ROUTES
 app.get('/', async (req, res) => {
-    const User = new UserModel({Admin:"false", Pseudo: "Test", Password: "Testpassword1234", Email:"Test@user.com"});
+    const User = new UserModel({Admin:"false", Pseudo: "Test154515", Password: "Testpassword1545165", Email:"Test061651651651@user.com"});
    
     try {
         await User.save ();
