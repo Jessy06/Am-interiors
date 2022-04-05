@@ -7,7 +7,7 @@ import NavBar from './components/NavBar';
 
 
   // Import Pages
-import AdminLog from './Pages/AdminLog';
+import AdminLog from './Pages/LoginAdmin';
 import Home from './Pages/Home';
 
 export default function App() {
