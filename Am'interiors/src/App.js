@@ -14,11 +14,14 @@ import Inspirations from "./Pages/Inspirations";
 import Contact from "./Pages/Contact";
 import Projets from "./Pages/Projets";
 
+
 export default function App() {
 return (
   // Routes 
   <Router>
      <NavBar/>
+     
+
      <Routes>
         <Route path="/" element = {<Home/>}/>
         <Route path="/presentation" element = {<Presentation/>}/>
