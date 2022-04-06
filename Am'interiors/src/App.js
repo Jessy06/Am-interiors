@@ -20,10 +20,7 @@ return (
   <Router>
      <NavBar/>
      <Home/>
-     <Presentation/>
-     <Inspirations/>
-     <Contact/>
-      <Routes>
+     <Routes>
         <Route path="/" element = {<Home/>}/>
         <Route path="/presentation" element = {<Presentation/>}/>
         <Route path="/inspirations" element = {<Inspirations/>}/>
