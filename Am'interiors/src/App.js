@@ -12,6 +12,7 @@ import Home from './Pages/Home';
 import Presentation from "./Pages/Presentation";
 import Inspirations from "./Pages/Inspirations";
 import Contact from "./Pages/Contact";
+import Projets from "./Pages/Projets";
 
 export default function App() {
 return (
@@ -24,6 +25,10 @@ return (
      <Contact/>
       <Routes>
         <Route path="/" element = {<Home/>}/>
+        <Route path="/presentation" element = {<Presentation/>}/>
+        <Route path="/inspirations" element = {<Inspirations/>}/>
+        <Route path="/contact" element = {<Contact/>}/>
+        <Route path="/projets" element = {<Projets/>}/>
         <Route path="/login" element = { <LoginAdmin/>}/>
       </Routes>
       </Router>
