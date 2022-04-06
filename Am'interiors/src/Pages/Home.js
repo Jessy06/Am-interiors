@@ -5,21 +5,18 @@ import '../App.css';
 
 function Home () {
     return  (
-        <div className='p-10'>
-            <br></br>
-            <br></br>
-            <br></br>
+        <div className="p-20 pl-14 grid grid-cols-2 gap-4">
 
-            <p class="text-7xl">AM'INTERIORS</p>
+            <div class="text-7xl">AM'INTERIORS</div>
 
             <br></br>
 
-            <p className="text-2xl">Société<br></br>
+            <div className="text-2xl">Société<br></br>
             d'aménagement<br></br>
-            d'intérieurs</p>
+            d'intérieurs</div>
 
-            <img src={LivingRoom}
-            className='float-right'/>
+            <div><img src={LivingRoom}
+            className='float-right'/></div>
 
 
 
