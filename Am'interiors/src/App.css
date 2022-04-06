@@ -4,7 +4,17 @@
 
 @layer base {
   body {
-    @apply pt-20 bg-zinc-200
+    @apply pt-20 bg-gray-300
+
+
+
+
+
+
+
+
+
+    
   }
 
 }
