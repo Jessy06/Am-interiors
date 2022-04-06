@@ -7,8 +7,11 @@ import NavBar from './components/NavBar';
 
 
   // Import Pages
-import AdminLog from './Pages/LoginAdmin';
+import LoginAdmin from './Pages/LoginAdmin';
 import Home from './Pages/Home';
+import Presentation from "./Pages/Presentation";
+import Inspirations from "./Pages/Inspirations";
+import Contact from "./Pages/Contact";
 
 export default function App() {
 return (
@@ -16,9 +19,12 @@ return (
   <Router>
      <NavBar/>
      <Home/>
+     <Presentation/>
+     <Inspirations/>
+     <Contact/>
       <Routes>
         <Route path="/" element = {<Home/>}/>
-        <Route path="/login" element = { <AdminLog/>}/>
+        <Route path="/login" element = { <LoginAdmin/>}/>
       </Routes>
       </Router>
 )

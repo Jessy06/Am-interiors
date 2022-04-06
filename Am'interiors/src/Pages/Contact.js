@@ -4,13 +4,13 @@ import '../App.css';
 
 
 
-function Presentation () {
+function Contact() {
     return  (
         <div>
-            <h1> Houra </h1>
+            <h1> Allo </h1>
 
          
         </div>
     )
 }
-    export default Presentation; 
+    export default Contact; 
