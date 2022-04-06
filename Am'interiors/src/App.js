@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import './App.css'
 
   // Import components
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
 
 
   // Import Pages
@@ -19,7 +19,6 @@ return (
   // Routes 
   <Router>
      <NavBar/>
-     <Home/>
      <Routes>
         <Route path="/" element = {<Home/>}/>
         <Route path="/presentation" element = {<Presentation/>}/>
