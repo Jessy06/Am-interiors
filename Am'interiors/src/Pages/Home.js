@@ -6,13 +6,13 @@ import '../App.css'
 function Home() {
   return (
     <div className="p-20 pl-10 grid-cols-2 gap-4">
-      <div class="text-7xl">AM'INTERIORS</div>
+      <div class="text-8xl">AM'INTERIORS</div>
 
       <br></br>
 
       <div className="text-2xl">
-        Société<br></br>
-        d'aménagement<br></br>
+        Société
+        d'aménagement
         d'intérieurs
       </div>
 
