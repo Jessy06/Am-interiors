@@ -1,10 +1,10 @@
 function LoginAdmin() {
   return (
     <div>
-        <h1 className="text-3xl font-bold underline">
+        <h1 className="text-3xl text-red-500">
       Hello world!
     </h1>
-      <form>
+      {/* <form>
         <label>
           Nom :
           <input type="text" name="name" />
@@ -18,7 +18,7 @@ function LoginAdmin() {
           <input type="text" name="name" />
         </label>
         <input type="submit" value="Envoyer" />
-      </form>
+      </form> */}
     </div>
   );
 }
