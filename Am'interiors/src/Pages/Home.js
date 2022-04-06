@@ -1,4 +1,5 @@
 import React from 'react';
+import LivingRoom from "../Images/Livingroom.jpg"
 import '../App.css';
 
 
@@ -16,6 +17,9 @@ function Home () {
             <p className="text-2xl">Société<br></br>
             d'aménagement<br></br>
             d'intérieurs</p>
+
+            <img src={LivingRoom}
+            className='float-right'/>
 
 
 
