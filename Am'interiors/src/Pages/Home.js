@@ -21,7 +21,7 @@ function Home() {
       <br></br>
 
       <div className="text-2xl float-top p-60 pr-8 pb-0.5 bg-lime-800">
-      <span className=''>
+      <span className="">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
         imperdiet quam, eu commodo justo volutpat et. Pellentesque vel tincidunt
         mauris, porta feugiat odio. Quisque dui tellus, lobortis vel dui id,
@@ -33,7 +33,19 @@ function Home() {
         accumsan justo. Quisque gravida est et mollis commodo. Suspendisse odio
         magna, pellentesque vel massa eu, malesuada.
       </span>
-    </div>
+
+      <br></br>
+      <br></br>
+
+            <button
+              class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 border border-gray-700 rounded"
+              type="button"
+            >
+              Work with me
+            </button>
+            <br></br>
+          </div>
+        
     </div>
   )
 }
