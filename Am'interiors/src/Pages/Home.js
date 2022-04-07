@@ -5,7 +5,7 @@ import '../App.css'
 
 function Home() {
   return (
-    <div className="p-17 pl-10 grid-cols-2 gap-4">
+    <div className="p-15 pl-10 pr-10">
       <div class="text-8xl">AM'INTERIORS</div>
 
       <br></br>
@@ -16,23 +16,24 @@ function Home() {
 
       <div>
         <img src={LivingRoom} className="float-right" />
-        <img src={LivingRoomModern} className="float-right" />
+        <img src={LivingRoomModern} className="float-right pr-1" />
       </div>
       <br></br>
-      <br></br>
-      <div className="text-2xl float-top-2 p-60 pb-0.5 bg-lime-800">
-        Présentation Entreprise
-        <br></br>
-        <br></br>
-      </div>
-      <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          tincidunt, odio in interdum iaculis, sapien purus imperdiet leo, id
-          tincidunt enim tortor a massa. Integer in ultrices sapien, ut
-          scelerisque quam. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Phasellus velit lectus, condimentum sed leo at, aliquet maximus
-          enim. Nulla.
-        </p>
+
+      <div className="text-2xl float-top p-60 pr-8 pb-0.5 bg-lime-800">
+      <span className=''>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
+        imperdiet quam, eu commodo justo volutpat et. Pellentesque vel tincidunt
+        mauris, porta feugiat odio. Quisque dui tellus, lobortis vel dui id,
+        sollicitudin mollis ligula. Praesent aliquam auctor erat at semper. Cras
+        non euismod odio. Suspendisse et facilisis diam. Mauris a neque tempor,
+        mattis urna vel, tempus sapien. In id quam mattis, tincidunt erat sit
+        amet, hendrerit justo. Maecenas ut aliquet nisi, id congue quam at el
+        Vestibulum sit amet purus nunc. Maecenas vitae imperdiet ex, tempor al
+        accumsan justo. Quisque gravida est et mollis commodo. Suspendisse odio
+        magna, pellentesque vel massa eu, malesuada.
+      </span>
+    </div>
     </div>
   )
 }
