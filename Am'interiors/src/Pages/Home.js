@@ -5,16 +5,12 @@ import '../App.css'
 
 function Home() {
   return (
-    <div className="p-20 pl-10 grid-cols-2 gap-4">
+    <div className="p-17 pl-10 grid-cols-2 gap-4">
       <div class="text-8xl">AM'INTERIORS</div>
 
       <br></br>
 
-      <div className="text-2xl">
-        Société
-        d'aménagement
-        d'intérieurs
-      </div>
+      <div className="text-2xl">Société d'aménagement d'intérieurs</div>
 
       <br></br>
 
@@ -24,9 +20,19 @@ function Home() {
       </div>
       <br></br>
       <br></br>
-      <div className="text-2xl float-top-6 bg-lime-800">
+      <div className="text-2xl float-top-2 p-60 pb-0.5 bg-lime-800">
         Présentation Entreprise
+        <br></br>
+        <br></br>
       </div>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          tincidunt, odio in interdum iaculis, sapien purus imperdiet leo, id
+          tincidunt enim tortor a massa. Integer in ultrices sapien, ut
+          scelerisque quam. Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Phasellus velit lectus, condimentum sed leo at, aliquet maximus
+          enim. Nulla.
+        </p>
     </div>
   )
 }
