@@ -1,27 +1,24 @@
 import React from 'react'
 import LivingRoom from '../Images/Livingroom.png'
 import LivingRoomModern from '../Images/livingRoomModern.jpg'
-import { GrInstagram } from 'react-icons/gr'
 import '../App.css'
 
 function Home() {
   return (
-    <div className="p-15 pl-10 pr-10">
-        
+    <div className="p-15 pl-10 pr-10 mb-10 ">
       <div class="text-8xl">AM'INTERIORS</div>
       <button
-          class="bg-white hover:bg-lime-800 text-gray-800 font-bold py-5 px-5 grid float-right"
-          type="button"
-        >
-          Work with me
-        </button>
+        class="bg-white hover:bg-lime-800 text-gray-800 font-bold py-5 px-5 grid float-right"
+        type="button"
+      >
+        Work with me
+      </button>
 
       <br></br>
 
       <div className="text-2xl">Société d'aménagement d'intérieurs</div>
 
       <br></br>
-      
 
       <div>
         <img src={LivingRoom} className="float-right" />
@@ -42,17 +39,8 @@ function Home() {
           imperdiet ex, tempor al accumsan justo. Quisque gravida est et mollis
           commodo. Suspendisse odio magna, pellentesque vel massa eu, malesuada.
         </span>
-
-        <br></br>
-        <br></br>
-
-       
-   
-        
-        </div>
       </div>
-
-    
+    </div>
   )
 }
 export default Home
