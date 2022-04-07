@@ -4,7 +4,7 @@ import './App.css'
 
   // Import components
 import NavBar from './components/NavBar/NavBar';
-import Footer from './components/Footer/Footer';
+
 
   // Import Pages
 import LoginAdmin from './Pages/LoginAdmin';
@@ -30,7 +30,6 @@ return (
         <Route path="/projets" element = {<Projets/>}/>
         <Route path="/login" element = { <LoginAdmin/>}/>
       </Routes>
-      <Footer/>
       </Router>
 )
 }
