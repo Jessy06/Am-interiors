@@ -33,21 +33,33 @@ function Inspirations() {
           Thème 1<br></br>
           <br></br>
           <img src={Background1} className=""></img>
+          <br></br>
+          <br></br>
+          <div className="text-xl p-1 pr-1 pb-1 pl-1">Explications</div>
         </div>
         <div className="2xl p-10 pr-25 pb-0.5 pl-0.5">
           Théme 2<br></br>
           <br></br>
           <img src={Background2} className=""></img>
+          <br></br>
+          <br></br>
+          <div className="text-xl p-1 pr-1 pb-1 pl-1">Explications</div>
         </div>
         <div className="2xl p-10 pr-25 pb-0.5 pl-0.5">
           Thème 3<br></br>
           <br></br>
           <img src={Floral} className=""></img>
+          <br></br>
+          <br></br>
+          <div className="text-xl p-1 pr-1 pb-1 pl-1">Explications</div>
         </div>
         <div className="2xl p-10 pr-25 pb-0.5 pl-0.5">
           Thème 4<br></br>
           <br></br>
           <img src={Rose} className=""></img>
+          <br></br>
+          <br></br>
+          <div className="text-xl p-1 pr-1 pb-1 pl-1">Explications</div>
         </div>
       </div>
     </div>
