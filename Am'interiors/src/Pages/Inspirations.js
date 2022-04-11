@@ -36,7 +36,7 @@ function Inspirations() {
           <img src={Background1} className=""></img>
           <br></br>
           <br></br>
-          <div className="text-xl p-1 pr-1 pb-1 pl-1 ">Explications</div>
+          <div className="text-xl p-1 pr-1 pb-1 pl-0.5">Explications</div>
         </div>
         <div className="2xl p-10 pr-25 pb-0.5 pl-0.5">
           Théme 2<br></br>
