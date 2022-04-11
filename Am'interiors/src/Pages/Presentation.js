@@ -10,7 +10,7 @@ function Presentation() {
             <div>About Me</div>
             <div> Amin Dab </div>
         </div>
-        <div className="text-2xl">
+        <div className="text-2xl ">
           lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
           risus. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
           risus. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
