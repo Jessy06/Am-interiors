@@ -7,7 +7,7 @@ import Rose from '../Images/Rose.jpg'
 
 function Inspirations() {
   return (
-    <div className="p-15 pl-10 pr-10 mb-10">
+    <div className="p-10 pl-5 pr-5 mb-5">
       <div class="text-8xl">Inspirations</div>
 
       <br></br>
@@ -28,14 +28,15 @@ function Inspirations() {
         </span>
       </div>
 
-      <div class="flex space-x-4 ">
+      <div class="flex space-x-4">
+          
         <div className="2xl p-10 pr-25 pb-0.5 pl-0.5">
           Thème 1<br></br>
           <br></br>
           <img src={Background1} className=""></img>
           <br></br>
           <br></br>
-          <div className="text-xl p-1 pr-1 pb-1 pl-1">Explications</div>
+          <div className="text-xl p-1 pr-1 pb-1 pl-1 ">Explications</div>
         </div>
         <div className="2xl p-10 pr-25 pb-0.5 pl-0.5">
           Théme 2<br></br>

@@ -5,7 +5,7 @@ import '../App.css'
 
 function Home() {
   return (
-    <div className="p-15 pl-10 pr-10 mb-10">
+    <div className="p-10 pl-5 pr-5 mb-10">
       <div class="text-8xl">AM'INTERIORS</div>
       <button
         class="bg-white hover:bg-lime-800 text-gray-800 font-bold py-3 px-3 grid float-right"
