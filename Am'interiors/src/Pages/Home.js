@@ -5,10 +5,10 @@ import '../App.css'
 
 function Home() {
   return (
-    <div className="p-15 pl-10 pr-10 mb-10 ">
+    <div className="p-15 pl-10 pr-10 mb-10">
       <div class="text-8xl">AM'INTERIORS</div>
       <button
-        class="bg-white hover:bg-lime-800 text-gray-800 font-bold py-5 px-5 grid float-right"
+        class="bg-white hover:bg-lime-800 text-gray-800 font-bold py-3 px-3 grid float-right"
         type="button"
       >
         Work with me
@@ -26,7 +26,7 @@ function Home() {
       </div>
       <br></br>
 
-      <div className="text-2xl float-top p-60 pr-8 pb-0.5 bg-lime-800">
+      <div className="text-2xl float-top p-60 pr-8 pb-0.5 bg-lime-800 ">
         <span className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel

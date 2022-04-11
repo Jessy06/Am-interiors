@@ -7,7 +7,7 @@ import '../App.css';
 function Inspirations () {
     return  (
         <div>
-            <h1> Alors alors ... c'est qui le patron ! C'est pas toi </h1>
+            <h1>  </h1>
 
          
         </div>

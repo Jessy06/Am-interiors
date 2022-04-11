@@ -1,8 +1,16 @@
-import React from "react";
+import React from 'react'
+import kitchen from '../Images/kitchen.jpg'
 
 function Contact() {
   return (
-    <div className="p-10">
+    <div className="p-10 pl-10 pr-10 mb-10">
+      
+      <div>
+        <img src={kitchen} className=" py-3 px-3 grid float-right" />
+      </div>
+
+      
+
       <form class="w-full max-w-lg">
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -13,8 +21,7 @@ function Contact() {
               First Name
             </label>
             <input
-            
-  class="appearance-none block w-full bg-gray-200 text-gray-300 border border-lime-800 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+              class="appearance-none block w-full bg-gray-200 text-gray-300 border border-lime-800 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
               id="grid-first-name"
               type="text"
             ></input>
@@ -90,8 +97,9 @@ function Contact() {
           </div>
           <div class="md:w-2/3"></div>
         </div>
+        
       </form>
     </div>
-  );
+  )
 }
-export default Contact;
+export default Contact
