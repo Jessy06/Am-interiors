@@ -12,12 +12,13 @@ app.use(express.json());
 mongoose.connect(process.env.DB_CONNECTION,
 {
 useNewUrlParser : true,
-} );
+}, () => console.log('connected to db'));
+
 
 
 // ROUTES
 app.get('/', async (req, res) => {
-    const User = new UserModel({Admin:"false", Pseudo: "Test154515", Password: "Testpassword1545165", Email:"Test061651651651@user.com"});
+    const User = new UserModel({Pseudo: "Test154515", Password: "Testpassword1545165", Email:"Test061651651651@user.com"});
    
     try {
         await User.save ();
@@ -28,4 +29,4 @@ app.get('/', async (req, res) => {
 });
 
 // PORT
-app.listen(3030);
+app.listen(3001);
