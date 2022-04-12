@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Axios from 'axios';
 
 function SignUp() {
   const [pseudo, setPseudo] = useState("");
@@ -6,6 +7,7 @@ function SignUp() {
   const [password, setPassword] = useState("");
 
   const addToList = () => {
+      Axios.post ("http://localhost:3001/newuser", {Pseudo: pseudo, password: password, email: email})
       console.log(pseudo + email + password)
   }
 

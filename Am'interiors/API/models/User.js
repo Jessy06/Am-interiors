@@ -1,9 +1,9 @@
 const mongoose = require ('mongoose');
 
 const UserSchema = new mongoose.Schema ({
-    Admin:{
-        type: Boolean,
-        default: true
+    Role:{
+        type: String,
+        default: "user"
     },
 
     Pseudo: {
