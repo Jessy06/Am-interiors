@@ -1,28 +1,46 @@
-import React from "react";
-import photoprofil from "../Images/photoprofil.jpg";
-import "../App.css";
+import React from 'react'
+import photoprofil from '../Images/photoprofil.jpg'
+import '../App.css'
 
 function Presentation() {
   return (
-    <div className="p-10 grid grid-cols-2 gap-4">
-      <div className="grid grid-rows-2 gap-4">
-        <div className="grid grid-rows-2">
-            <div>About Me</div>
-            <div> Amin Dab </div>
-        </div>
-        <div className="text-2xl ">
-          lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-          risus. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-          risus. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-          risus.
-        </div>
+    <div className="p-10 pl-5 pr-5 mb-5">
+    <div class="text-8xl">Presentation</div>
+    <button
+        class="bg-white hover:bg-lime-800 text-gray-800 font-bold py-3 px-3 grid float-right"
+        type="button"
+      >
+        Work with me
+      </button>
+
+    <br></br>
+    <br></br>
+    
+    <div className='text-xl'>A propos de Amin Dab</div>
+
+    <br></br>
+      
+
+      <div className="text-2xl bg-lime-800 p-1 pr-1 pb-1 pl-1">
+        <span className="">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
+          imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
+          tincidunt mauris, porta feugiat odio. Quisque dui tellus, lobortis vel
+          dui id, sollicitudin mollis ligula. Praesent aliquam auctor erat at
+          semper. Cras non euismod odio. Suspendisse et facilisis diam. Mauris a
+          neque tempor, mattis urna vel, tempus sapien. In id quam mattis,
+          tincidunt erat sit amet, hendrerit justo. Maecenas ut aliquet nisi, id
+          congue quam at el Vestibulum sit amet purus nunc. Maecenas vitae
+          imperdiet ex, tempor al accumsan justo. Quisque gravida est et mollis
+          commodo. Suspendisse odio magna, pellentesque vel massa eu, malesuada.
+        </span>
       </div>
-      <div className="grid grid-rows-2 gap-4">
-        <img src={photoprofil} />
-        <div>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-          risus.</div>
+      <br></br>
+      <div>
+      <img src={photoprofil} className="photoprofil" />
       </div>
+      
     </div>
-  );
+  )
 }
-export default Presentation;
+export default Presentation
