@@ -5,7 +5,7 @@ import '../App.css'
 
 function Home() {
   return (
-    <div className="p-10 pl-5 pr-5 mb-5">
+    <div className="p-20 pl-5 pr-5 mb-5">
       <div class="text-8xl">AM'INTERIORS</div>
       <button
         class="bg-white hover:bg-lime-800 text-gray-800 font-bold py-3 px-3 grid float-right"
@@ -21,12 +21,12 @@ function Home() {
       <br></br>
 
       <div>
-        <img src={LivingRoom} className="float-right" />
-        <img src={LivingRoomModern} className="float-right pr-1" />
+        <img src={LivingRoom} className="float-right" alt='livingroom'/>
+        <img src={LivingRoomModern} className="float-right pr-1" alt='livingroom'/>
       </div>
       <br></br>
 
-      <div className="text-2xl float-top p-60 pr-8 pb-0.5 bg-lime-800 ">
+      <div className="text-2xl float-top p-60 pr-8 pb-0.5 bg-lime-800 "alt='text'>
         <span className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel

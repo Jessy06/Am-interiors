@@ -3,7 +3,7 @@ import '../App.css'
 
 function Projets() {
   return (
-    <div className="p-5 pl-5 pr-5 mt-5 mb-5">
+    <div className="p-20 pl-5 pr-5 mt-5 mb-5">
       <div class="text-8xl">Projets</div>
       <button
         class="bg-white hover:bg-lime-800 text-gray-800 font-bold py-3 px-3 grid float-right"

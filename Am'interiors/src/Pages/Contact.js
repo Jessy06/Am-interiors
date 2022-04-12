@@ -3,7 +3,7 @@ import '../App.css'
 
 function Contact() {
   return (
-    <div className="p-10 pl-5 pr-5 mb-5">
+    <div className="p-20 pl-5 pr-5 mb-5 mt-5">
       <div class="text-8xl">Contact</div>
       
       <button
@@ -17,13 +17,10 @@ function Contact() {
       <br></br>
       <br></br>
 
-      <div className="text-2xl bg-lime-800 p-1 pr-1 pb-1 pl-1">
+      <div className="text-2xl bg-lime-800 p-1 pr-1 pb-1 pl-1" alt=''>
         <span className="">
           Services Proposés
         </span>
-        <div className='text-2xl'>
-          
-        </div>
       </div>
       <br></br>
 
@@ -111,6 +108,7 @@ function Contact() {
           
         </div>
       </div>
+      
 </div>
 
 

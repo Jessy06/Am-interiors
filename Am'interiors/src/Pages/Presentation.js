@@ -4,7 +4,7 @@ import '../App.css'
 
 function Presentation() {
   return (
-    <div className="p-5 pl-5 pr-5 mt-5 mb-5">
+    <div className="p-20 pl-5 pr-5 mt-5 mb-5">
 
       <div class="text-8xl">Presentation</div>
       <button
@@ -21,7 +21,7 @@ function Presentation() {
     <br></br>
       
 
-      <div className="text-2xl bg-lime-800 p-1 pr-1 pb-1 pl-1">
+      <div className="text-2xl bg-lime-800 p-1 pr-1 pb-1 pl-1"alt='presentation'>
         <span className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
@@ -37,7 +37,7 @@ function Presentation() {
       </div>
       <br></br>
       <div>
-      <img src={photoprofil} className="photoprofil" />
+      <img src={photoprofil} className="photoprofil" alt='Photoprofil' />
       </div>
       
     </div>
