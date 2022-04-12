@@ -1,105 +1,122 @@
 import React from 'react'
-import kitchen from '../Images/kitchen.jpg'
+import '../App.css'
 
 function Contact() {
   return (
-    <div className="p-5 pl-5 pr-5 mt-5 mb-5">
+    <div className="p-10 pl-5 pr-5 mb-5">
+      <div class="text-8xl">Contact</div>
       
-      <div>
-        <img src={kitchen} className=" py-3 px-3 grid float-right" />
+      <button
+        class="bg-white hover:bg-lime-800 text-gray-800 font-bold py-3 px-3 grid float-right"
+        type="button"
+      >
+        Work with me
+      </button>
+
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <div className="text-2xl bg-lime-800 p-1 pr-1 pb-1 pl-1">
+        <span className="">
+          Services Proposés
+        </span>
+        <div className='text-2xl'>
+          
+        </div>
       </div>
+      <br></br>
 
-      
+      {/* <!-- horizontal card --> */}
 
-      <form class="w-full max-w-lg">
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label
-              class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2"
-              for="grid-first-name"
-            >
-              First Name
-            </label>
-            <input
-              class="appearance-none block w-full bg-gray-200 text-gray-300 border border-lime-800 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-              id="grid-first-name"
-              type="text"
-            ></input>
-          </div>
-          <div class="w-full md:w-1/2 px-3">
-            <label
-              class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2"
-              for="grid-last-name"
-            >
-              Last Name
-            </label>
-            <input
-              class="appearance-none block w-full bg-gray-200 text-gray-300 border border-lime-800 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-last-name"
-              type="text"
-            ></input>
-          </div>
-        </div>
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full px-3">
-            <label
-              class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2"
-              for="grid-password"
-            >
-              E-mail
-            </label>
-            <input
-              class="appearance-none block w-full bg-gray-200 text-gray-300 border border-lime-800 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="email"
-              type="email"
-            ></input>
-          </div>
-        </div>
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full px-3">
-            <label
-              class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2"
-              for="grid-last-name"
-            >
-              Motif demande
-            </label>
-            <input
-              class="appearance-none block w-full bg-gray-200 text-gray-300 border border-lime-800 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-last-name"
-              type="text"
-            ></input>
-          </div>
-        </div>
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full px-3">
-            <label
-              class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2"
-              for="grid-password"
-            >
-              Message
-            </label>
-            <textarea
-              input
-              class="appearance-none block w-full bg-gray-200 text-gray-300 border border-lime-800 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-lime-800"
-              id="grid-last-name"
-              type="text"
-            ></textarea>
-          </div>
-        </div>
-        <div class="md:flex md:items-center">
-          <div class="md:w-1/3">
-            <button
-              class="shadow bg-lime-800 hover:bg-lime-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-              type="button"
-            >
-              Send
-            </button>
-          </div>
-          <div class="md:w-2/3"></div>
-        </div>
-        
-      </form>
+      <div class="flex space-x-4 ">
+          
+        <div className="2xl p-5 pr-5 pb-0.5 pl-0.5 rounded-xl"></div>
+  <div class="bg-white rounded-lg shadow-2xl md:flex">
+    <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8" alt="Laptop on Desk" class="md:w-2/5 rounded-t-lg md:rounded-l-lg md:rounded-t-" />
+    <div class="p-7">
+      <h2 class="font-bold text-xl md:text-3xl mb-2 text-lime-800">Confection de plans</h2>
+      <p class="text-lime-800">
+        Explication service 
+      </p>
     </div>
+    </div>
+    <br></br>
+    <div className="2xl p-5  pb-0.5 pl-0.5 pr-0.5 rounded-xl"></div>
+  <div class="bg-white rounded-lg shadow-2xl md:flex">
+    <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8" alt="Laptop on Desk" class="md:w-2/5 rounded-t-lg md:rounded-l-lg md:rounded-t-none" />
+    <div class="p-7">
+      <h2 class="font-bold text-xl md:text-3xl mb-2 text-lime-800">Confection de plans</h2>
+      <p class="text-lime-800">
+        Explication service 
+      </p>
+    </div>
+    </div>
+    <br></br>
+    <div className="2xl p-5 pr-25 pb-0.5 pl-0.5 pr-0.5 rounded-xl"></div>
+  <div class="bg-white rounded-lg shadow-2xl md:flex">
+    <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8" alt="Laptop on Desk" class="md:w-2/5 rounded-t-lg md:rounded-l-lg md:rounded-t-none" />
+    <div class="p-7">
+      <h2 class="font-bold text-xl md:text-3xl mb-2 text-lime-800">Confection de plans</h2>
+      <p class="text-lime-800">
+        Explication service 
+      </p>
+    </div>
+
+  </div>
+</div>
+<br></br>
+<div class="flex space-x-4 ">
+          
+        <div className="2xl p-5 pr-5 pb-0.5 pl-0.5 rounded-xl"></div>
+  <div class="bg-white rounded-lg shadow-2xl md:flex">
+    <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8" alt="Laptop on Desk" class="md:w-2/5 rounded-t-lg md:rounded-l-lg md:rounded-t-" />
+    <div class="p-7">
+      <h2 class="font-bold text-xl md:text-3xl mb-2 text-lime-800">Confection de plans</h2>
+      <p class="text-lime-800">
+        Explication service 
+      </p>
+    </div>
+    </div>
+    <br></br>
+    <div className="2xl p-5  pb-0.5 pl-0.5 pr-0.5 rounded-xl"></div>
+  <div class="bg-white rounded-lg shadow-2xl md:flex">
+    <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8" alt="Laptop on Desk" class="md:w-2/5 rounded-t-lg md:rounded-l-lg md:rounded-t-none" />
+    <div class="p-7">
+      <h2 class="font-bold text-xl md:text-3xl mb-2 text-lime-800">Confection de plans</h2>
+      <p class="text-lime-800">
+        Explication service 
+      </p>
+    </div>
+    </div>
+    <br></br>
+    <div className="2xl p-5 pr-25 pb-0.5 pl-0.5 pr-0.5 rounded-xl"></div>
+  <div class="bg-white rounded-lg shadow-2xl md:flex">
+    <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8" alt="Laptop on Desk" class="md:w-2/5 rounded-t-lg md:rounded-l-lg md:rounded-t-none" />
+    <div class="p-7">
+      <h2 class="font-bold text-xl md:text-3xl mb-2 text-lime-800">Confection de plans</h2>
+      <p class="text-lime-800">
+        Explication service 
+      </p>
+    </div>
+
+  </div>
+</div>
+<br></br>
+<div className="text-2xl bg-lime-800 p-1 pr-1 pb-1 pl-1">
+        <span className="">
+          Pour toutes demandes n'hésitez pas à cliquer sur le bouton "work with me" en haut de la page et remplir le formulaire
+        </span>
+        <div className='text-2xl'>
+          
+        </div>
+      </div>
+</div>
+
+
+  
+
+  
   )
 }
-export default Contact
+export default Contact;

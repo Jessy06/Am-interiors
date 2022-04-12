@@ -38,7 +38,8 @@ function Inspirations() {
 
       <div class="flex space-x-4 ">
           
-        <div className="2xl p-10 pr-25 pb-0.5 pl-0.5">
+        <div className="2xl p-10 pr-25 pb-0.5 pl-0.5 rounded-xl">
+          
           Thème 1<br></br>
           <br></br>
           <img src={Background1} className="" alt=''></img>
