@@ -10,6 +10,14 @@ function Inspirations() {
     <div className="p-10 pl-5 pr-5 mb-5">
       <div class="text-8xl">Inspirations</div>
 
+       <button
+        class="bg-white hover:bg-lime-800 text-gray-800 font-bold py-3 px-3 grid float-right"
+        type="button"
+      >
+        Work with me
+      </button>
+
+      <br></br>
       <br></br>
       <br></br>
 
@@ -28,12 +36,12 @@ function Inspirations() {
         </span>
       </div>
 
-      <div class="flex space-x-4">
+      <div class="flex space-x-4 ">
           
         <div className="2xl p-10 pr-25 pb-0.5 pl-0.5">
           Thème 1<br></br>
           <br></br>
-          <img src={Background1} className=""></img>
+          <img src={Background1} className="" alt=''></img>
           <br></br>
           <br></br>
           <div className="text-xl p-1 pr-1 pb-1 pl-0.5">Explications</div>
@@ -41,7 +49,7 @@ function Inspirations() {
         <div className="2xl p-10 pr-25 pb-0.5 pl-0.5">
           Théme 2<br></br>
           <br></br>
-          <img src={Background2} className=""></img>
+          <img src={Background2} className="" alt=''></img>
           <br></br>
           <br></br>
           <div className="text-xl p-1 pr-1 pb-1 pl-1">Explications</div>
@@ -49,15 +57,15 @@ function Inspirations() {
         <div className="2xl p-10 pr-25 pb-0.5 pl-0.5">
           Thème 3<br></br>
           <br></br>
-          <img src={Floral} className=""></img>
-          <br></br>
+          <img src={Floral} className="" alt=''></img>
+          <br></br> 
           <br></br>
           <div className="text-xl p-1 pr-1 pb-1 pl-1">Explications</div>
         </div>
         <div className="2xl p-10 pr-25 pb-0.5 pl-0.5">
           Thème 4<br></br>
           <br></br>
-          <img src={Rose} className=""></img>
+          <img src={Rose} className="" alt=''></img>
           <br></br>
           <br></br>
           <div className="text-xl p-1 pr-1 pb-1 pl-1">Explications</div>

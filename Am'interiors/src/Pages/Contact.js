@@ -3,7 +3,7 @@ import kitchen from '../Images/kitchen.jpg'
 
 function Contact() {
   return (
-    <div className="p-10 pl-10 pr-10 mb-10">
+    <div className="p-5 pl-5 pr-5 mt-5 mb-5">
       
       <div>
         <img src={kitchen} className=" py-3 px-3 grid float-right" />

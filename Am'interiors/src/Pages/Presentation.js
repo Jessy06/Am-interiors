@@ -4,17 +4,17 @@ import '../App.css'
 
 function Presentation() {
   return (
-    <div className="p-10 pl-5 pr-5 mb-5">
-    <div class="text-8xl">Presentation</div>
-    <button
+    <div className="p-5 pl-5 pr-5 mt-5 mb-5">
+
+      <div class="text-8xl">Presentation</div>
+      <button
         class="bg-white hover:bg-lime-800 text-gray-800 font-bold py-3 px-3 grid float-right"
         type="button"
       >
         Work with me
       </button>
 
-    <br></br>
-    <br></br>
+      <br></br>
     
     <div className='text-xl'>A propos de Amin Dab</div>
 
