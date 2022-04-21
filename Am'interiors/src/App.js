@@ -4,7 +4,7 @@ import './App.css'
 
   // Import components
 import NavBar from './components/NavBar/NavBar';
-
+import Test from './components/Test';
 
   // Import Pages
 import LoginAdmin from './Pages/LoginAdmin';
@@ -19,8 +19,7 @@ export default function App() {
 return (
   // Routes 
   <Router>
-     <NavBar/>
-     
+     <NavBar/> 
      <Routes>
         <Route path="/" element = {<Home/>}/>
         <Route path="/presentation" element = {<Presentation/>}/>
@@ -28,8 +27,8 @@ return (
         <Route path="/contact" element = {<Contact/>}/>
         <Route path="/projets" element = {<Projets/>}/>
         <Route path="/login" element = { <LoginAdmin/>}/>
+        <Route path="/test" element = { <Test/>}/>
       </Routes>
       </Router>
 )
 }
-

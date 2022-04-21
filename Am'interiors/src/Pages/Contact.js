@@ -1,17 +1,23 @@
 import React from 'react'
 import '../App.css'
 
+import Formulaire from '../components/Test'
+
+
 function Contact() {
+
+  const [clickModal, setClickModal] = React.useState(false);
+
   return (
     <div className="p-20 pl-5 pr-5 mb-5 mt-5">
       <div class="text-8xl">Contact</div>
 
-      <button
-        class="bg-white hover:bg-lime-800 text-gray-800 font-bold py-3 px-3 grid float-right"
-        type="button"
+      <div
+        onClick={() => setClickModal(true)}
+        class="py-3 px-3 grid float-right"
       >
-        Work with me
-      </button>
+        <Formulaire/>
+      </div>
 
       <br></br>
       <br></br>

@@ -16,7 +16,7 @@ function Presentation() {
 
       <br></br>
     
-    <div className='text-xl'>A propos de Amin Dab</div>
+    <div className='text-xl'>A propos de Amin Dabbabi</div>
 
     <br></br>
       

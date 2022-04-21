@@ -7,7 +7,7 @@ function SignUp() {
   const [password, setPassword] = useState("");
 
   const addToList = () => {
-      Axios.post ("http://localhost:3001/newuser", {Pseudo: pseudo, password: password, email: email})
+      Axios.post ("http://localhost:3001/newuser", {pseudo: pseudo, password: password, email: email})
       console.log(pseudo + email + password)
   }
 
@@ -15,7 +15,7 @@ function SignUp() {
     <div className="h-screen flex bg-gray-bg1">
       <div className="w-full max-w-md m-auto bg-gray-300 rounded-lg border border-primaryBorder shadow-default py-10 px-16">
         <h1 className="text-2xl font-medium text-primary mt-4 mb-12 text-center text-black">
-          New SignUp account
+          New Sign Up account
         </h1>
 
         <form>

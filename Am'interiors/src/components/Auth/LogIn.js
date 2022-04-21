@@ -13,14 +13,14 @@ const SignIn = () => {
                 <label htmlFor='pseudo'>Pseudo</label>
                     <input
                         type='pseudo'
-                        className={`w-full p-2 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4`}
+                        className={`w-full p-2 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4 text-black`}
                         id='pseudo'
                         placeholder='Your Pseudo'
                     />
                     <label htmlFor='email'>Email</label>
                     <input
                         type='email'
-                        className={`w-full p-2 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4`}
+                        className={`w-full p-2 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4 text-black`}
                         id='email'
                         placeholder='Your Email'
                     />
@@ -29,7 +29,7 @@ const SignIn = () => {
                     <label htmlFor='password'>Password</label>
                     <input
                         type='password'
-                        className={`w-full p-2 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4`}
+                        className={`w-full p-2 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4 text-black`}
                         id='password'
                         placeholder='Your Password'
                     />

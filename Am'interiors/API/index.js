@@ -4,6 +4,9 @@ const cors = require ('cors');
 require('dotenv').config();
 const mongoose = require('mongoose');
 
+//JSON WEB TOKEN AUTHENTICATION
+const jwt = require ('jsonwebtoken');
+
 app.use(express.json());
 app.use(cors());
 
@@ -18,8 +21,8 @@ useNewUrlParser : true,
 }, () => console.log('connected to db'));
 
 
-
 // ROUTES
+
 app.post('/newuser', async (req, res) => {
     const pseudo = req.body.pseudo;
     const email = req.body.email;
@@ -33,6 +36,9 @@ app.post('/newuser', async (req, res) => {
     } catch(err) {
         console.log(err);
     }
+
+    const accessToken = jwt.sign(User, process.env.TOKEN_SECRET)
+    res.json({accessToken : accessToken})
 });
 
 // PORT
