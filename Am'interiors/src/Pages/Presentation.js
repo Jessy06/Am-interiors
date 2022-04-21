@@ -4,7 +4,7 @@ import '../App.css'
 
 function Presentation() {
   return (
-    <div className="p-20 pl-5 pr-5 mt-5 mb-5">
+    <div className="p-5 pl-5 pr-5 mt-5 mb-5">
 
       <div class="text-8xl">Presentation</div>
       <button

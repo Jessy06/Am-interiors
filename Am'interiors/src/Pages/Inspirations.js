@@ -7,7 +7,7 @@ import Rose from '../Images/Rose.jpg'
 
 function Inspirations() {
   return (
-    <div className="p-10 pl-5 pr-5 mb-5">
+    <div className="p-5 pl-5 pr-5 mb-5">
       <div class="text-8xl">Inspirations</div>
 
        <button

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import './App.css';
   
 function Formulaire() {
@@ -59,40 +59,35 @@ function Formulaire() {
         function will be called .*/}
     <h2> Geeks For Geeks </h2>
     <h3> Sign-up Form </h3>
-    <img src="/gfg.png" />
+    {/* <img src="/gfg.png" /> */}
         <label >
           Name:
         </label><br/>
-        <input type="text" value={name} required onChange={(e) 
-              => {handleChange(e)}} /><br/>
+        <input type="text" value={name} required onChange={(e)  => {handleChange(e)}} /><br/>
           { /*when user write in name input box , handleChange()
               function will be called. */}
         <label >
           Age:
         </label><br/>
-        <input type="text" value={age} required onChange={(e)
-               => {handleAgeChange(e)}} /><br/>
+        <input type="text" value={age} required onChange={(e) => {handleAgeChange(e)}} />
             { /*when user write in age input box , handleAgeChange()
                function will be called. */}
         <label>
           Email:
         </label><br/>
-        <input type="email" value={email} required onChange={(e) 
-                => {handleEmailChange(e)}} /><br/>
+        <input type="email" value={email} required onChange={(e)  => {handleEmailChange(e)}} /><br/>
           {/* when user write in email input box , handleEmailChange() 
               function will be called.*/}
         <label>
           Password:
         </label><br/>
-        <input type="password" value={password} required onChange={(e) 
-               => {handlePasswordChange(e)}} /><br/>
+        <input type="password" value={password} required onChange={(e) => {handlePasswordChange(e)}} /><br/ >
               {/* when user write in password input box ,
                   handlePasswordChange() function will be called.*/}
         <label>
           Confirm Password:
         </label><br/>
-        <input type="password" value={confPassword} required onChange={(e) 
-               => {handleConfPasswordChange(e)}} /><br/>
+        <input type="password" value={confPassword} required onChange={(e)  => {handleConfPasswordChange(e)}} /><br/>
                 {/* when user write in confirm password  input box ,
                     handleConfPasswordChange() function will be called.*/}
         <input type="submit" value="Submit"/>
