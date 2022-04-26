@@ -1,11 +1,10 @@
 import React from 'react'
-import '../App.css'
 
+// Import Components.
 import Formulaire from '../components/Test'
 
 
 function Contact() {
-
 
   return (
     <div className="lg:p-5 pl-5 pr-5 mb-5 mt-5 sm:">
