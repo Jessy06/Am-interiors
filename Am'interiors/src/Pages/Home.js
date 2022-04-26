@@ -2,17 +2,18 @@ import React from 'react'
 import LivingRoom from '../Images/Livingroom.png'
 import LivingRoomModern from '../Images/livingRoomModern.jpg'
 import '../App.css'
+import Formulaire from '../components/Test'
 
 function Home() {
   return (
     <div className="p-5 pl-5 pr-5 mb-5">
-      <div class="text-8xl">AM'INTERIORS</div>
-      <button
-        class="bg-white hover:bg-lime-800 text-gray-800 font-bold py-3 px-3 grid float-right"
+      <div class="text-8xl">AM'INTERIEURS</div>
+      <div
+        class="py-3 px-3 grid float-right"
         type="button"
       >
-        Work with me
-      </button>
+       <Formulaire/>
+      </div>
 
       <br></br>
 
@@ -26,7 +27,7 @@ function Home() {
       </div>
       <br></br>
 
-      <div className="text-2xl float-top p-60 pr-8 pb-0.5 bg-lime-800 "alt='text'>
+      <div className="text-2xl float-top p-60 pr-8 pb-0.5 bg-gray-400 "alt='text'>
         <span className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
