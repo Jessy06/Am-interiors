@@ -7,7 +7,7 @@ import Formulaire from '../components/Test'
 function Home() {
   return (
     <div className="p-5 pl-5 pr-5 mb-5">
-      <div class="text-8xl">AM'INTERIEURS</div>
+      <div class="text-8xl">AM'INTERIORS</div>
       <div
         class="py-3 px-3 grid float-right"
         type="button"
