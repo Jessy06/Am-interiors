@@ -1,5 +1,6 @@
 import React from 'react'
 import '../App.css'
+import Formulaire from '../components/Test'
 import Background1 from '../Images/Background1.jpg'
 import Background2 from '../Images/Background2.jpg'
 import Floral from '../Images/Floral.jpg'
@@ -10,12 +11,12 @@ function Inspirations() {
     <div className="p-5 pl-5 pr-5 mb-5">
       <div class="text-8xl">Inspirations</div>
 
-       <button
-        class="bg-white hover:bg-lime-800 text-gray-800 font-bold py-3 px-3 grid float-right"
+      <div
+        class="py-3 px-3 grid float-right"
         type="button"
       >
-        Work with me
-      </button>
+       <Formulaire/>
+      </div>
 
       <br></br>
       <br></br>

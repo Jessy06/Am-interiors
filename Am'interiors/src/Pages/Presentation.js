@@ -1,18 +1,19 @@
 import React from 'react'
 import photoprofil from '../Images/photoprofil.jpg'
 import '../App.css'
+import Formulaire from '../components/Test'
 
 function Presentation() {
   return (
     <div className="p-5 pl-5 pr-5 mt-5 mb-5">
 
       <div class="text-8xl">Presentation</div>
-      <button
-        class="bg-white hover:bg-lime-800 text-gray-800 font-bold py-3 px-3 grid float-right"
+      <div
+        class="py-3 px-3 grid float-right"
         type="button"
       >
-        Work with me
-      </button>
+       <Formulaire/>
+      </div>
 
       <br></br>
     

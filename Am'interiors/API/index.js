@@ -37,8 +37,8 @@ app.post('/newuser', async (req, res) => {
         console.log(err);
     }
 
-    const accessToken = jwt.sign(User, process.env.TOKEN_SECRET)
-    res.json({accessToken : accessToken})
+    // const accessToken = jwt.sign(User, process.env.TOKEN_SECRET)
+    // res.json({accessToken : accessToken})
 });
 
 // PORT

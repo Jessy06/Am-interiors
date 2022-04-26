@@ -1,22 +1,20 @@
 import React from 'react'
-import '../App.css'
 
+// Import Components.
 import Formulaire from '../components/Test'
 
 
 function Contact() {
 
-  const [clickModal, setClickModal] = React.useState(false);
-
   return (
-    <div className="p-20 pl-5 pr-5 mb-5 mt-5">
+    <div className="lg:p-5 pl-5 pr-5 mb-5 mt-5 sm:">
       <div class="text-8xl">Contact</div>
 
       <div
-        onClick={() => setClickModal(true)}
         class="py-3 px-3 grid float-right"
+        type="button"
       >
-        <Formulaire/>
+       <Formulaire/>
       </div>
 
       <br></br>
@@ -84,7 +82,7 @@ function Contact() {
 
       <br></br>
 
-      <div class="flex space-x-4 ">
+      <div class="flex space-x-2 ">
         <div className="2xl p-5 pr-5 pb-0.5 pl-0.5 rounded-xl"></div>
         <div class="bg-white rounded-lg shadow-2xl md:flex">
           <img
@@ -144,6 +142,8 @@ function Contact() {
         </span>
         <div className="text-2xl"></div>
       </div>
+      <br></br>
+      <br></br>
     </div>
   )
 }
