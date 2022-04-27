@@ -2,7 +2,8 @@ import React from 'react'
 import LivingRoom from '../Images/Livingroom.png'
 import LivingRoomModern from '../Images/livingRoomModern.jpg'
 import '../App.css'
-import Formulaire from '../components/Test'
+import Formulaire from '../components/PopUp/Formulaire'
+
 
 function Home() {
   return (
@@ -27,7 +28,7 @@ function Home() {
       </div>
       <br></br>
 
-      <div className="text-2xl float-top p-60 pr-8 pb-0.5 bg-gray-400 "alt='text'>
+      <div className="text-2xl float-top p-60 pr-8 pb-0.5 bg-lime-800 "alt='text'>
         <span className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel

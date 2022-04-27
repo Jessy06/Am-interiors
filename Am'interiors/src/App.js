@@ -4,7 +4,7 @@ import './App.css'
 
   // Import components
 import NavBar from './components/NavBar/NavBar';
-import Test from './components/Test';
+import Formulaire from './components/PopUp/Formulaire';
 
   // Import Pages
 import LoginAdmin from './Pages/LoginAdmin';
@@ -27,7 +27,7 @@ return (
         <Route path="/contact" element = {<Contact/>}/>
         <Route path="/projets" element = {<Projets/>}/>
         <Route path="/login" element = { <LoginAdmin/>}/>
-        <Route path="/test" element = { <Test/>}/>
+        <Route path="/Formulaire" element = { <Formulaire/>}/>
       </Routes>
       </Router>
 )

@@ -1,11 +1,11 @@
 import React from 'react'
 import '../App.css'
-import Formulaire from '../components/Test'
+import Formulaire from '../components/PopUp/Formulaire'
 import Background1 from '../Images/Background1.jpg'
 import Background2 from '../Images/Background2.jpg'
 import Floral from '../Images/Floral.jpg'
 import Rose from '../Images/Rose.jpg'
-
+import Thème1 from '../components/Inspirations/Thème1'
 function Inspirations() {
   return (
     <div className="p-5 pl-5 pr-5 mb-5">
@@ -44,6 +44,7 @@ function Inspirations() {
           Thème 1<br></br>
           <br></br>
           <img src={Background1} className="" alt=''></img>
+          <Thème1/>
           <br></br>
           <br></br>
           <div className="text-xl p-1 pr-1 pb-1 pl-0.5">Explications</div>

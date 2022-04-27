@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css'
-import Formulaire from '../components/Test'
+import Formulaire from '../components/PopUp/Formulaire'
 
 function Projets() {
   return (
