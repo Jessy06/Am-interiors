@@ -7,7 +7,7 @@ function SignUp() {
   const [password, setPassword] = useState("");
 
   const addToList = () => {
-      Axios.post ("http://localhost:3001/newuser", {pseudo: pseudo, password: password, email: email})
+      Axios.post ("http://localhost:3001/api/user/register", {pseudo: pseudo, password: password, email: email})
       console.log(pseudo + email + password)
   }
 
