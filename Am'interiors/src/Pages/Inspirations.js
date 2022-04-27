@@ -46,6 +46,34 @@ function Inspirations() {
         <div className="text-2xl">
         <br></br>
         <br></br>
+      </div><img src={Peinture} className="" alt='Peinture'></img>
+          <br></br>
+          <br></br>
+          <span className="">
+           <div className='text-3xl'></div>Thème 1 
+            <br></br>
+            <br></br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
+          imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
+          tincidunt mauris, porta feugiat odio. Quisque dui tellus, lobortis vel
+          dui id, sollicitudin mollis ligula. Praesent aliquam auctor erat at
+          semper. Cras non euismod odio. Suspendisse et facilisis diam. Mauris a
+          neque tempor, mattis urna vel, tempus sapien. In id quam mattis,
+          tincidunt erat sit amet, hendrerit justo. Maecenas ut aliquet nisi, id
+          congue quam at el Vestibulum sit amet purus nunc. Maecenas vitae
+          imperdiet ex, tempor al accumsan justo. Quisque gravida est et mollis
+          commodo. Suspendisse odio magna, pellentesque vel massa eu, malesuada.
+          <br></br>
+          <br></br>
+          <Thème1/>
+        </span>
+        </div>
+        <br></br>
+        <div class="flex space-x-4 ">
+          <br></br>
+        <div className="text-2xl">
+        <br></br>
+        <br></br>
       </div>
       <img src={Peinture} className="" alt='Peinture'></img>
           <br></br>
@@ -66,36 +94,7 @@ function Inspirations() {
           commodo. Suspendisse odio magna, pellentesque vel massa eu, malesuada.
           <br></br>
           <br></br>
-          <Thème1/>
-          
-        </span>
-        </div>
-        <br></br>
-        <div class="flex space-x-4 ">
-          <br></br>
-        <div className="text-2xl">
-        <br></br>
-        <br></br>
-      </div>
-          <br></br>
-          <br></br>
-          <span className="">
-           <div className='text-3xl'></div>Thème 2
-            <br></br>
-            <br></br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
-          imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
-          tincidunt mauris, porta feugiat odio. Quisque dui tellus, lobortis vel
-          dui id, sollicitudin mollis ligula. Praesent aliquam auctor erat at
-          semper. Cras non euismod odio. Suspendisse et facilisis diam. Mauris a
-          neque tempor, mattis urna vel, tempus sapien. In id quam mattis,
-          tincidunt erat sit amet, hendrerit justo. Maecenas ut aliquet nisi, id
-          congue quam at el Vestibulum sit amet purus nunc. Maecenas vitae
-          imperdiet ex, tempor al accumsan justo. Quisque gravida est et mollis
-          commodo. Suspendisse odio magna, pellentesque vel massa eu, malesuada.
-          <br></br>
-          <br></br>
-        <Thème2/>
+        <Thème1/>
         </span>
         </div>
         <br></br>
