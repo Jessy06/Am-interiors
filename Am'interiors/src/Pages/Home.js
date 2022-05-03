@@ -28,7 +28,7 @@ function Home() {
       </div>
       <br></br>
 
-      <div className="text-2xl float-top p-60 pr-8 pb-0.5 bg-lime-800 "alt='text'>
+      <div className="text-2xl float-top p-60 pr-8 pb-0.5 bg-orange-50 "alt='text'>
         <span className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel

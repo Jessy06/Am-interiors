@@ -4,8 +4,12 @@
 
 @layer base {
   body {
-    @apply pt-20 bg-gradient-to-r from-gray-800 to-gray-900 text-white
+    @apply pt-20  text-white;
+    background-color: black;
   }
 
 }
 
+
+
+/* bg-gradient-to-r from-gray-800 to-gray-900 */

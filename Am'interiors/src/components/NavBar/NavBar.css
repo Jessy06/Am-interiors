@@ -4,14 +4,14 @@ nav {
     top: 0px;
     width: 100%;
     height: 80px;
-    background: #202533;
+    background: white;
     border-bottom: solid 3px white;
     border-bottom-width: thin;
   }
   
   .list {
     list-style-type: none;
-    background: #202533;
+    background: white;
     height: 100%;
     display: flex;
     justify-content: right;
@@ -26,7 +26,7 @@ nav {
     font-size: 20px;
     top: 20px;
     text-transform: uppercase;
-    color: #f1f1f1;
+    color: black;
     cursor: pointer;
   }
   
@@ -36,7 +36,7 @@ nav {
     right: 10px;
     top: 7px;
     padding: 5px;
-    color: white;
+    color: black;
     font-size: 18px;
   }
   
@@ -48,12 +48,12 @@ nav {
     }
   
     .items:nth-child(1){
-        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        border-top: 1px solid black;
         margin-top: 50px;
     }
     .items {
         width: 100%;
-        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        border-top: 1px solid black;
         text-align: center;
         margin-right: 0px;
         padding: 20px 0;
