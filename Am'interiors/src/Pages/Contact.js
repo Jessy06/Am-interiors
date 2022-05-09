@@ -7,7 +7,7 @@ import Formulaire from '../components/PopUp/Formulaire'
 function Contact() {
 
   return (
-    <div className="lg:p-5 pl-5 pr-5 mb-5 mt-5 sm:">
+    <div className="p-20 pl-5 pr-5 mb-5">
       <div class="text-8xl text-white">CONTACT</div>
       <br></br>
       <hr></hr>

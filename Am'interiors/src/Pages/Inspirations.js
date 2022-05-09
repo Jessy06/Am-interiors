@@ -9,7 +9,7 @@ import Thème4 from '../components/Inspirations/Thème4'
 
 function Inspirations() {
   return (
-    <div className="p-5 pl-5 pr-5 mb-5">
+    <div className="p-20 pl-5 pr-5 mb-5">
       <div class="text-8xl text-white">INSPIRATIONS</div>
       <br></br>
       <hr></hr>
