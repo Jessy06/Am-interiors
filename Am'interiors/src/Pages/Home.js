@@ -26,10 +26,13 @@ function Home() {
 
       <br></br>
 
-      <div className="text-2xl pl-20 pr-10 mb-10 pb-10 p-2 bg-gray-300 "alt='text'>
-        
-        <img src={LivingRoom} className="float-right pr-1 pl-2 p-2 border-solid" alt='livingroom'/>
-        <img src={LivingRoomModern} className="float-right pl-2 p-2 pr-1" alt='livingroom'/>
+      <div>
+        <img src={LivingRoom} className="float-right" alt='Livingroom'/>
+        <img src={LivingRoomModern} className="float-right pr-1" alt='Livingroom'/>
+      </div>
+      <br></br>
+
+      <div className="text-2xl float-top p-60 pr-8 pb-0.5 bg-orange-50 "alt='text'>
         <span className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel

@@ -1,12 +1,12 @@
 // Import Components
 import SignIn from "../components/Auth/LogIn";
-import LogIn from "../components/Auth/LogIn";
-import SignUp from "../components/Auth/SignUp";
+// import LogIn from "../components/Auth/LogIn";
+// import SignUp from "../components/Auth/SignUp";
 
 function LoginAdmin() {
     return (
         <div>
-        <SignUp/>
+        {/* <SignUp/> */}
         <SignIn/>
         </div>
     )

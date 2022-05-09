@@ -14,6 +14,7 @@ app.use(cors());
 // IMPORT ROUTES
 const authRoute = require('./routes/auth');
 
+
 // ROUTES MIDDLEWARES
 app.use('/api/user', authRoute);
 
@@ -23,20 +24,6 @@ mongoose.connect(process.env.DB_CONNECTION,
 useNewUrlParser : true,
 }, () => console.log('Connected to MongoDB'));
 
-
-// ROUTES
-// app.get('/', async (req, res) => {
-//     try {
-//         const user = await User.find();
-//         res.json(user);
-//       } catch (err) {
-//         res.json({ message: "Je n'arrive pas à avoir la data" });
-//       }
-// })
-
-
-    // const accessToken = jwt.sign(User, process.env.TOKEN_SECRET)
-    // res.json({accessToken : accessToken})
 
 // PORT
 app.listen(3001, console.log('Server Running'));
