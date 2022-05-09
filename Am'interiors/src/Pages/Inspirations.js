@@ -10,7 +10,11 @@ import Thème4 from '../components/Inspirations/Thème4'
 function Inspirations() {
   return (
     <div className="p-5 pl-5 pr-5 mb-5">
-      <div class="text-8xl">Inspirations</div>
+      <div class="text-8xl text-white">Inspirations</div>
+      <br></br>
+      <br></br>
+      <hr></hr>
+      <br></br>
 
       <div class="py-3 px-3 grid float-right" type="button">
         <Formulaire />
@@ -20,8 +24,8 @@ function Inspirations() {
       <br></br>
       <br></br>
 
-      <div className="text-2xl bg-lime-800 p-1 pr-1 pb-1 pl-1">
-        <span className="">
+      <div className="text-2xl text-white p-1 pr-1 pb-1 pl-1">
+        <span className=" text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
           tincidunt mauris, porta feugiat odio. Quisque dui tellus, lobortis vel
@@ -35,11 +39,13 @@ function Inspirations() {
         </span>
       </div>
       <br></br>
+      <hr></hr>
+      <br></br>
       <br></br>
 
-      <div class="flex space-x-4 ">
+      <div class="grid grid-cols-2 gap-3">
         <br></br>
-        <div className="text-2xl">
+        <div className="col-span-2 ...">
           <br></br>
           <br></br>
         </div>
@@ -47,7 +53,7 @@ function Inspirations() {
         <br></br>
         <br></br>
         <span className="">
-          <div className="text-3xl"></div>Thème 1<br></br>
+          <div className="text-3xl text-white"></div>Thème 1<br></br>
           <br></br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
@@ -65,9 +71,11 @@ function Inspirations() {
         </span>
       </div>
       <br></br>
-      <div class="flex space-x-4 ">
+      <hr></hr>
+      <br></br>
+      <div class="col-span-2 ... ">
         <br></br>
-        <div className="text-2xl">
+        <div className="text-2xl text-white">
           <br></br>
           <br></br>
         </div>
@@ -77,7 +85,7 @@ function Inspirations() {
         <br></br>
         <br></br>
         <span className="">
-          <div className="text-3xl"></div>Thème 2<br></br>
+          <div className="text-3xl text-orange-800"></div>Thème 2<br></br>
           <br></br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
@@ -95,9 +103,11 @@ function Inspirations() {
         </span>
       </div>
       <br></br>
-      <div class="flex space-x-4 ">
+      <hr></hr>
+      <br></br>
+      <div class="col-span-2 ... ">
         <br></br>
-        <div className="text-2xl">
+        <div className="text-2xl text-white">
           <br></br>
           <br></br>
         </div>
@@ -105,7 +115,7 @@ function Inspirations() {
         <br></br>
         <br></br>
         <span className="">
-          <div className="text-3xl"></div>Thème 3<br></br>
+          <div className="text-3xl text-white"></div>Thème 3<br></br>
           <br></br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
@@ -123,7 +133,9 @@ function Inspirations() {
         </span>
       </div>
       <br></br>
-      <div class="flex space-x-4 ">
+      <hr></hr>
+      <br></br>
+      <div class="col-span-2 ...">
         <br></br>
         <div className="text-2xl">
           <br></br>
@@ -135,7 +147,7 @@ function Inspirations() {
         <br></br>
         <br></br>
         <span className="">
-          <div className="text-3xl"></div>Thème 4<br></br>
+          <div className="text-3xl text-white"></div>Thème 4<br></br>
           <br></br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
@@ -152,6 +164,8 @@ function Inspirations() {
           <Thème4 />
         </span>
       </div>
+      <br></br>
+      <hr></hr>
       <br></br>
     </div>
   )

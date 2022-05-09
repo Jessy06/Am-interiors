@@ -1,4 +1,4 @@
-// import React, { useState } from 'react'
+import React, { useState } from 'react'
 
 export default function Modal() {
   const [showModal, setShowModal] = React.useState(false)
@@ -17,7 +17,7 @@ export default function Modal() {
   return (
     <>
       <button
-        className="bg-white hover:bg-lime-800 text-gray-800 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-200"
+        className="bg-white hover:bg-orange-800 text-gray-800 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-200"
         type="button"
         onClick={() => setShowModal(true)}
       >
@@ -44,7 +44,7 @@ export default function Modal() {
                   </button>
                 </div>
                 {/*body*/}
-                <div className="text-black">
+                <div className="text-white">
                   <form
                     onSubmit={(e) => {
                       handleSubmit(e)
@@ -52,7 +52,7 @@ export default function Modal() {
                   >
                     <br />
                   </form>
-                  <section class="overflow-hidden text-gray-700">
+                  <section class="overflow-hidden text-white">
         <div class="container px-100 py-100 mx-auto lg:pt-50 lg:px-50">
           <div class="flex flex-wrap -m-1 md:-m-2">
             <div class="flex flex-wrap w-1/3">

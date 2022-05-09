@@ -5,7 +5,11 @@ import Formulaire from '../components/PopUp/Formulaire'
 function Projets() {
   return (
     <div className="p-5 pl-5 pr-5 mt-5 mb-5">
-      <div class="text-8xl">Projets</div>
+      <div class="text-8xl text-white">Projets</div>
+      <br></br>
+      <br></br>
+      <hr></hr>
+      <br></br>
       <div
         class="py-3 px-3 grid float-right"
         type="button"
@@ -14,8 +18,7 @@ function Projets() {
       </div>
       <br></br>
       <br></br>
-      <br></br>
-      <div className="text-2xl bg-lime-800 p-1 pr-1 pb-1 pl-1">
+      <div className="text-2xl text-white p-1 pr-1 pb-1 pl-1">
         <span className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
@@ -29,6 +32,9 @@ function Projets() {
           commodo. Suspendisse odio magna, pellentesque vel massa eu, malesuada.
         </span>
       </div>
+      <br></br>
+      <hr></hr>
+      <br></br>
 
       <section class="overflow-hidden text-gray-700">
         <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
@@ -90,6 +96,8 @@ function Projets() {
           </div>
         </div>
       </section>
+      <br></br>
+      <hr></hr>
     </div>
   )
 }

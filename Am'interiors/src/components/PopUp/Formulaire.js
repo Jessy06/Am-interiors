@@ -31,7 +31,7 @@ export default function Modal() {
   return (
     <>
       <button
-        className="bg-white hover:bg-lime-800 text-gray-800 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+        className="bg-white hover:bg-orange-800 text-gray-800 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
         type="button"
         onClick={() => setShowModal(true)}
       >
@@ -39,8 +39,9 @@ export default function Modal() {
       </button>
       {showModal ? (
         <>
+        
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+          <div className="relative w-auto my-70 mx-auto max-w-6xl">
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
@@ -68,7 +69,7 @@ export default function Modal() {
         function will be called .*/}
                     {/* <img src="/gfg.png" /> */}
                     <label>Name:</label>
-                    <div className="p-1 pl-1 pr-1 mb-1 mt-1 pb-1"></div>
+                    <div className="p-1 pl-1 pr-1 mb-1 mt-1 pb-1 ml-1"></div>
                     <input
                       type="text"
                       value={name}
@@ -81,7 +82,7 @@ export default function Modal() {
                     {/*when user write in name input box , handleChange()
               function will be called. */}
                     <label>Surname:</label>
-                    <div className="p-1 pl-1 pr-1 mb-1 mt-1 pb-1"></div>
+                    <div className="p-1 pl-1 pr-1 mb-1 mt-1 pb-1 ml-1"></div>
                     <input
                       type="text"
                       value={surname}
@@ -96,6 +97,7 @@ export default function Modal() {
 
                     <label>Email:</label>
                     <div className="p-1 pl-1 pr-1 mb-1 mt-1 pb-1"></div>
+                    <div className='margin-left: 1px'/>
                     <input
                       type="email"
                       value={email}
@@ -108,7 +110,7 @@ export default function Modal() {
               function will be called.*/}
               <br></br>
 
-                    <div className="p-1 pl-1 pr-1 mb-1 mt-1 pb-1 right-2"></div>
+                    <div className="p-1 pl-1 pr-1 mb-1 mt-1 pb-1"></div>
                     <label
                       for="exampleFormControlTextarea1"
                       class="form-label inline-block mb-2 text-gray-700"

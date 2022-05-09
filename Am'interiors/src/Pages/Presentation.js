@@ -7,7 +7,10 @@ function Presentation() {
   return (
     <div className="p-5 pl-5 pr-5 mt-5 mb-5">
 
-      <div class="text-8xl">Presentation</div>
+      <div class="text-8xl text-white">Presentation</div>
+      <br></br>
+      <hr></hr>
+      <br></br>
       <div
         class="py-3 px-3 grid float-right"
         type="button"
@@ -17,12 +20,12 @@ function Presentation() {
 
       <br></br>
     
-    <div className='text-xl'>A propos de Amin Dabbabi</div>
+    <div className='text-2xl text-orange-700'>A propos de Amin Dabbabi</div>
 
     <br></br>
       
 
-      <div className="text-2xl bg-lime-800 p-1 pr-1 pb-1 pl-1"alt='presentation'>
+      <div className="text-3xl text-white p-1 pr-1 pb-1 pl-1"alt='presentation'>
         <span className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
@@ -37,9 +40,13 @@ function Presentation() {
         </span>
       </div>
       <br></br>
+      <hr></hr>
+      <br></br>
       <div>
       <img src={photoprofil} className="photoprofil" alt='Photoprofil' />
       </div>
+      <br></br>
+      <hr></hr>
       
     </div>
   )
