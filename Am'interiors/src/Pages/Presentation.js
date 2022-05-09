@@ -7,10 +7,12 @@ function Presentation() {
   return (
     <div className="p-5 pl-5 pr-5 mt-5 mb-5">
 
-      <div class="text-8xl text-white">Presentation</div>
+      <div class="text-8xl text-white">PRESENTATION</div>
       <br></br>
       <hr></hr>
       <br></br>
+    <hr></hr>
+    <br></br>
       <div
         class="py-3 px-3 grid float-right"
         type="button"
@@ -25,7 +27,7 @@ function Presentation() {
     <br></br>
       
 
-      <div className="text-3xl text-white p-1 pr-1 pb-1 pl-1"alt='presentation'>
+      <div className="text-2xl text-white p-1 pr-1 pb-1 pl-1"alt='presentation'>
         <span className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel

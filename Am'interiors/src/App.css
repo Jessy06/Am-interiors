@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply pt-20 bg-gradient-to-r from-black to-black text-black
+    @apply pt-20 bg-gradient-to-r from-black to-black text-white
   }
   
 

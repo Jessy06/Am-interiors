@@ -5,9 +5,17 @@ import SignIn from "../components/Auth/LogIn";
 
 function LoginAdmin() {
     return (
+        <div className="p-5 pl-5 pr-5 mb-5">
+      <div class="text-8xl text-white ">LOGIN</div>
+      <br></br>
+      <hr></hr>
+      <br></br>
+    <hr></hr>
+    <br></br>
         <div>
         {/* <SignUp/> */}
         <SignIn/>
+        </div>
         </div>
     )
 }

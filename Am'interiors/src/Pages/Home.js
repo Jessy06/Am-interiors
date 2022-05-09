@@ -10,6 +10,7 @@ function Home() {
     <div className="p-5 pl-5 pr-5 mb-5">
       <div class="text-8xl text-white ">AM'INTERIORS</div>
       <br></br>
+      <hr></hr>
       <br></br>
     <hr></hr>
     <br></br>
@@ -22,17 +23,17 @@ function Home() {
 
       <br></br>
 
-      <div className="text-2xl">Société d'aménagement d'intérieurs</div>
+      <div className="text-3xl text-orange-800 ">Société d'aménagement d'intérieurs</div>
 
       <br></br>
 
       <div>
-        <img src={LivingRoom} className="float-right" alt='Livingroom'/>
-        <img src={LivingRoomModern} className="float-right pr-1" alt='Livingroom'/>
+        <img src={LivingRoom} className="float-right pr-3 pl-3 p-2 mb-3 mt-3 border-solid " alt='Livingroom'/>
+        <img src={LivingRoomModern} className="float-right pl-3 p-2 pr-3 mb-3 mt-3 border-solid " alt='Livingroom'/>
       </div>
-      <br></br>
 
-      <div className="text-2xl float-top p-60 pr-8 pb-0.5 bg-orange-50 "alt='text'>
+      <div className="text-2xl text-black float-top p-40 pr-8 pb-0.5 bg-orange-50 "alt='text'>
+        <hr></hr>
         <span className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
@@ -42,8 +43,11 @@ function Home() {
           neque tempor, mattis urna vel, tempus sapien. In id quam mattis,
           tincidunt erat sit amet, hendrerit justo.
         </span>
+        <br></br>
       </div>
+      <br></br>
       <hr></hr>
+      <br></br>
     </div>
     
   )

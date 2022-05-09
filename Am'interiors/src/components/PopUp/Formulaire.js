@@ -6,6 +6,7 @@ export default function Modal() {
   const [email, setEmail] = useState('')
   const [texterea, setTexterea] = useState('')
   const [surname, setSurname] = useState('')
+  const [Request, setRequest] = useState('')
 
   // function to update state of name with
   // value enter by user in form
@@ -25,6 +26,9 @@ export default function Modal() {
 
     const handleSurnameChange = (e) => {
       setSurname(e.target.value)
+    }
+    const handleRequest = (e) => {
+      setRequest(e.target.value)
     }
   }
 
@@ -65,11 +69,12 @@ export default function Modal() {
                       handleSubmit(e)
                     }}
                   >
+                    <br></br>
                     {/*when user submit the form , handleSubmit() 
         function will be called .*/}
                     {/* <img src="/gfg.png" /> */}
                     <label>Name:</label>
-                    <div className="p-1 pl-1 pr-1 mb-1 mt-1 pb-1 ml-1"></div>
+                    <div className="grid-rows-3 p-3 pr-3 pb-3 pl-3 mt-3 ml-3"></div>
                     <input
                       type="text"
                       value={name}
@@ -78,11 +83,11 @@ export default function Modal() {
                         handleChange(e)
                       }}
                     />
-                    <br />
+                    <br></br>
                     {/*when user write in name input box , handleChange()
               function will be called. */}
                     <label>Surname:</label>
-                    <div className="p-1 pl-1 pr-1 mb-1 mt-1 pb-1 ml-1"></div>
+                    <div className="grid-rows-3 p-3 pr-3 pb-3 pl-3 mt-3 ml-3"></div>
                     <input
                       type="text"
                       value={surname}
@@ -91,13 +96,13 @@ export default function Modal() {
                         handleChange(e)
                       }}
                     />
-                    <br />
+                    <br></br>
                     {/*when user write in name input box , handleChange()
               function will be called. */}
 
                     <label>Email:</label>
-                    <div className="p-1 pl-1 pr-1 mb-1 mt-1 pb-1"></div>
-                    <div className='margin-left: 1px'/>
+                    <div className="grid-rows-3 p-3 pr-3 pb-3 pl-3 mt-3 ml-3"></div>
+                    <div className='margin-left: 10px'/>
                     <input
                       type="email"
                       value={email}
@@ -106,15 +111,23 @@ export default function Modal() {
                         handleEmailChange(e)
                       }}
                     />
+                    <br></br>
                     {/* when user write in email input box , handleEmailChange() 
               function will be called.*/}
-              <br></br>
-
-                    <div className="p-1 pl-1 pr-1 mb-1 mt-1 pb-1"></div>
-                    <label
-                      for="exampleFormControlTextarea1"
-                      class="form-label inline-block mb-2 text-gray-700"
-                    >
+               <label>Motif demande:</label>
+                    <div className="grid-rows-3 p-3 pr-3 pb-3 pl-3 mt-3 ml-3"></div>
+                    <div className='margin-left: 10px'/>
+                    <input
+                      type="text"
+                      value={Request}
+                      required
+                      onChange={(e) => {
+                        handleChange(e)
+                      }}
+                      />
+                      <br></br>
+                    <div className="grid-rows-3 p-3 pr-3 pb-3 pl-3 mt-3 ml-3"></div>
+                    <label>
                       Texterea :
                     </label>
                     <textarea
@@ -133,7 +146,7 @@ export default function Modal() {
         transition
         ease-in-out
         m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+        focus:text-gray-700 focus:bg-white focus:border-orange-600 focus:outline-none
       "
                       id="exampleFormControlTextarea1"
                       rows="3"
@@ -147,11 +160,11 @@ export default function Modal() {
                         handleTextereaChange(e)
                       }}
                     />
-                    <br />
+                    <br></br>
                     {/* when user write in texterea input box , handlTextereaChange() 
               function will be called.*/}
                     <input
-                      className="bg-white hover:bg-lime-800 text-gray-800 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                      className="bg-white hover:bg-orange-800 text-gray-800 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                       type="submit"
                       value="Submit"
                     />

@@ -10,8 +10,9 @@ import Thème4 from '../components/Inspirations/Thème4'
 function Inspirations() {
   return (
     <div className="p-5 pl-5 pr-5 mb-5">
-      <div class="text-8xl text-white">Inspirations</div>
+      <div class="text-8xl text-white">INSPIRATIONS</div>
       <br></br>
+      <hr></hr>
       <br></br>
       <hr></hr>
       <br></br>
@@ -24,7 +25,7 @@ function Inspirations() {
       <br></br>
       <br></br>
 
-      <div className="text-2xl text-white p-1 pr-1 pb-1 pl-1">
+      <div className="text-2xl text-white p-1 pr-1 pb-1 pl-1 grid grid-rows-1">
         <span className=" text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
@@ -43,13 +44,10 @@ function Inspirations() {
       <br></br>
       <br></br>
 
-      <div class="grid grid-cols-2 gap-3">
+      <div class="grid grid-rows-1 p-1 pr-1 pb-1 pl-1">
         <br></br>
-        <div className="col-span-2 ...">
-          <br></br>
-          <br></br>
-        </div>
-        <img src={Peinture} className="" alt="Peinture"></img>
+        <div className="p-1 pr-1 pb-1 pl-1 grid grid-rows-1"></div>
+        <img src={Peinture} className="float-left" alt="Peinture"></img>
         <br></br>
         <br></br>
         <span className="">
@@ -73,16 +71,13 @@ function Inspirations() {
       <br></br>
       <hr></hr>
       <br></br>
-      <div class="col-span-2 ... ">
+      <div class="grid grid-rows-1 p-1 pr-1 pb-1 pl-1">
         <br></br>
         <div className="text-2xl text-white">
           <br></br>
-          <br></br>
         </div>
         <br></br>
-        <br></br>
         <img src={Peinture} className="" alt="Peinture"></img>
-        <br></br>
         <br></br>
         <span className="">
           <div className="text-3xl text-orange-800"></div>Thème 2<br></br>
@@ -105,14 +100,12 @@ function Inspirations() {
       <br></br>
       <hr></hr>
       <br></br>
-      <div class="col-span-2 ... ">
+      <div class="grid grid-rows-1 p-1 pr-1 pb-1 pl-1">
         <br></br>
         <div className="text-2xl text-white">
           <br></br>
-          <br></br>
         </div>
         <img src={Peinture} className="" alt="Peinture"></img>
-        <br></br>
         <br></br>
         <span className="">
           <div className="text-3xl text-white"></div>Thème 3<br></br>
@@ -135,16 +128,13 @@ function Inspirations() {
       <br></br>
       <hr></hr>
       <br></br>
-      <div class="col-span-2 ...">
+      <div class="grid grid-rows-1 p-1 pr-1 pb-1 pl-1">
         <br></br>
         <div className="text-2xl">
           <br></br>
-          <br></br>
         </div>
         <br></br>
-        <br></br>
         <img src={Peinture} className="" alt="Peinture"></img>
-        <br></br>
         <br></br>
         <span className="">
           <div className="text-3xl text-white"></div>Thème 4<br></br>
@@ -167,6 +157,7 @@ function Inspirations() {
       <br></br>
       <hr></hr>
       <br></br>
+      <hr></hr>
     </div>
   )
 }

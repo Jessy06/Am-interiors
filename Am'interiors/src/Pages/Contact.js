@@ -8,17 +8,19 @@ function Contact() {
 
   return (
     <div className="lg:p-5 pl-5 pr-5 mb-5 mt-5 sm:">
-      <div class="text-8xl text-white">Contact</div>
-      <br></br>
+      <div class="text-8xl text-white">CONTACT</div>
       <br></br>
       <hr></hr>
       <br></br>
+    <hr></hr>
+    <br></br>
 
       <div
         class="py-3 px-3 grid float-right"
         type="button"
       >
        <Formulaire/>
+       <br></br>
        <br></br>
       </div>
 

@@ -2,14 +2,15 @@ import React from 'react'
 import '../App.css'
 import Formulaire from '../components/PopUp/Formulaire'
 
-function Projets() {
+function Studio() {
   return (
     <div className="p-5 pl-5 pr-5 mt-5 mb-5">
-      <div class="text-8xl text-white">Projets</div>
-      <br></br>
+      <div class="text-8xl text-white">STUDIO</div>
       <br></br>
       <hr></hr>
       <br></br>
+    <hr></hr>
+    <br></br>
       <div
         class="py-3 px-3 grid float-right"
         type="button"
@@ -101,4 +102,4 @@ function Projets() {
     </div>
   )
 }
-export default Projets
+export default Studio

@@ -12,7 +12,7 @@ import Home from './Pages/Home';
 import Presentation from "./Pages/Presentation";
 import Inspirations from "./Pages/Inspirations";
 import Contact from "./Pages/Contact";
-import Projets from "./Pages/Projets";
+import Studio from "./Pages/Studio";
 import Welcome from "./Pages/Welcome";
 
 
@@ -26,7 +26,7 @@ return (
         <Route path="/presentation" element = {<Presentation/>}/>
         <Route path="/inspirations" element = {<Inspirations/>}/>
         <Route path="/contact" element = {<Contact/>}/>
-        <Route path="/projets" element = {<Projets/>}/>
+        <Route path="/studio" element = {<Studio/>}/>
         <Route path="/login" element = { <LoginAdmin/>}/>
         <Route path="/Formulaire" element = { <Formulaire/>}/>
         <Route path="/admin/Welcome" element = { <Welcome/>}/>
