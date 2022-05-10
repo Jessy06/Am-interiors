@@ -6,7 +6,11 @@
   body {
     @apply pt-20 bg-gradient-to-r from-black to-black text-white
   }
-  
+  hr {
+padding: 1px;
+background:#ff4500;
+border: 0;
+}
 
 }
 

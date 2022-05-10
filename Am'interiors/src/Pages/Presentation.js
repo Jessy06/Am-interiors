@@ -6,28 +6,26 @@ import Formulaire from '../components/PopUp/Formulaire'
 function Presentation() {
   return (
     <div className="p-5 pl-5 pr-5 mt-5 mb-5">
-
-      <div class="text-8xl text-white">PRESENTATION</div>
+      <div class="text-8xl text-white text-right">-PRESENTATION-</div>
       <br></br>
       <hr></hr>
       <br></br>
-    <hr></hr>
-    <br></br>
-      <div
-        class="py-3 px-3 grid float-right"
-        type="button"
-      >
-       <Formulaire/>
+      <hr></hr>
+      <br></br>
+      <div class="py-3 px-3 grid float-right" type="button">
+        <Formulaire />
       </div>
 
       <br></br>
-    
-    <div className='text-2xl text-orange-700'>A propos de Amin Dabbabi</div>
 
-    <br></br>
-      
+      <div className="text-2xl text-white">A propos de Amin Dabbabi</div>
 
-      <div className="text-2xl text-white p-1 pr-1 pb-1 pl-1"alt='presentation'>
+      <br></br>
+
+      <div
+        className="text-2xl text-white p-1 pr-1 pb-1 pl-1"
+        alt="presentation"
+      >
         <span className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
@@ -45,11 +43,10 @@ function Presentation() {
       <hr></hr>
       <br></br>
       <div>
-      <img src={photoprofil} className="photoprofil" alt='Photoprofil' />
+        <img src={photoprofil} className="photoprofil" alt="Photoprofil" />
       </div>
       <br></br>
       <hr></hr>
-      
     </div>
   )
 }

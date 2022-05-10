@@ -4,18 +4,15 @@ import Formulaire from '../components/PopUp/Formulaire'
 
 function Studio() {
   return (
-    <div className="p-20 pl-5 pr-5 mt-5 mb-5">
-      <div class="text-8xl text-white">STUDIO</div>
+    <div className="p-5 pl-5 pr-5 mt-5 mb-5">
+      <div class="text-8xl text-white text-right">-STUDIO-</div>
       <br></br>
       <hr></hr>
       <br></br>
-    <hr></hr>
-    <br></br>
-      <div
-        class="py-3 px-3 grid float-right"
-        type="button"
-      >
-       <Formulaire/>
+      <hr></hr>
+      <br></br>
+      <div class="py-3 px-3 grid float-right" type="button">
+        <Formulaire />
       </div>
       <br></br>
       <br></br>

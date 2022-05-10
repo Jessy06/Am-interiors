@@ -3,25 +3,20 @@ import React from 'react'
 // Import Components.
 import Formulaire from '../components/PopUp/Formulaire'
 
-
 function Contact() {
-
   return (
-    <div className="p-20 pl-5 pr-5 mb-5">
-      <div class="text-8xl text-white">CONTACT</div>
+    <div className="p-5 pl-5 pr-5 mb-5">
+      <div class="text-8xl text-white text-right">-CONTACT-</div>
       <br></br>
       <hr></hr>
       <br></br>
-    <hr></hr>
-    <br></br>
+      <hr></hr>
+      <br></br>
 
-      <div
-        class="py-3 px-3 grid float-right"
-        type="button"
-      >
-       <Formulaire/>
-       <br></br>
-       <br></br>
+      <div class="py-3 px-3 grid float-right" type="button">
+        <Formulaire />
+        <br></br>
+        <br></br>
       </div>
 
       <br></br>
@@ -37,7 +32,6 @@ function Contact() {
       {/* <!-- horizontal card --> */}
 
       <div class="flex space-x-4 ">
-        
         <div className="2xl p-5 pr-5 pb-0.5 pl-0.5 rounded-xl"></div>
         <div class="bg-white rounded-lg shadow-2xl md:flex">
           <img

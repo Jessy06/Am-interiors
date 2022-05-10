@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 
 export default function Modal() {
@@ -27,6 +28,7 @@ export default function Modal() {
     const handleSurnameChange = (e) => {
       setSurname(e.target.value)
     }
+    // eslint-disable-next-line no-unused-vars
     const handleRequest = (e) => {
       setRequest(e.target.value)
     }
