@@ -6,7 +6,7 @@ import Formulaire from '../components/PopUp/Formulaire'
 
 function Home() {
   return (
-    <div className="p-5 pl-5 pr-5 mb-5">
+    <div className="p-5 pl-5 pr-5 mb-5 pb-5">
       <div class="text-8xl text-white text-right ">AM'INTERIORS</div>
       <br></br>
       <hr></hr>
@@ -28,12 +28,12 @@ function Home() {
       <div>
         <img
           src={LivingRoom}
-          className="float-right pr-3 pl-3 p-2 mb-3 mt-3 border-solid "
+          className="float-right pr-3 pl-3 p-3 mb-3 mt-3 border-solid "
           alt="Livingroom"
         />
         <img
           src={LivingRoomModern}
-          className="float-right pl-3 p-2 pr-3 mb-3 mt-3 border-solid "
+          className="float-right pl-3 p-3 pr-3 mb-3 mt-3 border-solid "
           alt="Livingroom"
         />
       </div>
