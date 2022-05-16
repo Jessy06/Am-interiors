@@ -5,12 +5,10 @@ import Formulaire from '../components/PopUp/Formulaire'
 
 function Contact() {
   return (
-    <div className="p-5 pl-5 pr-5 mb-5">
-      <div class="text-8xl text-white text-right">-CONTACT-</div>
+    <div className="p-14">
+      <div class="text-8xl text-white text-right border-r-4 border-b-4 border-orange-100/75 p-4 ">CONTACT</div>
       <br></br>
-      <hr></hr>
       <br></br>
-      <hr></hr>
       <br></br>
 
       <div class="py-3 px-3 grid float-right" type="button">

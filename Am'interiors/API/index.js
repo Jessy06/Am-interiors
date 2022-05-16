@@ -12,11 +12,18 @@ app.use(express.json());
 app.use(cors());
 
 // IMPORT ROUTES
-const authRoute = require('./routes/auth');
+const authRoute = require('./Routes/auth');
+const dashRoute = require('./Routes/Dashboard');
+const projetRoute = require('./Routes/Projet');
+const inspirationRoute = require('./Routes/Inspirations');
 
 
 // ROUTES MIDDLEWARES
 app.use('/api/user', authRoute);
+app.use('/api/admin', dashRoute);
+app.use('/api/admin/projets', projetRoute);
+app.use('/api/admin/inspirations', inspirationRoute);
+
 
 // CONNECT TO DB
 mongoose.connect(process.env.DB_CONNECTION,

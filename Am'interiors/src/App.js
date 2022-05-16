@@ -13,7 +13,7 @@ import Presentation from "./Pages/Presentation";
 import Inspirations from "./Pages/Inspirations";
 import Contact from "./Pages/Contact";
 import Studio from "./Pages/Studio";
-import Welcome from "./Pages/Welcome";
+import Dashboard from "./Pages/Admin/Adminboard";
 
 
 export default function App() {
@@ -29,7 +29,7 @@ return (
         <Route path="/studio" element = {<Studio/>}/>
         <Route path="/login" element = { <LoginAdmin/>}/>
         <Route path="/Formulaire" element = { <Formulaire/>}/>
-        <Route path="/admin/Welcome" element = { <Welcome/>}/>
+        <Route path="/admin" element = { <Dashboard/>}/>
       </Routes>
       </Router>
 )

@@ -22,5 +22,29 @@ const loginValidation = (data) => {
     return schema.validate(data);
   };
 
+// Projet Validation
+const projetValidation = (data) => {
+    const schema = Joi.object ({
+        title:Joi.string().max(20).required(),
+        description:Joi.string().min(10).max(250).required(),
+        lieu: Joi.string().required()
+        // date:Joi.date().required,
+    })
+    return schema.validate(data);
+}
+
+// Projet Validation
+const inspirationValidation = (data) => {
+    const schema = Joi.object ({
+        title:Joi.string().max(20).required(),
+        description:Joi.string().min(10).max(250).required(),
+        lieu: Joi.string().required(),
+        theme: Joi.string().max(15).required()
+    })
+    return schema.validate(data);
+}
+
 module.exports.registerValidation = registerValidation;
 module.exports.loginValidation = loginValidation;
+module.exports.projetValidation = projetValidation;
+module.exports.inspirationValidation = inspirationValidation;

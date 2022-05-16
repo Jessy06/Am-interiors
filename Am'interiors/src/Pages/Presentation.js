@@ -5,12 +5,10 @@ import Formulaire from '../components/PopUp/Formulaire'
 
 function Presentation() {
   return (
-    <div className="p-5 pl-5 pr-5 mt-5 mb-5">
-      <div class="text-8xl text-white text-right">-PRESENTATION-</div>
+    <div className="p-14">
+      <div class="text-8xl text-white text-righ border-l-4 border-b-4 border-orange-100/75 p-4">PRESENTATION</div>
       <br></br>
-      <hr></hr>
       <br></br>
-      <hr></hr>
       <br></br>
       <div class="py-3 px-3 grid float-right" type="button">
         <Formulaire />

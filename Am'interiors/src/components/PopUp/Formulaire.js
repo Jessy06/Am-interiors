@@ -51,12 +51,12 @@ export default function Modal() {
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
-                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t pr-10 pl-10">
                   <h3 className="text-3xl text-black font-semibold">
                     Formulaire de contact
                   </h3>
                   <button
-                    className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                    className="p-1 ml-auto border-0 text-black float-right text-3xl leading-none font-semibold"
                     onClick={() => setShowModal(false)}
                   >
                     <span className="text-black opacity-5 h-6 w-6 text-3xl block outline-none focus:outline-none">
@@ -65,7 +65,7 @@ export default function Modal() {
                   </button>
                 </div>
                 {/*body*/}
-                <div className="text-black">
+                <div className="text-black p-6">
                   <form
                     onSubmit={(e) => {
                       handleSubmit(e)
@@ -76,8 +76,9 @@ export default function Modal() {
         function will be called .*/}
                     {/* <img src="/gfg.png" /> */}
                     <label>Name:</label>
-                    <div className="grid-rows-3 p-3 pr-3 pb-3 pl-3 mt-3 ml-3"></div>
+                    <div className="pb-2"></div>
                     <input
+                      className='border-2 rounded border-zinc-200 pb-2'
                       type="text"
                       value={name}
                       required
@@ -89,8 +90,9 @@ export default function Modal() {
                     {/*when user write in name input box , handleChange()
               function will be called. */}
                     <label>Surname:</label>
-                    <div className="grid-rows-3 p-3 pr-3 pb-3 pl-3 mt-3 ml-3"></div>
+                    <div className="pb-2"></div>
                     <input
+                      className='border-2 rounded border-zinc-200 pb-2'
                       type="text"
                       value={surname}
                       required
@@ -103,9 +105,9 @@ export default function Modal() {
               function will be called. */}
 
                     <label>Email:</label>
-                    <div className="grid-rows-3 p-3 pr-3 pb-3 pl-3 mt-3 ml-3"></div>
-                    <div className='margin-left: 10px'/>
+                    <div className="pb-2"></div>
                     <input
+                      className='border-2 rounded border-zinc-200 pb-2'
                       type="email"
                       value={email}
                       required
@@ -117,9 +119,9 @@ export default function Modal() {
                     {/* when user write in email input box , handleEmailChange() 
               function will be called.*/}
                <label>Motif demande:</label>
-                    <div className="grid-rows-3 p-3 pr-3 pb-3 pl-3 mt-3 ml-3"></div>
-                    <div className='margin-left: 10px'/>
+                    <div className="pb-2"></div>
                     <input
+                      className='border-2 rounded border-zinc-200 pb-2'
                       type="text"
                       value={Request}
                       required
@@ -143,7 +145,7 @@ export default function Modal() {
         font-normal
         text-gray-700
         bg-white bg-clip-padding
-        border border-solid border-gray-300
+        border border-solid border-zinc-200
         rounded
         transition
         ease-in-out

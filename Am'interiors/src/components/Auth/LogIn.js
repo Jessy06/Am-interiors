@@ -1,12 +1,14 @@
 import React, { useRef, useState } from "react";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
+import {useCookies} from "react-cookie";
 
 const Login = () => {
     const LoginUrl = "http://localhost:3001/api/user/login";
     const [LoginResult, setLoginResult] = useState();
     const pseudo = useRef();
     const password = useRef();
+    const [Cookies, setcookie]= useCookies(["token", "role","username", "id"]);
     const navigate = useNavigate();
   
  // LOGIN
@@ -19,9 +21,16 @@ const Login = () => {
 try {
     const res = await axios.post(LoginUrl, userData);
     const result = res.data.message;
+    const token = res.data.token;
+    const role = res.data.role;
+    const id = res.data.Id;
+    const username = res.data.username
     setLoginResult(result);
     if (res.status === 200) {
-        navigate("/admin/Welcome", {replace: true})
+      setcookie("token", token);
+      setcookie("username", username);
+      setcookie("id",id);
+        // navigate("/", {replace: true})
     }
 } catch (err) {
     const error = err.response.data.message;

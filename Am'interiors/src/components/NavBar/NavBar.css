@@ -17,16 +17,18 @@ nav {
     justify-content: right;
     align-items: right;
     position: relative;
+    border-top: solid 3px;
+    border-right: solid 3px;
   }
   .items {
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: auto;
     top: 20px;
     text-transform: uppercase;
-    color: black;
+    color: white;
     cursor: pointer;
   }
   
