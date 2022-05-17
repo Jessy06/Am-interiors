@@ -30,7 +30,7 @@ try {
       setcookie("token", token);
       setcookie("username", username);
       setcookie("id",id);
-        // navigate("/", {replace: true})
+      navigate("/admin", {replace: true})
     }
 } catch (err) {
     const error = err.response.data.message;

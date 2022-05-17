@@ -15,3 +15,5 @@ const App = () => (
 );
 
 render([<App key="1" />, <Footer key="2" />], document.getElementById("root"));
+
+export default Footer;
