@@ -1,6 +1,6 @@
 import React from 'react'
-import LivingRoom from '../Images/LivingRoom.png'
-import LivingRoomModern from '../Images/LivingRoomModern.jpg'
+import LivingRoom from '../Images/Livingroom.png'
+import livingRoomModern from '../Images/livingRoomModern.jpg'
 import '../App.css'
 import Formulaire from '../components/PopUp/Formulaire'
 
@@ -11,7 +11,8 @@ function Home() {
       <br></br>
       {/* <hr></hr> */}
       <br></br>
-      {/* <hr></hr> */}
+      <hr></hr>
+      <br></br>
       <br></br>
       <div class="py-3 px-3 grid float-right" type="button">
         <Formulaire />
@@ -29,7 +30,7 @@ function Home() {
           alt="Livingroom"
         />
         <img
-          src={LivingRoomModern}
+          src={livingRoomModern}
           className="border-solid mr-4 p-10"
           alt="Livingroom"
         />

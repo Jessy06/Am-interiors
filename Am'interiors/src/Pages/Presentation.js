@@ -8,6 +8,7 @@ function Presentation() {
     <div className="p-14">
       <div class="text-8xl text-white text-righ border-l-4 border-b-4 border-orange-100/75 p-4">PRESENTATION</div>
       <br></br>
+      <hr></hr>
       <br></br>
       <br></br>
       <div class="py-3 px-3 grid float-right" type="button">
