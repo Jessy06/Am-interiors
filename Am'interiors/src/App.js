@@ -5,7 +5,7 @@ import './App.css'
   // Import components
 import NavBar from './components/NavBar/NavBar';
 import Formulaire from './components/PopUp/Formulaire';
-
+import Footer from '.Footer/components/Footer/Footer';
   // Import Pages
 import LoginAdmin from './Pages/LoginAdmin';
 import Home from './Pages/Home';
@@ -30,6 +30,7 @@ return (
         <Route path="/login" element = { <LoginAdmin/>}/>
         <Route path="/Formulaire" element = { <Formulaire/>}/>
         <Route path="/admin" element = { <Dashboard/>}/>
+        <Route path="/Footer" element = { <Footer/>}/>
       </Routes>
       </Router>
 )

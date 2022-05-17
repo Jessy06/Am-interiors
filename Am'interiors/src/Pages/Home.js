@@ -3,6 +3,7 @@ import LivingRoom from '../Images/Livingroom.png'
 import livingRoomModern from '../Images/livingRoomModern.jpg'
 import '../App.css'
 import Formulaire from '../components/PopUp/Formulaire'
+import Footer from '../components/Footer/Footer'
 
 function Home() {
   return (
@@ -47,11 +48,10 @@ function Home() {
         <br></br>
         </div>
         
-        
-    
       <br></br>
       <hr></hr>
       <br></br>
+      <Footer />
     </div>
   )
 }

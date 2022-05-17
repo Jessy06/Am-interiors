@@ -2,6 +2,7 @@ import React from 'react'
 
 // Import Components.
 import Formulaire from '../components/PopUp/Formulaire'
+import Footer from '../components/Footer/Footer'
 
 function Contact() {
   return (
@@ -146,6 +147,7 @@ function Contact() {
       <br></br>
       <br></br>
       <hr></hr>
+      <Footer/>
     </div>
   )
 }
