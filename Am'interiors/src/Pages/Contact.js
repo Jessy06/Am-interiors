@@ -147,6 +147,7 @@ function Contact() {
       <br></br>
       <br></br>
       <hr></hr>
+      <br></br>
       <Footer/>
     </div>
   )
