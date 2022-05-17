@@ -1,5 +1,6 @@
 import React from 'react'
 import '../App.css'
+import Footer from '../components/Footer/Footer'
 import Formulaire from '../components/PopUp/Formulaire'
 
 function Studio() {
@@ -94,6 +95,8 @@ function Studio() {
       </section>
       <br></br>
       <hr></hr>
+      <br></br>
+      <Footer />
     </div>
   )
 }

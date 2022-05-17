@@ -2,6 +2,7 @@ import React from 'react'
 import photoprofil from '../Images/photoprofil.jpg'
 import '../App.css'
 import Formulaire from '../components/PopUp/Formulaire'
+import Footer from '../components/Footer/Footer'
 
 function Presentation() {
   return (
@@ -46,6 +47,8 @@ function Presentation() {
       </div>
       <br></br>
       <hr></hr>
+      <br></br>
+      <Footer />
     </div>
   )
 }

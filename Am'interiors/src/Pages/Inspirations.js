@@ -6,6 +6,7 @@ import Thème1 from '../components/Inspirations/Thème1'
 import Thème2 from '../components/Inspirations/Thème2'
 import Thème3 from '../components/Inspirations/Thème3'
 import Thème4 from '../components/Inspirations/Thème4'
+import Footer from '../components/Footer/Footer'
 
 function Inspirations() {
   return (
@@ -156,6 +157,7 @@ function Inspirations() {
       <br></br>
       <hr></hr>
       <br></br>
+      <Footer />
     </div>
   )
 }
