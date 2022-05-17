@@ -1,5 +1,6 @@
 import React from "react";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
+import { useCookies } from "react-cookie";
 import './App.css'
 
   // Import components
@@ -17,6 +18,8 @@ import Dashboard from "./Pages/Admin/Adminboard";
 
 
 export default function App() {
+  const [Cookies] = useCookies(["token"]);
+
 return (
   // Routes 
   <Router>
@@ -29,7 +32,23 @@ return (
         <Route path="/studio" element = {<Studio/>}/>
         <Route path="/login" element = { <LoginAdmin/>}/>
         <Route path="/Formulaire" element = { <Formulaire/>}/>
-        <Route path="/admin" element = { <Dashboard/>}/>
+        
+        {Cookies.token ? (
+          <>
+          <Route path="/admin" element={<Dashboard/>} />
+
+          {Cookies.role === "administrator" ? (
+            <Route path="/admin" element={<Dashboard/>}/>
+          ) : (
+            <Route path="*" element={<Navigate to="/" />} />
+          )}
+        </>
+
+        ) : (
+          <>
+          <Route path="*" element={<Navigate to="/" />} />
+          </>
+        )}
       </Routes>
       {/* <Footer/> */}
       </Router>

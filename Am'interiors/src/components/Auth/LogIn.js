@@ -22,14 +22,14 @@ try {
     const res = await axios.post(LoginUrl, userData);
     const result = res.data.message;
     const token = res.data.token;
-    const role = res.data.role;
     const id = res.data.Id;
-    const username = res.data.username
+    const pseudo = res.data.pseudo
     setLoginResult(result);
     if (res.status === 200) {
       setcookie("token", token);
-      setcookie("username", username);
+      setcookie("pseudo", pseudo);
       setcookie("id",id);
+      
       navigate("/admin", {replace: true})
     }
 } catch (err) {

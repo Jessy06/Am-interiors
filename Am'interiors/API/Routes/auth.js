@@ -56,22 +56,21 @@ router.post("/login", async (req, res) => {
       return res.status(400).send("Invalid password !")
       
     // CREATE AND ASSIGN TOKEN  
-    const token = jwt.sign({_id: user.id}, process.env.TOKEN_SECRET, {expiresIn: "30 min"});
+    const token = jwt.sign({_id: user.id}, process.env.TOKEN_SECRET, {expiresIn: "10 min"});
     
   if (user.admin === true) {
     res.cookie("token", token, { httpOnly: true }).send({
       token,
       message: "Admin logged !",
-      role: "Administrator",
       Id: user._id,
-      username: user.username,
+      pseudo: user.pseudo,
+      admin: user.admin,
+      role: "Administrator"
     });
     
   } else {
     return res.status(401).json({error:"Access refused : Only the administrator can login !", message:"Access refused !"})
   };
-  
-    // res.header('auth-token', token).send(token);  
 });
 
 
