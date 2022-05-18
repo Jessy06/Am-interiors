@@ -42,7 +42,6 @@ function Inspirations() {
       <br></br>
       <hr></hr>
       <br></br>
-      <br></br>
 
       <div class="grid grid-rows-1 p-1 pr-1 pb-1 pl-1">
         <br></br>

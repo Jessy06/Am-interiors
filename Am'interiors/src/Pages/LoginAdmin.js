@@ -10,6 +10,7 @@ function LoginAdmin() {
       <div>
         <SignIn />
       </div>
+      <hr></hr>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import LivingRoom from '../Images/LivingRoom.png'
+import LivingRoom from '../Images/Livingroom.png'
 import livingRoomModern from '../Images/LivingRoomModern.jpg'
 import '../App.css'
 import Formulaire from '../components/PopUp/Formulaire'

@@ -7,7 +7,7 @@ function Footer (){
       <div class="text-8xl text-white text-righ border-l-4 border-b-4 border-orange-100/75 p-4">
          
     <div class="sm:flex sm:items-center">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"> Mon Instagram : 
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"> Mon Instagram 
         <br></br>
         </span>
         <div class="flex mt-10 space-x-10 sm:justify-center sm:mt-0">     
@@ -17,10 +17,6 @@ function Footer (){
         </div>
         </div>
         </div>
-      
-
-  
-
 );
 
 }
