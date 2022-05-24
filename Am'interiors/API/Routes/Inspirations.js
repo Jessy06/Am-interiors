@@ -4,6 +4,16 @@ const router = express.Router();
 const Inspiration = require("../models/Inspirations");
 const { inspirationValidation } = require("../validation");
 
+// GET ALL Projet
+router.get("/", async (req, res) => {
+  try {
+    const inspirations = await Inspiration.find().sort({title: 'asc'});
+    res.json(inspirations);
+  } catch (err) {
+    res.status(400).send(err);
+  };
+})
+
 // Post a new Projet
 router.post('/new', async (req, res) => {
      // Validate data before we make a new projet

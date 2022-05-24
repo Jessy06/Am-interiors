@@ -3,10 +3,20 @@ const express = require("express");
 const router = express.Router();
 const Projet = require("../models/Projet");
 // const User = require("../models/User");
-// const verify = require("./verifytoken");
+const verify = require("./verifytoken");
 const { projetValidation } = require("../validation");
 
-// Post a new Projet
+// GET ALL Projet
+router.get("/", async (req, res) => {
+  try {
+    const projets = await Projet.find().sort({title: 'asc'});
+    res.json(projets);
+  } catch (err) {
+    res.status(400).send(err);
+  };
+})
+
+// POST a new Projet
 router.post('/new', async (req, res) => {
      // Validate data before we make a new projet
    const {error} = projetValidation(req.body);
@@ -27,5 +37,24 @@ router.post('/new', async (req, res) => {
          console.log(err);
      }
  });
+
+ // UPDATE
+router.put("/:projetId", verify, async (req, res) => {
+  try {
+    await Projet.updateOne(
+      { _id: req.params.projetId },
+      {
+        $set: {
+          title: req.body.title,
+          description: req.body.description,
+          lieu: req.body.lieu
+        },
+      }
+    );
+    res.status(200).send({ message: "Projet correctly updated !" });
+  } catch (err) {
+    res.status(400).send(err);
+  }
+});
 
  module.exports = router;
