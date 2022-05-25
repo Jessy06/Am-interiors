@@ -17,7 +17,7 @@ router.get("/", async (req, res) => {
 })
 
 // POST a new Projet
-router.post('/new', async (req, res) => {
+router.post('/new', verify , async (req, res) => {
      // Validate data before we make a new projet
    const {error} = projetValidation(req.body);
    if (error) return res.status(400).send({message:error.details[0].message} );
@@ -37,6 +37,7 @@ router.post('/new', async (req, res) => {
          console.log(err);
      }
  });
+
 
  // UPDATE
 router.put("/:projetId", verify, async (req, res) => {
