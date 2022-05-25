@@ -58,4 +58,15 @@ router.put("/:projetId", verify, async (req, res) => {
   }
 });
 
+// DELETE a Projet
+
+router.delete("/:id", verify, async (req, res) => {
+  try {
+    await Projet.deleteOne({_id: req.params.id} );
+    res.status(200).send({ message: "Projet correctly deleted !" });
+  } catch (err) {
+    res.status(400).send(err);
+  }
+})
+
  module.exports = router;

@@ -56,5 +56,14 @@ router.post('/new', async (req, res) => {
   }
 });
 
+// DELETE an Inspiration
+router.delete("/:id", verify, async (req, res) => {
+  try {
+    await Inspiration.deleteOne({_id: req.params.id} );
+    res.status(200).send({ message: "Inspiration correctly deleted !" });
+  } catch (err) {
+    res.status(400).send(err);
+  }
+})
 
  module.exports = router;

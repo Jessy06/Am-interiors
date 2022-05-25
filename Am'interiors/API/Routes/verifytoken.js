@@ -8,6 +8,6 @@ module.exports = function (req, res, next) {
     req.user = verified;
     next();
   } catch (err) {
-    res.status(400).send({ message: 'You are not allowed to be here. Please go away ahaha !!' });
+    res.status(400).send({ message: 'You are not allowed to be here. Please go away !!' });
   }
 };
