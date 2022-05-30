@@ -1,8 +1,8 @@
 import React from 'react'
-// import LivingRoom from '../Images/LivingRoom.png'
-import Logo from "../Images/LogoAminterior.png"
+import LivingRoom from '../Images/Livingroom.png'
+// import Logo from "../Images/LogoAminterior.png"
 
-import livingRoomModern from '../Images/LivingRoomModern.jpg'
+import livingRoomModern from '../Images/livingRoomModern.jpg'
 import '../App.css'
 import Formulaire from '../components/PopUp/Formulaire'
 import Footer from '../components/Footer/Footer'
@@ -12,30 +12,31 @@ function Home() {
     <div className="p-14">
       <div className ="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4">AM'INTERIORS</div>
       <br></br>
-      {/* <hr></hr> */}
       <br></br>
-      <br></br>
-      <br></br>
+    
+      
       <div class="py-3 px-3 grid float-right" type="button">
         <Formulaire />
       </div>
 
-      <br></br>
-
-      <div className="text-3xl text-black p-6 bg-orange-50/75 rounded">
+      <div className="text-3xl text-black p-6 bg-orange-50/80 rounded">
         Société d'aménagement d'intérieurs
       </div>
-      <div className='grid grid-cols-2 gap-2 bg-orange-50/75 rounded'>
+      
+      <div className='grid grid-cols-2 gap-2 bg-orange-50/80'>
+        
        <img
-          src={Logo}
-          className="border-solid ml-4 p-10"
+          src={LivingRoom}
+          className="border-solid ml-4 p-2 bg-black inset-2.5 mx-0.5 "
           alt="Logo"
         />
         <img
           src={livingRoomModern}
-          className="border-solid mr-4 p-10"
+          className="border-solid ml-4 p-2 bg-black inset-2.5 mx-0.5 "
           alt="Livingroom"
         />
+        <br></br>
+        <br></br>
       
         <span className='text-2xl text-black col-span-2 pb-10 pr-8 pl-14'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis

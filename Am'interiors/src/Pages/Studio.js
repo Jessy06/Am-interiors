@@ -6,8 +6,7 @@ import Formulaire from '../components/PopUp/Formulaire'
 function Studio() {
   return (
     <div className="p-14">
-      <div class="text-8xl text-white text-right border-r-4 border-b-4 border-orange-100/75 p-4">STUDIO</div>
-      <br></br>
+      <div class="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4">STUDIO</div>
       <br></br>
       <br></br>
       <div class="py-3 px-3 grid float-right" type="button">

@@ -4,14 +4,14 @@ nav {
     top: 0px;
     width: 100%;
     height: 80px;
-    background: #a99e89;
-    border-bottom: solid 3px #a99e89;
+    background: #ccc6be;
+    border-bottom: solid 3px #ccc6be;
     border-bottom-width: thin;
   }
   
   .list {
     list-style-type: none;
-    background:#a99e89;
+    background:#ccc6be;
     height: 100%;
     display: flex;
     justify-content: right;
@@ -56,7 +56,7 @@ nav {
         border-top: 1px solid black;
         text-align: center;
         margin-right: 0px;
-        padding: 20px 0;
+        padding: 50px 0;
     }
     .btn {
         display: block;
