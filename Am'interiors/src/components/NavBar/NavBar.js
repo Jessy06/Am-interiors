@@ -25,6 +25,8 @@ function NavBar() {
   return (
     <nav className="p-2">
       {(toggleMenu || screenWidth > 500) && (
+
+        
         <ul className="list">
           <Link to = "/"><li className="items">Home</li></Link>
           <Link to ="/presentation"><li className="items">Presentation</li></Link>

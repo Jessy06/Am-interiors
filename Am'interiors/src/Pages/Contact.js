@@ -41,7 +41,7 @@ function Contact() {
           />
           <div class="p-7">
             <h2 class="font-bold text-xl md:text-3xl mb-2 text-orange-800">
-              Confection de plans
+              Réalisation d'un plan 3D
             </h2>
             <p class="text-black">Explication service</p>
           </div>
@@ -57,8 +57,8 @@ function Contact() {
             class="md:w-2/5 rounded-t-lg md:rounded-l-lg md:rounded-t-none"
           />
           <div class="p-7">
-            <h2 class="font-bold text-xl md:text-3xl mb-2 text-orange-800">
-              Confection de plans
+            <h2 class="text-xl md:text-3xl mb-2 text-orange-800 underline underline-offset-8">
+              Shopping List
             </h2>
             <p class="text-black">Explication service</p>
           </div>
@@ -75,7 +75,7 @@ function Contact() {
           />
           <div class="p-7">
             <h2 class="font-bold text-xl md:text-3xl mb-2 text-orange-800">
-              Confection de plans
+              Conseil en décoration
             </h2>
             <p class="text-black">Explication service</p>
           </div>

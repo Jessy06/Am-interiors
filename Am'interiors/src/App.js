@@ -15,6 +15,7 @@ import Inspirations from "./Pages/Inspirations";
 import Contact from "./Pages/Contact";
 import Studio from "./Pages/Studio";
 import Dashboard from "./Pages/Admin/Adminboard";
+import Test from "./Pages/Test";
 
 
 export default function App() {
@@ -32,6 +33,8 @@ return (
         <Route path="/studio" element = {<Studio/>}/>
         <Route path="/login" element = { <LoginAdmin/>}/>
         <Route path="/Formulaire" element = { <Formulaire/>}/>
+        <Route path="/Test" element = { <Test/>}/>
+
         
         {Cookies.token ? (
           <>
