@@ -10,7 +10,7 @@ import Footer from '../components/Footer/Footer'
 function Home() {
   return (
     <div className="p-14">
-      <div className ="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4">AM'INTERIORS</div>
+      <div className ="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4">AM'INTERIOR</div>
       <br></br>
       <br></br>
     
@@ -23,16 +23,16 @@ function Home() {
         Société d'aménagement d'intérieurs
       </div>
       
-      <div className='grid grid-cols-2 gap-2 bg-orange-50/80'>
+      <div className='grid grid-cols-2 gap-1 bg-orange-50/80'>
         
        <img
           src={LivingRoom}
-          className="border-solid ml-4 p-2 bg-black inset-2.5 mx-0.5 "
+          className="border-solid ml-4 p-2 bg-black inset-2.5 pl-1 pr-1 "
           alt="Logo"
         />
         <img
           src={livingRoomModern}
-          className="border-solid ml-4 p-2 bg-black inset-2.5 mx-0.5 "
+          className="border-solid ml-4 p-2 bg-black inset-2.5 pl-1 pr-1"
           alt="Livingroom"
         />
         <br></br>
