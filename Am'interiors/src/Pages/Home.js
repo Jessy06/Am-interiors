@@ -1,8 +1,8 @@
 import React from 'react'
-import LivingRoom from '../Images/Livingroom.png'
+import LivingRoom from '../Images/LivingRoom.png'
 // import Logo from "../Images/LogoAminterior.png"
 
-import livingRoomModern from '../Images/livingRoomModern.jpg'
+import livingRoomModern from '../Images/LivingRoomModern.jpg'
 import '../App.css'
 import Formulaire from '../components/PopUp/Formulaire'
 import Footer from '../components/Footer/Footer'
@@ -13,13 +13,14 @@ function Home() {
       <div className ="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4">AM'INTERIOR</div>
       <br></br>
       <br></br>
-    
+      {/* <div> <span className='bg-red-100'>AM'</span><span className='bg-blue-900'> INTERIOR</span> */}
+      {/* </div> */}
       
       <div class="py-3 px-3 grid float-right" type="button">
         <Formulaire />
       </div>
 
-      <div className="text-3xl text-black p-6 bg-orange-50/80 rounded">
+      <div className="text-3xl text-black p-6 bg-orange-50/80">
         Société d'aménagement d'intérieurs
       </div>
       
