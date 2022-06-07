@@ -1,8 +1,8 @@
 import React from 'react'
-import LivingRoom from '../Images/Livingroom.png'
+import LivingRoom from '../Images/LivingRoom.png'
 // import Logo from "../Images/LogoAminterior.png"
 
-import livingRoomModern from '../Images/livingRoomModern.jpg'
+import livingRoomModern from '../Images/LivingRoomModern.jpg'
 import '../App.css'
 import Formulaire from '../components/PopUp/Formulaire'
 import Footer from '../components/Footer/Footer'
@@ -10,30 +10,31 @@ import Footer from '../components/Footer/Footer'
 function Home() {
   return (
     <div className="p-14">
-      <div className ="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4">AM'INTERIOR</div>
+      <div className ="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4">
+        <span className='font-title text-8xl text-white text-right'>AM'</span>interior</div>
       <br></br>
       <br></br>
       {/* <div> <span className='bg-red-100'>AM'</span><span className='bg-blue-900'> INTERIOR</span> */}
       {/* </div> */}
-      
-      <div class="py-3 px-3 grid float-right" type="button">
+            
+      <div className='grid grid-cols-2 gap-1 bg-orange-50/80'>
+
+      <div className="text-3xl text-black p-6">
+        Société d'aménagement d'intérieurs
+      </div>
+
+      <div class="p-3 float-right" type="button">
         <Formulaire />
       </div>
 
-      <div className="text-3xl text-black p-6 bg-orange-50/80">
-        Société d'aménagement d'intérieurs
-      </div>
-      
-      <div className='grid grid-cols-2 gap-1 bg-orange-50/80'>
-        
        <img
           src={LivingRoom}
-          className="border-solid ml-4 p-2 bg-black inset-2.5 pl-1 pr-1 "
+          className="border-solid ml-4 p-2 bg-black inset-2.5 "
           alt="Logo"
         />
         <img
           src={livingRoomModern}
-          className="border-solid ml-4 p-2 bg-black inset-2.5 pl-1 pr-1"
+          className="border-solid p-2 bg-black inset-2.5 "
           alt="Livingroom"
         />
         <br></br>
