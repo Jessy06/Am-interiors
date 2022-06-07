@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Import Components.
-import Contact from '../components/Contact/Contact';
+import Contact from '../components/Admin/Contact/Contact';
 import Formulaire from '../components/PopUp/Formulaire';
 
 function ContactPage() {
