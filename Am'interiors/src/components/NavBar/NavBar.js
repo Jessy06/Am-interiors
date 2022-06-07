@@ -28,6 +28,7 @@ function NavBar() {
 
         
         <ul className="list">
+          <span className="text-6xl p-0.5 text-black">•</span>
           <Link to = "/"><li className="items">Home</li></Link>
           <Link to ="/presentation"><li className="items">Presentation</li></Link>
           <Link to = "/inspirations"><li className="items">Inspirations</li></Link>

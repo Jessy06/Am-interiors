@@ -7,7 +7,7 @@ import Footer from '../components/Footer/Footer'
 function Contact() {
   return (
     <div className="p-14">
-      <div class="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4 ">CONTACT</div>
+      <div class="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4 "><span className="text-9xl p-2 text-white">-</span>CONTACT</div>
       <br></br>
       <br></br>
 

@@ -1,8 +1,8 @@
 import React from 'react'
-import LivingRoom from '../Images/LivingRoom.png'
+import LivingRoom from '../Images/Livingroom.png'
 // import Logo from "../Images/LogoAminterior.png"
 
-import livingRoomModern from '../Images/LivingRoomModern.jpg'
+import livingRoomModern from '../Images/livingRoomModern.jpg'
 import '../App.css'
 import Formulaire from '../components/PopUp/Formulaire'
 import Footer from '../components/Footer/Footer'
