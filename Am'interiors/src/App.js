@@ -9,11 +9,11 @@ import Formulaire from './components/PopUp/Formulaire';
 import Footer from './components/Footer/Footer';
   // Import Pages
 import LoginAdmin from './Pages/LoginAdmin';
-import Home from './Pages/Home';
-import Presentation from "./Pages/Presentation";
-import Inspirations from "./Pages/Inspirations";
-import Contact from "./Pages/Contact";
-import Studio from "./Pages/Studio";
+import Home from './Pages/HomePage';
+import Presentation from "./Pages/PresentationPage";
+import Inspirations from "./Pages/InspirationsPage";
+import Contact from "./Pages/ContactPage";
+import Studio from "./Pages/StudioPage";
 import Dashboard from "./Pages/Admin/Adminboard";
 import Test from "./Pages/Test";
 

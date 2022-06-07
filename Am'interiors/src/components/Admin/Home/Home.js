@@ -1,37 +1,19 @@
 import React from 'react'
-import LivingRoom from '../Images/LivingRoom.png'
-// import Logo from "../Images/LogoAminterior.png"
-
-import livingRoomModern from '../Images/LivingRoomModern.jpg'
-import '../App.css'
-import Formulaire from '../components/PopUp/Formulaire'
-import Footer from '../components/Footer/Footer'
+// Import Images
+import LivingRoom from '../../../Images/LivingRoom.png';
+import LivingRoomModern from '../../../Images/LivingRoomModern.jpg'
 
 function Home() {
   return (
-    <div className="p-14">
-      <div className ="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4">
-        <span className='font-title text-8xl text-white text-right'>AM'in</span>terior</div>
-      <br></br>
-      <br></br>
-            
-      <div className='grid grid-cols-2 gap-1 bg-orange-50/80'>
-
-      <div className="text-3xl text-black p-6">
-        Société d'aménagement d'intérieurs
-      </div>
-
-      <div class="p-3 float-right" type="button">
-        <Formulaire />
-      </div>
-
+        <div>
+      <div className='grid grid-cols-2 gap-1'>
        <img
           src={LivingRoom}
           className="border-solid ml-4 p-2 bg-black inset-2.5 "
           alt="Logo"
         />
         <img
-          src={livingRoomModern}
+          src={LivingRoomModern}
           className="border-solid p-2 bg-black inset-2.5 "
           alt="Livingroom"
         />
@@ -49,13 +31,7 @@ function Home() {
         </span>
         <br></br>
         </div>
-        
-      <br></br>
-      <hr></hr>
-      <br></br>
-      <Footer/>
-      
-    </div>
+        </div>
   )
 }
 export default Home

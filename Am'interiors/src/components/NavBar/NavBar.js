@@ -24,9 +24,7 @@ function NavBar() {
 
   return (
     <nav className="p-2">
-      {(toggleMenu || screenWidth > 500) && (
-
-        
+      {(toggleMenu || screenWidth > 500) && (        
         <ul className="list">
           <span className="text-6xl p-0.5 text-black">•</span>
           <span className="text-6xl p-0.5 text-orange-800">•</span>

@@ -1,5 +1,12 @@
 import React from "react";
 
+// Import components
+import Home from "./Home/Home";
+import Contact from "./Contact/Contact";
+import Presentation from "./Presentation/Presentation";
+import Inspirations from "./Inspirations/Inspirations";
+import Studio from "./Studio/Studio";
+
 function NavigationAdmin() {
   const [showHome, setShowHome] = React.useState(false);
   const [showPresentation, setShowPresentation] = React.useState(false);
@@ -10,7 +17,7 @@ function NavigationAdmin() {
   return (
       <div className="grid grid-cols-6 gap-1 ">
         {/* Start of first columns */}
-        <div className="bg-slate-600 col-span-1 uppercase p-6 border-l-4 border-orange-100/75 sticky">
+        <div className="bg-slate-600 col-span-1 uppercase p-6 border-l-4 border-orange-100/75">
           {/* header of filter */}
           <div className="flex items-start justify-center p-2 border-b border-r border-orange-100/75 ">
             Navigation
@@ -69,7 +76,7 @@ function NavigationAdmin() {
           {/* Show Home */}
           <div>
           {showHome ? (
-              <div>Elements du bouton Home</div>
+              <div> <Home/> </div>
           ) : null}
           </div>
           {/* End show Home */}
@@ -77,7 +84,7 @@ function NavigationAdmin() {
           {/* Show Presentation */}
           <div>
           {showPresentation ? (
-              <div> Elements du bouton Presentation</div>
+              <div> <Presentation /> </div>
           ) :null }
           </div>
           {/* End show Presentation */}
@@ -85,7 +92,7 @@ function NavigationAdmin() {
           {/* Show Inspiration */}
           <div>
           {showInspiration ? (
-              <div> Elements du bouton Inspiration</div>
+              <div> <Inspirations/> </div>
           ) :null }
           </div>
           {/* End show Inspiration */}
@@ -93,7 +100,7 @@ function NavigationAdmin() {
           {/* Show Studio */}
           <div>
           {showStudio ? (
-              <div> Elements du bouton Studio</div>
+              <div> <Studio/> </div>
           ) :null }
           </div>
           {/* End show Studio */}
@@ -101,7 +108,7 @@ function NavigationAdmin() {
           {/* Show Contact */}
           <div>
           {showContact ? (
-              <div> Elements du bouton Contact</div>
+              <div> <Contact/> </div>
           ) :null }
           </div>
           {/* End show Contact */}

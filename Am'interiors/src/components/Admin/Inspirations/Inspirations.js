@@ -1,28 +1,15 @@
 import React from 'react'
-import '../App.css'
-import Formulaire from '../components/PopUp/Formulaire'
-import Peinture from '../Images/Peinture.jpg'
-import Thème1 from '../components/Inspirations/Thème1'
-import Thème2 from '../components/Inspirations/Thème2'
-import Thème3 from '../components/Inspirations/Thème3'
-import Thème4 from '../components/Inspirations/Thème4'
-import Footer from '../components/Footer/Footer'
+
+//Import Components
+import Peinture from '../../../Images/Peinture.jpg';
+import Thème1 from '../../Inspirations/Thème1';
+import Thème2 from '../../Inspirations/Thème2';
+import Thème3 from '../../Inspirations/Thème3';
+import Thème4 from '../../Inspirations/Thème4';
 
 function Inspirations() {
   return (
-    <div className="p-14">
-      <div class="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4"><span className="text-9xl p-2 text-white">-</span>INSPIRATIONS</div>
-      <br></br>
-      <br></br>
-
-      <div class="py-3 px-3 grid float-right" type="button">
-        <Formulaire />
-      </div>
-
-      <br></br>
-      <br></br>
-      <br></br>
-
+    <div>
       <div className="text-2xl text-white p-1 pr-1 pb-1 pl-1 grid grid-rows-1">
         <span className=" text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
@@ -151,11 +138,7 @@ function Inspirations() {
           <Thème4 />
         </span>
       </div>
-      <br></br>
-      <hr></hr>
-      <br></br>
-      <Footer />
     </div>
   )
 }
-export default Inspirations
+export default Inspirations;
