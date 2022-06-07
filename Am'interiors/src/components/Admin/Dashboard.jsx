@@ -10,7 +10,7 @@ function NavigationAdmin() {
   return (
       <div className="grid grid-cols-6 gap-1 ">
         {/* Start of first columns */}
-        <div className="bg-slate-700 col-span-1 uppercase p-6 border-l-4 border-orange-100/75 sticky">
+        <div className="bg-slate-600 col-span-1 uppercase p-6 border-l-4 border-orange-100/75 sticky">
           {/* header of filter */}
           <div className="flex items-start justify-center p-2 border-b border-r border-orange-100/75 ">
             Navigation
@@ -64,7 +64,7 @@ function NavigationAdmin() {
         {/* End of first columns */}
 
         {/* Start of second columns */}
-        <div className="bg-slate-500 col-span-5 p-4">
+        <div className="bg-orange-800 col-span-5 p-4">
 
           {/* Show Home */}
           <div>
