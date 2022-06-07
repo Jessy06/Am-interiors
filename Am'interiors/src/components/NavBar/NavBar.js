@@ -35,7 +35,7 @@ function NavBar() {
           <Link to = "/inspirations"><li className="items">Inspirations</li></Link>
           <Link to = "/studio"><li className="items">Studio</li></Link>
           <Link to = "/contact"><li className="items">Contact</li></Link>
-          <Link to ="/login"><li className="items">login</li></Link>
+          <Link to ="/login"><li className="items">Login</li></Link>
         </ul>
       )}
 

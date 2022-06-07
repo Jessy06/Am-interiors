@@ -11,11 +11,9 @@ function Home() {
   return (
     <div className="p-14">
       <div className ="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4">
-        <span className='font-title text-8xl text-white text-right'>AM'</span>interior</div>
+        <span className='font-title text-8xl text-white text-right'>AM'in</span>terior</div>
       <br></br>
       <br></br>
-      {/* <div> <span className='bg-red-100'>AM'</span><span className='bg-blue-900'> INTERIOR</span> */}
-      {/* </div> */}
             
       <div className='grid grid-cols-2 gap-1 bg-orange-50/80'>
 
