@@ -6,6 +6,11 @@ import Footer from "../components/Footer/Footer";
 import Home from "../components/Admin/Home/Home";
 import HomeEN from "../components/Admin/Home/HomeEN"
 
+//import images
+import FranceFlag from "../Images/FlagFrance.png";
+import UKFlag from "../Images/FlagUk.png"
+
+
 function HomePage() {
   const [swapLanguageFR, setSwapLanguageFR] = React.useState(true);
   const [swapLanguageEN, setSwapLanguageEN] = React.useState(false);
@@ -25,11 +30,13 @@ function HomePage() {
     <button className="text-l text-white hover:bg-orange-800 p-2 border-2"
     onClick={() => 
     [setSwapLanguageFR(true),
-    setSwapLanguageEN(false)]}>FR</button>
+    setSwapLanguageEN(false)]}>FR 
+    <img src= {FranceFlag} alt="flag"/></button>
     <button className="text-l text-white hover:bg-orange-800 p-2 border-2 "
     onClick={() => 
       [setSwapLanguageFR(false),
-      setSwapLanguageEN(true)]}>EN</button>
+      setSwapLanguageEN(true)]}>EN
+      <img src= {UKFlag} alt="flag"/></button>
     </div>
     {/* END SWAP LANGUAGES */}
     <br></br>
