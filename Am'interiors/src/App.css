@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply pt-20 bg-black text-white;
+    @apply pt-20 bg-black;
     font-family: 'DM Sans', sans-serif;
   }
   hr {

@@ -1,9 +1,18 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react';
+import Axios from "axios";
 
 // Import Components
 
 
 function Studio() {
+  const ApiUrl = "http://localhost:3001/api/admin/projets/";
+  const [projetList, setProjetList] = useState([]);
+ 
+  useEffect(() => {
+    Axios.get(ApiUrl).then((response) => {
+      setProjetList(response.data)});
+  }, [])
+
   return (
     <div>
       <div className="text-2xl text-white p-1 pr-1 pb-1 pl-1">

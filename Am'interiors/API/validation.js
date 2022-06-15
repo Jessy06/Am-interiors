@@ -33,7 +33,7 @@ const projetValidation = (data) => {
     return schema.validate(data);
 }
 
-// Projet Validation
+// Inspiration Validation
 const inspirationValidation = (data) => {
     const schema = Joi.object ({
         title:Joi.string().max(20).required(),
@@ -44,7 +44,20 @@ const inspirationValidation = (data) => {
     return schema.validate(data);
 }
 
+// Inspiration Validation
+const imagesValidation = (data) => {
+    const schema = Joi.object ({
+        id_projet:Joi.string().max(20).required(),
+        title:Joi.string().max(20).required(),
+        description:Joi.string().min(10).max(250).required(),
+        img:Joi.string()
+    })
+    return schema.validate(data);
+}
+
+
 module.exports.registerValidation = registerValidation;
 module.exports.loginValidation = loginValidation;
 module.exports.projetValidation = projetValidation;
 module.exports.inspirationValidation = inspirationValidation;
+module.exports.imagesValidation = imagesValidation;
