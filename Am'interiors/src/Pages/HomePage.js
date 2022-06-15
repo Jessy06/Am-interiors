@@ -27,15 +27,15 @@ function HomePage() {
 
     {/* SWAP LANGUAGES BUTTON */}
     <div>
-    <button className="text-l text-white hover:bg-orange-800 p-2 border-2"
+    <button className="text-l text-white hover:bg-orange-800 p-1 border-1"
     onClick={() => 
     [setSwapLanguageFR(true),
-    setSwapLanguageEN(false)]}>FR 
+    setSwapLanguageEN(false)]}>
     <img src= {FranceFlag} alt="flag"/></button>
-    <button className="text-l text-white hover:bg-orange-800 p-2 border-2 "
+    <button className="text-l text-white hover:bg-orange-800 p-1 border-1 "
     onClick={() => 
       [setSwapLanguageFR(false),
-      setSwapLanguageEN(true)]}>EN
+      setSwapLanguageEN(true)]}>
       <img src= {UKFlag} alt="flag"/></button>
     </div>
     {/* END SWAP LANGUAGES */}
