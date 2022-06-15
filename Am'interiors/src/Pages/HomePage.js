@@ -36,7 +36,7 @@ function HomePage() {
 
       <div className="grid grid-row-2 gap-1 bg-orange-50/80">
         <div className="text-3xl text-black p-6">
-          Société d'aménagement d'intérieurs
+         {( swapLanguageEN ? ("Interior Design"):("Société d'aménagement d'intérieurs"))} 
           <div class="float-right" type="button">
           <Formulaire />
         </div>
