@@ -22,16 +22,17 @@ function HomePage() {
 
     {/* SWAP LANGUAGES BUTTON */}
     <div>
-    <button className="text-xl text-white p-2 border-2"
+    <button className="text-l text-white hover:bg-orange-800 p-2 border-2"
     onClick={() => 
     [setSwapLanguageFR(true),
     setSwapLanguageEN(false)]}>FR</button>
-    <button className="text-xl text-white p-2 border-2"
+    <button className="text-l text-white hover:bg-orange-800 p-2 border-2 "
     onClick={() => 
       [setSwapLanguageFR(false),
       setSwapLanguageEN(true)]}>EN</button>
     </div>
     {/* END SWAP LANGUAGES */}
+    <br></br>
 
       <div className="grid grid-row-2 gap-1 bg-orange-50/80">
         <div className="text-3xl text-black p-6">
