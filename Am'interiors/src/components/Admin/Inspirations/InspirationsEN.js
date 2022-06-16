@@ -7,9 +7,10 @@ import Thème2 from '../../Inspirations/Thème2';
 import Thème3 from '../../Inspirations/Thème3';
 import Thème4 from '../../Inspirations/Thème4';
 
-function Inspirations() {
+function InspirationsEN() {
   return (
     <div>
+    <span className=" text-white">HELLO IM ENGLISH</span>
       <div className="text-2xl text-white p-1 pr-1 pb-1 pl-1 grid grid-rows-1">
         <span className=" text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
@@ -146,4 +147,4 @@ function Inspirations() {
     </div>
   )
 }
-export default Inspirations;
+export default InspirationsEN;
