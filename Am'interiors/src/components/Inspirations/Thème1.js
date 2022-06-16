@@ -12,7 +12,7 @@ export default function Modal() {
   const handleSubmit = (e) => {
     setName(e.target.value)
   }
-  <div className="p-5 pl-5 pr-5 mb-5"></div>
+  <div className="p-14"></div>
 
   return (
     <>

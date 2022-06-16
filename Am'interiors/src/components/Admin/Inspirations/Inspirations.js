@@ -30,12 +30,12 @@ function Inspirations() {
 
       <div class="grid grid-rows-1 p-1 pr-1 pb-1 pl-1">
         <br></br>
-        <div className="p-1 pr-1 pb-1 pl-1 grid grid-rows-1"></div>
-        <img src={Peinture} className="float-left" alt="Peinture"></img>
+        <div className="p-1 pr-1 pb-1 pl-1 grid grid-rows-1">
+        <img src={Peinture} className="float-left" alt="Peinture"/>
         <br></br>
         <br></br>
         <span className="">
-          <div className="text-3xl text-white"></div>Thème 1<br></br>
+          <div className="text-2xl text-white">Thème 1<br></br>
           <br></br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
@@ -50,7 +50,9 @@ function Inspirations() {
           <br></br>
           <br></br>
           <Thème1 />
+          </div>
         </span>
+
       </div>
       <br></br>
       <hr></hr>
@@ -61,10 +63,10 @@ function Inspirations() {
           <br></br>
         </div>
         <br></br>
-        <img src={Peinture} className="" alt="Peinture"></img>
+        <img src={Peinture} className="" alt="Peinture"/>
         <br></br>
         <span className="">
-          <div className="text-3xl text-orange-800"></div>Thème 2<br></br>
+          <div className="text-2xl text-white">Thème 2<br></br>
           <br></br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
@@ -79,6 +81,7 @@ function Inspirations() {
           <br></br>
           <br></br>
           <Thème2 />
+          </div>
         </span>
       </div>
       <br></br>
@@ -89,10 +92,10 @@ function Inspirations() {
         <div className="text-2xl text-white">
           <br></br>
         </div>
-        <img src={Peinture} className="" alt="Peinture"></img>
+        <img src={Peinture} className="" alt="Peinture"/>
         <br></br>
         <span className="">
-          <div className="text-3xl text-white"></div>Thème 3<br></br>
+          <div className="text-2xl text-white">Thème 3<br></br>
           <br></br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
@@ -107,6 +110,7 @@ function Inspirations() {
           <br></br>
           <br></br>
           <Thème3 />
+          </div>
         </span>
       </div>
       <br></br>
@@ -118,10 +122,10 @@ function Inspirations() {
           <br></br>
         </div>
         <br></br>
-        <img src={Peinture} className="" alt="Peinture"></img>
+        <img src={Peinture} className="" alt="Peinture"/>
         <br></br>
         <span className="">
-          <div className="text-3xl text-white"></div>Thème 4<br></br>
+          <div className="text-2xl text-white">Thème 4<br></br>
           <br></br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
@@ -136,8 +140,10 @@ function Inspirations() {
           <br></br>
           <br></br>
           <Thème4 />
+          </div>
         </span>
       </div>
+    </div>
     </div>
   )
 }
