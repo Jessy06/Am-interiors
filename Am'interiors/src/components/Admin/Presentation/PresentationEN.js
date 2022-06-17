@@ -25,7 +25,6 @@ function PresentationEN () {
         </span>
       </div>
       <br></br>
-      <hr></hr>
       <br></br>
       <div>
         <img src={photoprofil} className="photoprofil" alt="Photoprofil" />
