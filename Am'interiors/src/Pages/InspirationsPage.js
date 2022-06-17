@@ -17,16 +17,9 @@ function InspirationsPage() {
   const [swapLanguageEN, setSwapLanguageEN] = React.useState(false);
 
   return (
-    <div className="p-14">
-      <div class="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4"><span className="text-9xl p-2 text-white">-</span>INSPIRATIONS</div>
-      <br></br>
-
-      <div class="py-3 px-3 grid float-right" type="button">
-        <Formulaire />
-      </div>
-      
-      {/* SWAP LANGUAGES BUTTON */}
-      <div>
+    <div className="p-4">
+       {/* SWAP LANGUAGES BUTTON */}
+       <div>
         <button
           className="text-l text-white hover:bg-orange-800 p-1 border-1"
           onClick={() => [setSwapLanguageFR(true), setSwapLanguageEN(false)]}
@@ -43,6 +36,18 @@ function InspirationsPage() {
 
       </div>
       {/* END SWAP LANGUAGES */}
+      <div class="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4"><span className="text-9xl p-2 text-white">-</span>INSPIRATIONS</div>
+      
+      <br></br>
+      
+
+      <div class="py-3 px-3 grid float-right" type="button">
+        
+        <Formulaire />
+        
+      </div>
+      
+     
       { swapLanguageFR ? ( <Inspirations />) : null} 
         { swapLanguageEN ? ( <InspirationsEN/>) : null} 
 
