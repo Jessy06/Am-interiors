@@ -11,13 +11,13 @@ function Contact() {
 
       {/* <!-- horizontal card --> */}
 
-      <div class="flex space-x-4 ">
-        <div className="2xl p-5 pr-5 pb-0.5 pl-0.5 rounded-xl"></div>
+      <div class="flex space-x-2 ">
+        <div className="2xl p-5 pr-0.5 pb-0.5 pl-0.5 rounded-xl"></div>
         <div class="bg-white rounded-lg shadow-2xl md:flex">
           <img
             src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8"
             alt="Laptop on Desk"
-            class="md:w-2/5 rounded-t-lg md:rounded-l-lg md:rounded-t-"
+            class="md:w-2/5 rounded-t-lg md:rounded-l-lg md:rounded-t-none"
           />
           <div class="p-7">
             <h2 class="text-xl md:text-3xl mb-2 text-orange-800 underline underline-offset-8">
@@ -46,7 +46,7 @@ function Contact() {
 
         <br></br>
 
-        <div className="2xl p-5 pr-25 pb-0.5 pl-0.5 pr-0.5 rounded-xl"></div>
+        <div className="2xl p-5  pb-0.5 pl-0.5 pr-0.5 rounded-xl"></div>
         <div class="bg-white rounded-lg shadow-2xl md:flex">
           <img
             src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8"
@@ -65,12 +65,12 @@ function Contact() {
       <br></br>
 
       <div class="flex space-x-2 ">
-        <div className="2xl p-5 pr-5 pb-0.5 pl-0.5 rounded-xl"></div>
+        <div className="2xl p-5 pr-0.5 pb-0.5 pl-0.5 rounded-xl"></div>
         <div class="bg-white rounded-lg shadow-2xl md:flex">
           <img
             src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8"
             alt="Laptop on Desk"
-            class="md:w-2/5 rounded-t-lg md:rounded-l-lg md:rounded-t-"
+            class="md:w-2/5 rounded-t-lg md:rounded-l-lg md:rounded-t-none"
           />
           <div class="p-7">
             <h2 class="text-xl md:text-3xl mb-2 text-orange-800 underline underline-offset-8">
@@ -99,7 +99,7 @@ function Contact() {
 
         <br></br>
 
-        <div className="2xl p-5 pr-25 pb-0.5 pl-0.5 pr-0.5 rounded-xl"></div>
+        <div className="2xl p-5  pb-0.5 pl-0.5 pr-0.5 rounded-xl"></div>
         <div class="bg-white rounded-lg shadow-2xl md:flex">
           <img
             src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8"
@@ -116,7 +116,8 @@ function Contact() {
       </div>
 
       <br></br>
-
+      <br></br>
+      
       <div className="text-2xl  p-1 pr-1 pb-1 pl-1">
         <span className="text-white">
           Pour toutes demandes n'hésitez pas à cliquer sur le bouton "work with

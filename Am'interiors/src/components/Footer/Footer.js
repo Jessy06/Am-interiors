@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer (){
   return (
-      <div class="text-8xl text-white text-righ border-l-4 border-b-4 border-orange-100/75 p-4">
+      <div class="text-8xl text-white text-righ border-l-8 border-b-8 border-orange-800 p-4">
          
     <div class="sm:flex sm:items-center">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"> Mon Instagram 

@@ -6,15 +6,15 @@ import LivingRoomModern from '../../../Images/LivingRoomModern.jpg'
 function Home() {
   return (
         <div>
-      <div className='grid grid-cols-2 gap-1'>
+      <div className='grid grid-row-2 gap-1'>
        <img
           src={LivingRoom}
-          className="border-solid ml-4 p-2 bg-black inset-2.5 "
+          className="border-solid ml-11 p-2 bg-black"
           alt="Logo"
         />
         <img
           src={LivingRoomModern}
-          className="border-solid p-2 bg-black inset-2.5 "
+          className="border-solid mr-3 ml-9 p-2 bg-black "
           alt="Livingroom"
         />
         <br></br>
