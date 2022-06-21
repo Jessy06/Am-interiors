@@ -40,15 +40,12 @@ function HomePage() {
       <br></br>
 
       <div className="grid grid-row-2 gap-1 bg-orange-50/80">
-        <div className="text-4xl text-black p-3 pt-2">
-          <span className="text-5xl ml-3 text-black">•</span>
-          <span className="text-5xl mr-4  ml-1 text-orange-800">•</span>
-          {swapLanguageEN
-            ? 'Interior Design'
-            : "Décorateur d'intérieurs et d'extérieurs"}
-          <div className="float-right mr-6" type="button">
-            <Formulaire />
-          </div>
+        <div className="text-3xl text-black p-6">
+        <span className="text-6xl p-0.5 text-black">•</span>
+          <span className="text-6xl p-0.5 text-orange-800">•</span>
+         {( swapLanguageEN ? ("Interior Designer"):("Société d'aménagement d'intérieurs"))} 
+          <div class="float-right" type="button">
+          <Formulaire />
         </div>
         {swapLanguageFR ? <Home /> : null}
         {swapLanguageEN ? <HomeEN /> : null}
@@ -58,6 +55,7 @@ function HomePage() {
       <br></br>
       <br></br>
       <Footer />
+    </div>
     </div>
   )
 }
