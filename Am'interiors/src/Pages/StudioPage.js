@@ -44,7 +44,6 @@ function StudioPage() {
       { swapLanguageFR ? ( <Studio />) : null} 
         { swapLanguageEN ? ( <StudioEN />) : null} 
       <br></br>
-      <hr></hr>
       <br></br>
       <Footer />
     </div>

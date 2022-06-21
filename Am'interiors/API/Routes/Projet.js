@@ -3,8 +3,9 @@ const express = require("express");
 const router = express.Router();
 const Projet = require("../models/Projet");
 // const User = require("../models/User");
-const verify = require("./verifytoken");
-const { projetValidation } = require("../validation");
+const verify = require("../Middlewares/verifytoken");
+const { projetValidation } = require("../Middlewares/validation");
+const upload = require("../Middlewares/upload");
 
 // GET ALL Projet
 router.get("/", async (req, res) => {
@@ -17,18 +18,26 @@ router.get("/", async (req, res) => {
 })
 
 // POST a new Projet
-router.post('/new', verify , async (req, res) => {
+router.post('/new', verify, upload.array("image[]", 10), async (req, res) => {
      // Validate data before we make a new projet
    const {error} = projetValidation(req.body);
    if (error) return res.status(400).send({message:error.details[0].message} );
      
    // Create new projet
      const title = req.body.title;
-     const description = req.body.description;
-    //  const date = req.body.date;
+     const descriptionFR = req.body.descriptionFR;
+     const descriptionEN = req.body.descriptionEN;
      const lieu = req.body.lieu;
+     const images = {
+      data : req.files.filename,
+      contentType:"image/png"}
  
-     const projet = new Projet({title:title, description: description, lieu: lieu});
+     const projet = new Projet(
+      {title:title, 
+      descriptionFR: descriptionFR,
+      descriptionEN: descriptionEN,
+      lieu: lieu,
+      images: images});
     
      try {
        await projet.save ();

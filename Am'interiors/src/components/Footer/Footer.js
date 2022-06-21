@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 function Footer (){
   return (
       <div class="text-8xl text-white text-righ border-l-4 border-b-4 border-orange-100/75 p-4">

@@ -26,7 +26,8 @@ const loginValidation = (data) => {
 const projetValidation = (data) => {
     const schema = Joi.object ({
         title:Joi.string().max(20).required(),
-        description:Joi.string().min(10).max(250).required(),
+        descriptionFR:Joi.string().min(10).max(250).required(),
+        descriptionEN:Joi.string().min(10).max(250).required(),
         lieu: Joi.string().required()
         // date:Joi.date().required,
     })
@@ -44,13 +45,14 @@ const inspirationValidation = (data) => {
     return schema.validate(data);
 }
 
-// Inspiration Validation
+// Image Validation
 const imagesValidation = (data) => {
     const schema = Joi.object ({
-        id_projet:Joi.string().max(20).required(),
-        title:Joi.string().max(20).required(),
-        description:Joi.string().min(10).max(250).required(),
-        img:Joi.string()
+        // projet:Joi.string().max(20).required(),
+        // title:Joi.string().max(20).required(),
+        // descriptionFR:Joi.string().min(10).max(250).required(),
+        // descriptionEN:Joi.string().min(10).max(250).required(),
+        // img:Joi.string()
     })
     return schema.validate(data);
 }

@@ -8,7 +8,7 @@ const bcrypt = require("bcryptjs");
 const User = require ("../models/User")
 
 //VALIDATION
-const { registerValidation, loginValidation } = require("../validation");
+const { registerValidation, loginValidation } = require("../Middlewares/validation");
 const { verify } = require("jsonwebtoken");
 
 // CREATE (POST) REGISTER/NEW USER

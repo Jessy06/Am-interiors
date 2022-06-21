@@ -2,7 +2,7 @@ const mongoose = require ('mongoose');
 
 const ImageSchema = new mongoose.Schema({
 
-    id_projet: {
+    projet: {
         type: String,
         required: true
     },
@@ -13,7 +13,13 @@ const ImageSchema = new mongoose.Schema({
         unique: true 
     },
 
-    description: {
+    descriptionFR: {
+        type: String,
+        required: true,
+        unique: true
+    },
+
+    descriptionEN: {
         type: String,
         required: true,
         unique: true
@@ -23,8 +29,6 @@ const ImageSchema = new mongoose.Schema({
         data : Buffer,
         contentType: String
     }
-
-
     });
 
     module.exports = mongoose.model("Images", ImageSchema);

@@ -8,7 +8,13 @@ const InspirationSchema = new mongoose.Schema ({
         unique: true 
     },
 
-    description: {
+    descriptionFR: {
+        type: String,
+        required: true,
+        unique: true
+    },
+
+    descriptionEN: {
         type: String,
         required: true,
         unique: true

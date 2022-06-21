@@ -2,8 +2,8 @@ const express = require("express");
 
 const router = express.Router();
 const Inspiration = require("../models/Inspirations");
-const verify = require("./verifytoken");
-const { inspirationValidation } = require("../validation");
+const verify = require("../Middlewares/verifytoken");
+const { inspirationValidation } = require("../Middlewares/validation");
 
 // GET ALL Inspirations
 router.get("/", verify, async (req, res) => {

@@ -8,24 +8,27 @@ const ProjetSchema = new mongoose.Schema ({
         unique: true 
     },
 
-    description: {
+    descriptionFR: {
         type: String,
         required: true,
         unique: true
     },
 
-    // date: {
-    //     type: Date,
-    //     required: true
-    // },
-    
+    descriptionEN: {
+        type: String,
+        required: true,
+        unique: true
+    },
+
     lieu: { 
         type: String,
         required: true
      },
 
-    
-    
+    images: {
+        data: Buffer,
+        contentType: String
+    }
 });
 
 module.exports = mongoose.model("Projet", ProjetSchema)

@@ -4,9 +4,6 @@ const cors = require ('cors');
 require('dotenv').config();
 const mongoose = require('mongoose');
 
-//JSON WEB TOKEN AUTHENTICATION
-const jwt = require ('jsonwebtoken');
-
 // MIDDLEWARES
 app.use(express.json());
 app.use(cors());
