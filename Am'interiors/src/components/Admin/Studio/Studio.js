@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useCookies } from "react-cookie";
 import Axios from "axios";
 
 // Import Components
 
 function Studio() {
+  const [Cookies] = useCookies(["token","id", "pseudo"]);
+
   const ApiUrlProjet = "http://localhost:3001/api/admin/projets/";
   const [projetList, setProjetList] = useState([]);
 
@@ -47,13 +50,22 @@ function Studio() {
             {val.descriptionFR}
           </div>
           {/* Lieu, City */}
-          <span className="text-lg float-left italic">{val.lieu}</span>
+          <div className="text-lg italic">{val.lieu}</div>
          
         </div>
       </div>
       <div className="text-6xl text-white border-b-2">•
        {/* Button Gallery */}
       <button className="float-right border-2 rounded-3xl p-2 px-6 text-sm animate-pulse hover:bg-orange-100 hover:text-black hover:border-black"> Voir plus → </button>
+
+       {/* Admin Button Cookie Token */}
+       {Cookies.token ? 
+       <div className="grid grid-cols-3 gap-24 text-xl pb-2">
+        <button className="border-2 rounded-3xl p-2 px-6 text-sm hover:bg-orange-100 hover:text-black hover:border-black"> Creer un nouveau projet</button>
+        <button className="border-2 rounded-3xl p-2 px-6 text-sm hover:bg-orange-100 hover:text-black hover:border-black"> Modifier le projet</button>
+        <button className="border-2 rounded-3xl p-2 px-6 text-sm hover:animate-pulse  hover:text-red-500 hover:border-red-500"> Supprimer le projet</button>
+        </div>
+        : null }
       </div>
   </section>
 </div>
