@@ -45,7 +45,7 @@ function HomePage() {
         <div className="text-3xl text-black p-6">
         <span className="text-6xl p-0.5 text-black">•</span>
           <span className="text-6xl p-0.5 text-orange-800">•</span>
-         {( swapLanguageEN ? ("Interior Design"):("Société d'aménagement d'intérieurs"))} 
+         {( swapLanguageEN ? ("Interior Designer"):("Société d'aménagement d'intérieurs"))} 
           <div class="float-right" type="button">
           <Formulaire />
         </div>
