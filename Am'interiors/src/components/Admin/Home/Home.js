@@ -1,7 +1,7 @@
 import React from 'react'
 // Import Images
 import LivingRoom from '../../../Images/LivingRoom.png';
-import LivingRoomModern from '../../../Images/LivingRoomModern.jpg'
+import LivingRoomModern from '../../../Images/LivingRoomModern.jpg';
 
 function Home() {
   return (
