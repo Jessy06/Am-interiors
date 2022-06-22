@@ -40,9 +40,9 @@ function HomePage() {
       <br></br>
 
       <div className="grid grid-row-2 gap-1 bg-orange-50/80">
-        <div className="text-4xl text-black p-3 pt-2">
-          <span className="text-5xl ml-3 text-black">•</span>
-          <span className="text-5xl mr-4  ml-1 text-orange-800">•</span>
+        <div className="text-2xl text-black p-3 pt-2">
+          <span className="text-3xl ml-3 text-black">•</span>
+          <span className="text-3xl mr-4  ml-1 text-orange-800">•</span>
           {swapLanguageEN
             ? 'Interior Design'
             : "Décorateur d'intérieurs et d'extérieurs"}

@@ -3,13 +3,12 @@ import React from 'react'
 function Contact() {
     return (
         <div>
-        <div className="text-2xl p-1 pr-2 pb-1 pl-1 mr-6 ml-6" alt="">
-          <span className="text-4xl mr-4 ml-4  text-orange-800">•</span>
-        <span className="text-white">Services Proposés</span>
+        <div className="text-3xl p-1 pr-2 pb-10 pl-1 mr-6 ml-6  " alt="">
+          <span className=" text-orange-800">•</span>
+        <span className="text-white text-2xl mr-3 ml-3 mt-3">Services Proposés</span>
         
       </div>
-      <br></br>
-      <br></br>
+
 
       {/* <!-- horizontal card --> */}
 

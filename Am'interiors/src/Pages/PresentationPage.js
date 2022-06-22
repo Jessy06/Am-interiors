@@ -39,8 +39,10 @@ function PresentationPage() {
       </div>
       
       <br></br>
-
-      <div className="text-2xl text-white">{swapLanguageEN ? "About Amin Dabbabi" : "A propos de Amin Dabbabi"}</div>
+      
+    
+      <div className="text-3xl text-white">{swapLanguageEN ? "About Amin Dabbabi" : <div><span className=" text-orange-800 mr-4 ml-4">•</span>A propos de Amin Dabbabi</div>}</div>
+       
 
       <br></br>
       {swapLanguageFR ? <Presentation /> : null}
