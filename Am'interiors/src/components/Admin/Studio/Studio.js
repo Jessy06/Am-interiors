@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import {useCookies} from 'react-cookie';
 import Axios from "axios";
 
 // Import Components
@@ -7,6 +8,7 @@ function Studio() {
   const [Cookies] = useCookies(["token","id", "pseudo"]);
   const ApiUrlProjet = "http://localhost:3001/api/admin/projets/";
   const [projetList, setProjetList] = useState([]);
+  const [showModalNewProjet, setShowModalNewProjet] = React.useState(false)
 
   useEffect(() => {
     Axios.get(ApiUrlProjet).then((response) => {
@@ -56,15 +58,47 @@ function Studio() {
        {/* Button Gallery */}
       <button className="float-right border-2 rounded-3xl p-2 px-6 text-sm animate-pulse hover:bg-orange-100 hover:text-black hover:border-black"> Voir plus → </button>
 
-       {/* Admin Button Cookie Token */}
+       {/* START Admin Button Cookie Token */}
        {Cookies.token ? 
        <div className="grid grid-cols-3 gap-24 text-xl pb-2">
-        <button className="border-2 rounded-3xl p-2 px-6 text-sm hover:bg-orange-100 hover:text-black hover:border-black"> Creer un nouveau projet</button>
+        
+        <button className="border-2 rounded-3xl p-2 px-6 text-sm hover:bg-orange-100 hover:text-black hover:border-black"
+        type="button"
+        onClick={() => setShowModalNewProjet(true)}> Creer un nouveau projet</button>
+          {showModalNewProjet ? (
+           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+            <div className="relative w-auto my-70 mx-auto max-w-6xl">
+               {/*content*/}
+               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                {/*header*/}
+                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t pr-10 pl-10">
+                <h3 className="text-3xl text-black font-semibold">
+                  Créer un nouveau projet
+                  </h3>
+                  <button
+                    className="p-1 ml-auto border-0 float-right text-3xl leading-none font-semibold"
+                    onClick={() => setShowModalNewProjet(false)}
+                  >
+                    <span className="text-red-500 h-6 w-6 text-3xl block outline-none focus:outline-none">
+                      ×
+                    </span>
+                  </button>
+                </div>
+              </div>            
+            </div>
+           </div>
+          ): null }
+
         <button className="border-2 rounded-3xl p-2 px-6 text-sm hover:bg-orange-100 hover:text-black hover:border-black"> Modifier le projet</button>
         <button className="border-2 rounded-3xl p-2 px-6 text-sm hover:animate-pulse  hover:text-red-500 hover:border-red-500"> Supprimer le projet</button>
+        
         </div>
         : null }
+  
+       {/* END Admin Button Cookie Token */}
+      
       </div>
+
   </section>
 </div>
       )}
