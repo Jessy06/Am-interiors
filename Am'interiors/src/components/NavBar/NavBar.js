@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useCookies } from "react-cookie";
 import "./NavBar.css";
+import"./Navbar.scss";
 
 function NavBar() {
   const [toggleMenu, setToggleMenu] = useState(false);
