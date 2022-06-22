@@ -1,6 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { useCookies } from 'react-cookie';
 
 // Import components
 import Home from "./Home/Home";
@@ -9,98 +7,71 @@ import Presentation from "./Presentation/Presentation";
 import Inspirations from "./Inspirations/Inspirations";
 import Studio from "./Studio/Studio";
 
-
 function NavigationAdmin() {
-  const [landingDashboard, setShowLandingDashboard] = React.useState(true);
   const [showHome, setShowHome] = React.useState(false);
   const [showPresentation, setShowPresentation] = React.useState(false);
   const [showInspiration, setShowInspiration] = React.useState(false);
   const [showStudio, setShowStudio] = React.useState(false);
   const [showContact, setShowContact] = React.useState(false);
-  const [removeCookies] = useCookies(["token", "pseudo", "id"]);
-  const navigate = useNavigate();
-
-  const logOut = () => {
-    removeCookies('token');
-    removeCookies('pseudo');
-    removeCookies('id');
-
-    navigate("/", {replace: true})
-  };
 
   return (
-      <div className="grid grid-cols-6 gap-6 pt-10 ">
+      <div className="grid grid-cols-6 gap-1 ">
         {/* Start of first columns */}
-        <div className="bg-orange-100 col-span-1 uppercase p-6 border-l-4 border-t-4 border-orange-100/75 text-black text-center rounded">
+        <div className="bg-slate-600 col-span-1 uppercase p-6 border-l-4 border-orange-100/75">
           {/* header of filter */}
-          <div className="flex items-start justify-center p-2 border-b border-r border-black text-2xl">
+          <div className="flex items-start justify-center p-2 border-b border-r border-orange-100/75 ">
             Navigation
           </div>
           {/* end of filter header*/}
-          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-black hover:text-white hover:border-slate-600"
+          <div className="p-2"
           onClick={() =>
-          [setShowLandingDashboard(false),
-          setShowHome(true),
+          [setShowHome(true),
           setShowPresentation(false),
           setShowInspiration(false),
           setShowStudio(false),
           setShowContact(false)]
           }>Home </div>
 
-          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-black hover:text-white hover:border-slate-600"
+          <div className="p-2"
            onClick={() =>
-          [setShowLandingDashboard(false),
-          setShowPresentation(true),
+          [setShowPresentation(true),
           setShowHome(false),
           setShowInspiration(false),
           setShowStudio(false),
           setShowContact(false)]
           }> Presentation </div>
 
-          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-black hover:text-white hover:border-slate-600"
+          <div className="p-2"
           onClick={() =>
-          [setShowLandingDashboard(false),
-          setShowInspiration(true),
+          [setShowInspiration(true),
           setShowPresentation(false),
           setShowHome(false),
           setShowStudio(false),
           setShowContact(false)]
           }> Inspirations </div>
 
-          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-black hover:text-white hover:border-slate-600"
-          onClick={() =>
-          [setShowLandingDashboard(false),
-          setShowStudio(true),
+          <div className="p-2"
+        onClick={() =>
+          [setShowStudio(true),
           setShowPresentation(false),
           setShowInspiration(false),
           setShowHome(false),
           setShowContact(false)]
           }> Studio </div>
 
-          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-black hover:text-white hover:border-slate-600"
+          <div className="p-2"
           onClick={() => 
-            [setShowLandingDashboard(false),
-            setShowContact(true), 
+            [setShowContact(true), 
             setShowPresentation(false),
             setShowInspiration(false),
             setShowStudio(false),
             setShowHome(false)]
             }> Contact </div>
-
-          <bouton
-          type="button"
-          onClick = {logOut}
-          className="text-red-900 mt-16 border-2"> Log out </bouton>
-          </div>
-
+        </div>
         {/* End of first columns */}
 
         {/* Start of second columns */}
-        <div className="col-span-5 p-4 text-white">
-          {landingDashboard ? (
-            <div className="text-white text-center p-40 text-4xl animate-pulse">
-              Selectionnez la page à que vous souhaitez afficher !</div>
-            ) : null }
+        <div className="bg-orange-800 col-span-5 p-4">
 
           {/* Show Home */}
           <div>
