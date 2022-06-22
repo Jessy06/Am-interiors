@@ -1,21 +1,21 @@
 import React from 'react'
 // Import Images
-import LivingRoom from '../../../Images/LivingRoom.png';
-import LivingRoomModern from '../../../Images/LivingRoomModern.jpg';
+import Salon from '../../../Images/Salon.png';
+import Terrasse from '../../../Images/Terrasse.png';
 
 function Home() {
   return (
         <div>
-      <div className='grid grid-row-2 gap-1'>
+      <div className='grid grid-row-2 gap-4'>
        <img
-          src={LivingRoom}
+          src={Salon}
           className="border-solid ml-11 p-2 bg-black"
-          alt="Logo"
+          alt="Salon"
         />
         <img
-          src={LivingRoomModern}
-          className="border-solid mr-3 ml-9 p-2 bg-black "
-          alt="Livingroom"
+          src={Terrasse}
+          className="border-solid mr-4 ml-11 p-2 bg-black"
+          alt="Terrasse"
         />
         <br></br>
         <br></br>
