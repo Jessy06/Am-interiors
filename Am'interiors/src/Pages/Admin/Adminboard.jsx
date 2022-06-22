@@ -6,7 +6,7 @@ import {useNavigate} from "react-router-dom"
 import NavigationAdmin from '../../components/Admin/Dashboard'
 
 function Dashboard() {
-  const [removeCookies] = useCookies(["token", "pseudo", "id"]);
+  const [Cookies, removeCookies] = useCookies(["token", "pseudo", "id"]);
   const navigate = useNavigate();
 
   const logOut = () => {
