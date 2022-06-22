@@ -33,7 +33,7 @@ function InspirationsPage() {
       </div>
       {/* END SWAP LANGUAGES */}
       <div class="text-6xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4">
-        <span className="text-6xl p-1 text-white">-</span>INSPIRATIONS
+        <span className="text-6xl p-1 text-white">-</span>Inspirations
       </div>
 
       <div class="py-3 px-3 grid float-right" type="button">

@@ -32,7 +32,7 @@ function PresentationPage() {
         </button>
       </div>
       {/* END SWAP LANGUAGES */}
-      <div class="text-6xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4"><span className="text-6xl p-2 text-white">-</span>PRESENTATION</div>
+      <div class="text-6xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4"><span className="text-6xl p-2 text-white">-</span>Presentation</div>
       <br></br>
       <div class="py-3 px-3 grid float-right" type="button">
         <Formulaire />

@@ -34,7 +34,7 @@ function StudioPage() {
       {/* END SWAP LANGUAGES */}
       
       <div class="text-6xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4">
-        <span className="text-6xl p-2 text-white">-</span>STUDIO
+        <span className="text-6xl p-2 text-white">-</span>Studio
       </div>
       <br></br>
 
