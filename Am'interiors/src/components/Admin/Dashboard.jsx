@@ -31,7 +31,7 @@ function NavigationAdmin() {
   return (
       <div className="grid grid-cols-6 gap-6 pt-10 ">
         {/* Start of first columns */}
-        <div className="bg-orange-100 col-span-1 uppercase p-6 border-l-4 border-t-4 border-orange-100/75 text-black text-center rounded">
+        <div className="bg-orange-50/80 col-span-1 uppercase p-6 border-l-4 border-t-4 border-orange-50/80 text-black text-center rounded">
           {/* header of filter */}
           <div className="flex items-start justify-center p-2 border-b border-r border-black text-2xl">
             Navigation
@@ -98,8 +98,8 @@ function NavigationAdmin() {
         {/* Start of second columns */}
         <div className="col-span-5 p-4 text-white">
           {landingDashboard ? (
-            <div className="text-white text-center p-40 text-4xl animate-pulse">
-              Selectionnez la page à que vous souhaitez afficher !</div>
+            <div className="text-orange-50/80 text-center p-40 text-4xl animate-pulse">
+              Selectionnez la page que vous souhaitez afficher !</div>
             ) : null }
 
           {/* Show Home */}
