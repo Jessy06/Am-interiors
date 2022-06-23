@@ -37,7 +37,7 @@ function NavigationAdmin() {
             Navigation
           </div>
           {/* end of filter header*/}
-          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-black hover:text-white hover:border-slate-600"
+          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-orange-800 hover:text-white hover:border-slate-600"
           onClick={() =>
           [setShowLandingDashboard(false),
           setShowHome(true),
@@ -47,7 +47,7 @@ function NavigationAdmin() {
           setShowContact(false)]
           }>Home </div>
 
-          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-black hover:text-white hover:border-slate-600"
+          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-orange-800 hover:text-white hover:border-slate-600"
            onClick={() =>
           [setShowLandingDashboard(false),
           setShowPresentation(true),
@@ -57,7 +57,7 @@ function NavigationAdmin() {
           setShowContact(false)]
           }> Presentation </div>
 
-          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-black hover:text-white hover:border-slate-600"
+          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-orange-800 hover:text-white hover:border-slate-600"
           onClick={() =>
           [setShowLandingDashboard(false),
           setShowInspiration(true),
@@ -67,7 +67,7 @@ function NavigationAdmin() {
           setShowContact(false)]
           }> Inspirations </div>
 
-          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-black hover:text-white hover:border-slate-600"
+          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-orange-800 hover:text-white hover:border-slate-600"
           onClick={() =>
           [setShowLandingDashboard(false),
           setShowStudio(true),
@@ -77,7 +77,7 @@ function NavigationAdmin() {
           setShowContact(false)]
           }> Studio </div>
 
-          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-black hover:text-white hover:border-slate-600"
+          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-orange-800 hover:text-white hover:border-slate-600"
           onClick={() => 
             [setShowLandingDashboard(false),
             setShowContact(true), 
@@ -90,7 +90,7 @@ function NavigationAdmin() {
           <bouton
           type="button"
           onClick = {logOut}
-          className="text-red-900 mt-16 border-2"> Log out </bouton>
+          className="text-red-900 mt-16 border-2 hover:bg-orange-800 hover:text-white border-black rounded 2xl p-2"> Log out </bouton>
           </div>
 
         {/* End of first columns */}
