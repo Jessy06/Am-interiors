@@ -28,16 +28,17 @@ router.post('/new', verify, upload.array("image[]", 10), async (req, res) => {
      const descriptionFR = req.body.descriptionFR;
      const descriptionEN = req.body.descriptionEN;
      const lieu = req.body.lieu;
-     const images = {
-      data : req.files.filename,
-      contentType:"image/png"}
+    //  const images = {
+    //   data : req.files.filename,
+    //   contentType:"image/png"}
  
      const projet = new Projet(
       {title:title, 
       descriptionFR: descriptionFR,
       descriptionEN: descriptionEN,
       lieu: lieu,
-      images: images});
+      // images: images
+    });
     
      try {
        await projet.save ();

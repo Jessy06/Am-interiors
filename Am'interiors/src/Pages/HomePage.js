@@ -34,7 +34,7 @@ function HomePage() {
       {/* END SWAP LANGUAGES */}
       <div className="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4">
         {/* TITLE */}
-        <span className="font-title text-8xl text-white text-right">AM'in</span>
+        <span className="font-title text-8xl text-white text-right">Am'in</span>
         terior
       </div>
       <br></br>

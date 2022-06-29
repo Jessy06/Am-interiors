@@ -8,6 +8,7 @@ import Contact from "./Contact/Contact";
 import Presentation from "./Presentation/Presentation";
 import Inspirations from "./Inspirations/Inspirations";
 import Studio from "./Studio/Studio";
+import PostProjet from "./Studio/CreateProjet.js"
 
 
 function NavigationAdmin() {
@@ -17,6 +18,7 @@ function NavigationAdmin() {
   const [showInspiration, setShowInspiration] = React.useState(false);
   const [showStudio, setShowStudio] = React.useState(false);
   const [showContact, setShowContact] = React.useState(false);
+  const [showCreateProjet, setShowCreateProjet] = React.useState(false);
   const [removeCookies] = useCookies(["token", "pseudo", "id"]);
   const navigate = useNavigate();
 
@@ -29,12 +31,12 @@ function NavigationAdmin() {
   };
 
   return (
-      <div className="grid grid-cols-6 gap-6 pt-10 ">
+      <div className="grid grid-cols-6 gap-0.5 pt-0.5 ">
         {/* Start of first columns */}
-        <div className="bg-orange-50/80 col-span-1 uppercase p-6 border-l-4 border-t-4 border-orange-50/80 text-black text-center rounded">
+        <div className="bg-orange-50/80 col-span-1 uppercase p-6 border-l-4 border-t-4 border-orange-50/80 text-black text-center rounded h-full">
           {/* header of filter */}
-          <div className="flex items-start justify-center p-2 border-b border-r border-black text-2xl">
-            Navigation
+          <div className="flex items-start justify-center p-2 text-2xl h-fit">
+            Colonne 1
           </div>
           {/* end of filter header*/}
           <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-orange-800 hover:text-white hover:border-slate-600"
@@ -87,6 +89,19 @@ function NavigationAdmin() {
             setShowHome(false)]
             }> Contact </div>
 
+          <div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-orange-800 hover:text-white hover:border-slate-600"
+          onClick={() =>
+          [setShowLandingDashboard(false),
+          setShowInspiration(false),
+          setShowPresentation(false),
+          setShowHome(false),
+          setShowStudio(false),
+          setShowContact(false),
+          setShowCreateProjet(true)
+        ]
+          }> Nouveau projet</div>
+
+
           <bouton
           type="button"
           onClick = {logOut}
@@ -96,10 +111,10 @@ function NavigationAdmin() {
         {/* End of first columns */}
 
         {/* Start of second columns */}
-        <div className="col-span-5 p-4 text-white">
+        <div className="col-span-5 p-4 text-white bg-slate-200">
           {landingDashboard ? (
             <div className="text-orange-50/80 text-center p-40 text-4xl animate-pulse">
-              Selectionnez la page que vous souhaitez afficher !</div>
+              Colonne 2</div>
             ) : null }
 
           {/* Show Home */}
@@ -141,9 +156,19 @@ function NavigationAdmin() {
           ) :null }
           </div>
           {/* End show Contact */}
+          
+          <div>
+      {showCreateProjet ? (
+          <div className="text-white"> <PostProjet/> </div>
+      ) : null}
+      </div>
         </div>
+
+      
+
         {/* End of Second columns */}
       </div>
   );
+
 }
 export default NavigationAdmin;

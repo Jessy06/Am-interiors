@@ -32,7 +32,7 @@ function NavBar() {
     <nav className="p-2">
        {/* Logo */}
       <div className="text-xl text-white p-2 float-left ml-4 mt-2">
-        <span className="font-title text-xl text-white ">AM'in</span>
+        <span className="font-title text-xl text-white ">Am'in</span>
         terior
         </div>
       {(toggleMenu || screenWidth > 500) && (
