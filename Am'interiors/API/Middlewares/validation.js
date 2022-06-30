@@ -38,7 +38,8 @@ const projetValidation = (data) => {
 const inspirationValidation = (data) => {
     const schema = Joi.object ({
         title:Joi.string().max(20).required(),
-        description:Joi.string().min(10).max(250).required(),
+        descriptionFR:Joi.string().min(10).max(250).required(),
+        descriptionEN:Joi.string().min(10).max(250).required(),
         lieu: Joi.string().required(),
         theme: Joi.string().max(15).required()
     })

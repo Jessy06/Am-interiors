@@ -9,6 +9,7 @@ import Presentation from "./Presentation/Presentation";
 import Inspirations from "./Inspirations/Inspirations";
 import Studio from "./Studio/Studio";
 import PostProjet from "./Studio/CreateProjet.js"
+import PostInspiration from "./Inspirations/CreateInspirations";
 
 
 function NavigationAdmin() {
@@ -19,6 +20,7 @@ function NavigationAdmin() {
   const [showStudio, setShowStudio] = React.useState(false);
   const [showContact, setShowContact] = React.useState(false);
   const [showCreateProjet, setShowCreateProjet] = React.useState(false);
+  const [showCreateInspiration, setShowCreateInspiration] = React.useState(false);
   const [removeCookies] = useCookies(["token", "pseudo", "id"]);
   const navigate = useNavigate();
 
@@ -97,9 +99,23 @@ function NavigationAdmin() {
           setShowHome(false),
           setShowStudio(false),
           setShowContact(false),
-          setShowCreateProjet(true)
+          setShowCreateProjet(true),
+          setShowCreateInspiration(false)
         ]
           }> Nouveau projet</div>
+
+<div className="border-2 border-black rounded-3xl p-2 mt-2 text-sm hover:bg-orange-800 hover:text-white hover:border-slate-600"
+          onClick={() =>
+          [setShowLandingDashboard(false),
+          setShowInspiration(false),
+          setShowPresentation(false),
+          setShowHome(false),
+          setShowStudio(false),
+          setShowContact(false),
+          setShowCreateProjet(false),
+          setShowCreateInspiration(true)
+        ]
+          }> Nouvelle Inspiration</div>
 
 
           <bouton
@@ -162,10 +178,13 @@ function NavigationAdmin() {
           <div className="text-white"> <PostProjet/> </div>
       ) : null}
       </div>
+
+      <div>
+      {showCreateInspiration ? (
+          <div className="text-white"> <PostInspiration/> </div>
+      ) : null}
+      </div>
         </div>
-
-      
-
         {/* End of Second columns */}
       </div>
   );

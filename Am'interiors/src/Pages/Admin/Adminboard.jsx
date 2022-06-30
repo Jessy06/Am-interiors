@@ -1,6 +1,6 @@
 import React from 'react';
 import {useCookies} from "react-cookie"
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 // import components 
 import NavigationAdmin from '../../components/Admin/Dashboard'
@@ -21,6 +21,7 @@ function Dashboard() {
     <div className="">
         <NavigationAdmin/>
       <bouton
+      className="text-white"
       type="button"
       onClick = {logOut}> Log out </bouton>
     </div>

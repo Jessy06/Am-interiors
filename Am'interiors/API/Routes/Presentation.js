@@ -8,8 +8,8 @@ const { presentationValidation } = require("../Middlewares/validation");
 // GET ALL presentations
 router.get("/", verify, async (req, res) => {
   try {
-    const presentations = await Presentation.find().sort({title: 'asc'});
-    res.json(presentations);
+    const presentation = await Presentation.find().sort({title: 'asc'});
+    res.json(presentation);
   } catch (err) {
     res.status(400).send(err);
   };

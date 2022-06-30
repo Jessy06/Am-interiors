@@ -23,15 +23,16 @@ router.post('/new', async (req, res) => {
      
    // Create new inspirations
      const title = req.body.title;
-     const description = req.body.description;
+     const descriptionFR = req.body.descriptionFR;
+     const descriptionEN = req.body.descriptionEN;
      const lieu = req.body.lieu;
      const theme = req.body.theme;
  
-     const inspiration = new Inspiration({title:title, description: description, lieu: lieu, theme: theme});
+     const inspiration = new Inspiration({title:title, descriptionFR: descriptionFR, descriptionEN: descriptionEN,lieu: lieu, theme: theme});
     
      try {
        await inspiration.save ();
-         res.send("New Theme Created !")
+         res.send("New inspiration Created !")
      } catch(err) {
          console.log(err);
      }
@@ -44,7 +45,8 @@ router.post('/new', async (req, res) => {
       {
         $set: {
           title: req.body.title,
-          description: req.body.description,
+          descriptionFR: req.body.descriptionFR,
+          descriptionEN: req.body.descriptionEN,
           lieu: req.body.lieu,
           theme:req.body.theme
         },

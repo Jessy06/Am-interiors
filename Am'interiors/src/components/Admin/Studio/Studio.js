@@ -63,6 +63,6 @@ function Studio() {
 </div>
       )}
       )}
-      </div>)
+</div>)
 }
 export default Studio;
