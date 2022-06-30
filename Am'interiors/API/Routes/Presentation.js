@@ -6,7 +6,7 @@ const verify = require("../Middlewares/verifytoken");
 const { presentationValidation } = require("../Middlewares/validation");
 
 // GET ALL presentations
-router.get("/", verify, async (res) => {
+router.get("/", verify, async (req, res) => {
   try {
     const presentations = await Presentation.find().sort({title: 'asc'});
     res.json(presentations);
@@ -32,7 +32,7 @@ router.post('/new', async (req, res) => {
     
      try {
        await presentation.save ();
-         res.send("New Theme Created !")
+         res.send("New Presentation Created !")
      } catch(err) {
          console.log(err);
      }
