@@ -56,6 +56,17 @@ const imagesValidation = (data) => {
     })
     return schema.validate(data);
 }
+// Presentation Validation
+const presentationValidation = (data) => {
+    const schema = Joi.object ({
+        titleFR:Joi.string().max(20).required(),
+        descriptionFR:Joi.string().min(10).max(250).required(),
+        titleEN:Joi.string().max(20).required(),
+        descriptionEN:Joi.string().min(10).max(250).required(),
+       
+    })
+    return schema.validate(data);
+}
 
 
 module.exports.registerValidation = registerValidation;
@@ -63,3 +74,4 @@ module.exports.loginValidation = loginValidation;
 module.exports.projetValidation = projetValidation;
 module.exports.inspirationValidation = inspirationValidation;
 module.exports.imagesValidation = imagesValidation;
+module.exports.presentationValidation = presentationValidation;

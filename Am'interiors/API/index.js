@@ -14,7 +14,7 @@ const dashRoute = require('./Routes/Images');
 const projetRoute = require('./Routes/Projet');
 const inspirationRoute = require('./Routes/Inspirations');
 const imagesRoute = require('./Routes/Images');
-
+const presentationRoute = require('./Routes/Presentation');
 
 // ROUTES MIDDLEWARES
 app.use('/api/user', authRoute);
@@ -22,7 +22,7 @@ app.use('/api/images', imagesRoute)
 app.use('/api/admin', dashRoute);
 app.use('/api/admin/projets', projetRoute);
 app.use('/api/admin/inspirations', inspirationRoute);
-
+app.use('/api/admin/presentation', presentationRoute);
 
 // CONNECT TO DB
 mongoose.connect(process.env.DB_CONNECTION,
