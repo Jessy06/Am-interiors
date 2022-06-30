@@ -25,13 +25,13 @@ const contactSchema = new mongoose.Schema ({
         unique: true
     },
 
-    ServicesFR: {
+    servicesFR: {
         type: String,
         required: true,
         unique: true
     },
 
-    ServicesEN: {
+    servicesEN: {
         type: String,
         required: true,
         unique: true
