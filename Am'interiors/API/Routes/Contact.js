@@ -27,8 +27,8 @@ router.post('/new', async (req, res) => {
      const titleEN = req.body.titleEN;
      const soustitreFR = req.body.soustitreFR;
      const soustitreEN = req.body.soustitreEN;
-     const servicesFR = req.body.ServicesEN; 
-     const servicesEN = req.body.ServicesEN;
+     const servicesFR = req.body.servicesEN; 
+     const servicesEN = req.body.servicesEN;
     const descriptionServiceFR = req.body.descriptionServiceFR;
     const descriptionServiceEN = req.body.descriptionServiceEN;
   

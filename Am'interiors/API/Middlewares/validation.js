@@ -75,10 +75,10 @@ const contactValidation = (data) => {
         soustitreFR:Joi.string().min(10).max(250).required(),
         titleEN:Joi.string().max(20).required(),
         soustitreEN:Joi.string().min(10).max(250).required(),
-        serviceEN:Joi.string().min(10).max(250).required(),
-        serviceFR:Joi.string().min(10).max(250).required(),
+        servicesEN:Joi.string().min(10).max(250).required(),
+        servicesFR:Joi.string().min(10).max(250).required(),
         descriptionServiceEN:Joi.string().min(10).max(250).required(),
-        descriptionServieFR:Joi.string().min(10).max(250).required(),
+        descriptionServiceFR:Joi.string().min(10).max(250).required(),
        
     })
     return schema.validate(data);
