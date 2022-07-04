@@ -1,29 +1,29 @@
 import React from 'react';
-import {useCookies} from "react-cookie"
-import { useNavigate } from "react-router-dom"
+// import {useCookies} from "react-cookie"
+// import { useNavigate } from "react-router-dom"
 
 // import components 
-import NavigationAdmin from '../../components/Admin/Dashboard'
+import NavigationAdmin from '../../components/Admin/Dashboard/Dashboard'
 
 function Dashboard() {
-  const [Cookies, removeCookies] = useCookies(["token", "pseudo", "id"]);
-  const navigate = useNavigate();
+  // const [Cookies, removeCookies] = useCookies(["token", "pseudo", "id"]);
+  // const navigate = useNavigate();
 
-  const logOut = () => {
-    removeCookies('token');
-    removeCookies('pseudo');
-    removeCookies('id');
+  // const logOut = () => {
+  //   removeCookies('token');
+  //   removeCookies('pseudo');
+  //   removeCookies('id');
 
-    navigate("/", {replace: true})
-  };
+  //   navigate("/", {replace: true})
+  // };
 
   return (
     <div className="">
         <NavigationAdmin/>
-      <bouton
+      {/* <bouton
       className="text-white"
       type="button"
-      onClick = {logOut}> Log out </bouton>
+      onClick = {logOut}> Log out </bouton> */}
     </div>
   )
 }
