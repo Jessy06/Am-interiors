@@ -3,6 +3,9 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import {useCookies} from "react-cookie";
 
+//import image
+import livingroom from "../../Images/Livingroom.png"
+
 const Login = () => {
     const LoginUrl = "http://localhost:3001/api/user/login";
     const [LoginResult, setLoginResult] = useState();
@@ -40,10 +43,10 @@ try {
 
     return (
         <div className="container mx-auto">
-        <div className="flex justify-center px-6 my-12">
+        <div className="flex justify-center px-6 my-10">
           {LoginResult && (
             <div
-              className="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3 rounded-lg"
+              className="bg-black border-t border-b border-blue-500 text-blue-700 px-4 py-3 rounded-lg"
               role="alert"
             >
               <p className="font-bold">{LoginResult}</p>
@@ -51,14 +54,22 @@ try {
           )}
         </div>
         <div className='h-screen flex bg-gray-bg1'>
-        <div className='w-full max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-16'>
-            <h1 className='text-2xl font-medium text-primary mt-4 mb-12 text-center text-black'>
+        <div className='w-full max-w-md m-auto bg-orange-800 rounded-lg border border-primaryBorder shadow-default py-12 px-14'>
+        <img
+          src={livingroom}
+          className=""
+          alt="Salon"
+        />
+        <div>
+            <h1 className='text-3xl font-medium text-primary mt-4 mb-12 text-center text-black'>
                 Log in to your account 🔐
             </h1>
+            </div>
     
             <form>
                 <div>
                 <label htmlFor='pseudo' className='text-black'>Pseudo</label>
+                <br></br>
                     <input
                         type='pseudo'
                         className={'text-black w-full p-2 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4 '}
@@ -78,7 +89,7 @@ try {
                     />
                 </div>             
                 <div class='flex justify-center items-center mt-6'>
-                <button class="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                <button class="shadow bg-white hover:bg-orange-400 focus:shadow-outline focus:outline-none text-black font-bold py-4 px-4 rounded"
                 type="button"
                 onClick={postForm}>
                   Login
