@@ -12,10 +12,19 @@ import {
 // Import components
 import PostProjet from "./CreateProjet.js";
 import PostInspiration from "./CreateInspirations";
+import PostService from "./CreateService.js";
+import MyProjects from "./MesProjets.js";
+import MyInspirations from "./MesInspirations.js";
+import MyPresentation from "./MaPresentation.js";
+import MyServices from "./MesServices.js";
 
 function NavigationAdmin() {
   const [landingDashboard, setShowLandingDashboard] = React.useState(true);
   const [showMesProjets, setShowMesProjets] = React.useState(false);
+  const [showMesInspirations, setShowMesInspirations] = React.useState(false);
+  const [showMaPresentation, setShowMaPresentation] = React.useState(false);
+  const [showMesServices, setShowMesServices] = React.useState(false);
+  const [showCreateService, setShowCreateService] = React.useState(false);
   const [showCreateProjet, setShowCreateProjet] = React.useState(false);
   const [showCreateInspiration, setShowCreateInspiration] =
     React.useState(false);
@@ -39,22 +48,56 @@ function NavigationAdmin() {
           className="mt-2 p-2 hover:bg-orange-800 hover:text-white active:bg-orange-800 active:text-white"
           onClick={() => [
             setShowMesProjets(true),
+            setShowMesInspirations(false),
+            setShowMaPresentation(false),
+            setShowMesServices(false),
             setShowLandingDashboard(false),
             setShowCreateProjet(false),
             setShowCreateInspiration(false),
+            setShowCreateService(false),
           ]}
         >
           <BsImages /> Mes Projets
         </div>
-        <div className="mt-2 p-2 hover:bg-orange-800 hover:text-white">
+        <div className="mt-2 p-2 hover:bg-orange-800 hover:text-white"
+        onClick={() => [
+          setShowMesProjets(false),
+          setShowMesInspirations(true),
+          setShowMaPresentation(false),
+          setShowMesServices(false),
+          setShowLandingDashboard(false),
+          setShowCreateProjet(false),
+          setShowCreateInspiration(false),
+          setShowCreateService(false),
+      ]}>
           
           <BsLightbulbFill /> Mes Inspirations
         </div>
-        <div className="mt-2 p-2 hover:bg-orange-800 hover:text-white active:bg-orange-800 active:text-white">
+        <div className="mt-2 p-2 hover:bg-orange-800 hover:text-white active:bg-orange-800 active:text-white"
+        onClick={() => [
+          setShowMesProjets(false),
+          setShowMesInspirations(false),
+          setShowMaPresentation(true),
+          setShowMesServices(false),
+          setShowLandingDashboard(false),
+          setShowCreateProjet(false),
+          setShowCreateInspiration(false),
+          setShowCreateService(false),
+        ]}>
           
           <BsPersonDashFill /> Ma présentation
         </div>
-        <div className="mt-2 mb-10 p-2 hover:bg-orange-800 hover:text-white active:bg-orange-800 active:text-white">
+        <div className="mt-2 mb-10 p-2 hover:bg-orange-800 hover:text-white active:bg-orange-800 active:text-white"
+        onClick={() => [
+          setShowMesProjets(false),
+          setShowMesInspirations(false),
+          setShowMaPresentation(false),
+          setShowMesServices(true),
+          setShowLandingDashboard(false),
+          setShowCreateProjet(false),
+          setShowCreateInspiration(false),
+          setShowCreateService(false),
+        ]}>
           
           <BsListNested /> Mes Services
         </div>
@@ -69,6 +112,7 @@ function NavigationAdmin() {
               setShowMesProjets(false),
               setShowCreateProjet(true),
               setShowCreateInspiration(false),
+              setShowCreateService(false),
             ]}
           >
             {" "}
@@ -81,6 +125,7 @@ function NavigationAdmin() {
               setShowMesProjets(false),
               setShowCreateProjet(false),
               setShowCreateInspiration(true),
+              setShowCreateService(false),
             ]}
           >
             <AiOutlinePlus /> Nouvelle(s) Inspiration(s)
@@ -92,7 +137,8 @@ function NavigationAdmin() {
               setShowLandingDashboard(false),
               setShowMesProjets(false),
               setShowCreateProjet(false),
-              setShowCreateInspiration(true),
+              setShowCreateInspiration(false),
+              setShowCreateService(true),
             ]}
           >
             <AiOutlinePlus /> Nouveau(x) Service(s)
@@ -111,15 +157,39 @@ function NavigationAdmin() {
       {/* Start of second columns */}
       <div className="col-span-5 p-4 text-white bg-gray-100">
         {landingDashboard ? (
-          <div className="text-orange-50/80 text-center p-40 text-4xl animate-pulse">
+          <div className="text-black text-center p-40 text-4xl animate-pulse">
             Colonne 2
           </div>
         ) : null}
 
         <div>
           {showMesProjets? ( 
-            <div className="text-white">
-              Voici mes Projets
+            <div className="text-black">
+              <MyProjects/>
+            </div>
+          ) : null}
+        </div>
+
+        <div>
+          {showMesInspirations? ( 
+            <div className="text-black">
+              <MyInspirations/>
+            </div>
+          ) : null}
+        </div>
+
+        <div>
+          {showMaPresentation? ( 
+            <div className="text-black">
+              <MyPresentation/>
+            </div>
+          ) : null}
+        </div>
+        <div>
+
+          {showMesServices? ( 
+            <div className="text-black">
+              <MyServices/>
             </div>
           ) : null}
         </div>
@@ -136,6 +206,14 @@ function NavigationAdmin() {
           {showCreateInspiration ? (
             <div className="text-white">
               <PostInspiration />
+            </div>
+          ) : null}
+        </div>
+
+        <div>
+          {showCreateService ? (
+            <div className="text-white">
+              <PostService/>
             </div>
           ) : null}
         </div>

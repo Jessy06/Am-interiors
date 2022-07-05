@@ -6,7 +6,7 @@ const verify = require("../Middlewares/verifytoken");
 const { inspirationValidation } = require("../Middlewares/validation");
 
 // GET ALL Inspirations
-router.get("/", verify, async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const inspirations = await Inspiration.find().sort({title: 'asc'});
     res.json(inspirations);

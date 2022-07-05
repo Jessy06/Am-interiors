@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import {useCookies} from "react-cookie";
 
 //import image
-import livingroom from "../../Images/Livingroom.png"
+import LivingRoom from "../../Images/LivingRoom.png"
 
 const Login = () => {
     const LoginUrl = "http://localhost:3001/api/user/login";
@@ -56,7 +56,7 @@ try {
         <div className='h-screen flex bg-gray-bg1'>
         <div className='w-full max-w-md m-auto bg-orange-800 rounded-lg border border-primaryBorder shadow-default py-12 px-14'>
         <img
-          src={livingroom}
+          src={LivingRoom}
           className=""
           alt="Salon"
         />

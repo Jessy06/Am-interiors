@@ -5,8 +5,8 @@ const Presentation = require("../models/Presentation");
 const verify = require("../Middlewares/verifytoken");
 const { presentationValidation } = require("../Middlewares/validation");
 
-// GET ALL presentations
-router.get("/", verify, async (req, res) => {
+// GET ALL presentation
+router.get("/", async (req, res) => {
   try {
     const presentation = await Presentation.find().sort({title: 'asc'});
     res.json(presentation);
