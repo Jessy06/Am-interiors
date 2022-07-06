@@ -69,8 +69,7 @@ function NavigationAdmin() {
           setShowCreateProjet(false),
           setShowCreateInspiration(false),
           setShowCreateService(false),
-      ]}>
-          
+      ]}>      
           <BsLightbulbFill /> Mes Inspirations
         </div>
         <div className="mt-2 p-2 hover:bg-orange-800 hover:text-white active:bg-orange-800 active:text-white"
@@ -91,8 +90,8 @@ function NavigationAdmin() {
         onClick={() => [
           setShowMesProjets(false),
           setShowMesInspirations(false),
-          setShowMaPresentation(false),
           setShowMesServices(true),
+          setShowMaPresentation(false),
           setShowLandingDashboard(false),
           setShowCreateProjet(false),
           setShowCreateInspiration(false),
@@ -113,6 +112,8 @@ function NavigationAdmin() {
               setShowCreateProjet(true),
               setShowCreateInspiration(false),
               setShowCreateService(false),
+              setShowMesInspirations(false),
+              setShowMesServices(false),
             ]}
           >
             {" "}
@@ -122,10 +123,12 @@ function NavigationAdmin() {
             className="my-2 p-2 bg-orange-800 text-white"
             onClick={() => [
               setShowLandingDashboard(false),
-              setShowMesProjets(false),
               setShowCreateProjet(false),
               setShowCreateInspiration(true),
               setShowCreateService(false),
+              setShowMesProjets(false),
+              setShowMesInspirations(false),
+              setShowMesServices(false),
             ]}
           >
             <AiOutlinePlus /> Nouvelle(s) Inspiration(s)
@@ -135,10 +138,12 @@ function NavigationAdmin() {
             className="my-2 p-2 bg-orange-800 text-white"
             onClick={() => [
               setShowLandingDashboard(false),
-              setShowMesProjets(false),
               setShowCreateProjet(false),
               setShowCreateInspiration(false),
               setShowCreateService(true),
+              setShowMesProjets(false),
+              setShowMesInspirations(false),
+              setShowMesServices(false),
             ]}
           >
             <AiOutlinePlus /> Nouveau(x) Service(s)
