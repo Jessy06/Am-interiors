@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import {useCookies} from "react-cookie";
 
 //import image
-import LivingRoom from "../../Images/LivingRoom.png"
+import LivingRoom from "../../Images/Livingroom.png"
 
 const Login = () => {
     const LoginUrl = "http://localhost:3001/api/user/login";
