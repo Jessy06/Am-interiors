@@ -5,20 +5,24 @@ import Terrasse from '../../../Images/Terrasse.png';
 
 function Home() {
   return (
-        <div>
-      <div className='grid grid-row-2 gap-1'>
+        
+      <div className='grid grid-rows-2 gap-1'>
+
+        <div className='grid lg:grid-cols-2'>
        <img
           src={Salon}
-          className="border-solid ml-11 p-2 bg-black"
+          className="border-solid p-2 bg-black lg:bg-black lg:border-solid"
           alt="Salon"
         />
         <img
           src={Terrasse}
-          className="border-solid ml-11 p-2 bg-black"
+          className="border-solid  p-2 bg-black lg:bg-black lg:border-solid"
           alt="Terrasse"
         />
+        </div>
         <br></br>
         <br></br>
+        <div>
       
         <span className='text-2xl text-black col-span-2 pb-10 pr-8 pl-14'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
@@ -29,9 +33,10 @@ function Home() {
           neque tempor, mattis urna vel, tempus sapien. In id quam mattis,
           tincidunt erat sit amet, hendrerit justo.
         </span>
+        </div>
         <br></br>
         </div>
-        </div>
+      
   )
 }
 export default Home
