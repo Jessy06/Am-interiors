@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import {useCookies} from "react-cookie";
 
 //import image
-import Logo from "../../Images/LogoAminterior.png"
+import LivingRoom from "../../Images/LivingRoom.png"
 
 const Login = () => {
     const LoginUrl = "http://localhost:3001/api/user/login";
@@ -46,7 +46,7 @@ try {
         <div className="flex justify-center px-6 my-10">
           {LoginResult && (
             <div
-              className="sm:bg-black border-t border-b border-blue-500 text-blue-700 px-4 py-3 rounded-lg "
+              className="bg-black border-t border-b border-blue-500 text-blue-700 px-4 py-3 rounded-lg"
               role="alert"
             >
               <p className="font-bold">{LoginResult}</p>
@@ -54,11 +54,11 @@ try {
           )}
         </div>
         <div className='h-screen flex bg-gray-bg1'>
-        <div className='w-full max-w-md m-auto bg-orange-800 rounded-lg border border-primaryBorder shadow-default px-6 my-10'>
+        <div className='w-full max-w-md m-auto bg-orange-800 rounded-lg border border-primaryBorder shadow-default py-12 px-14'>
         <img
-          src={Logo}
+          src={LivingRoom}
           className=""
-          alt="Logo"
+          alt="Salon"
         />
         <div>
             <h1 className='text-3xl font-medium text-primary mt-4 mb-12 text-center text-black'>
