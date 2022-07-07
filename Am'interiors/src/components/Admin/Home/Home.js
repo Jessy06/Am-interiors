@@ -6,25 +6,26 @@ import Terrasse from '../../../Images/Terrasse.png';
 function Home() {
   return (
         
-      <div className='grid grid-rows-2 gap-1'>
+      <div className='grid gap-1 p-4'>
 
-        <div className='grid lg:grid-cols-2'>
+        <div className='grid lg:grid-cols-2 gap-4 lg:place-items-center'>
        <img
           src={Salon}
-          className="border-solid p-2 bg-black lg:bg-black lg:border-solid"
+          className="border-solid  p-1 lg:bg-black lg:border-solid bg-black"
           alt="Salon"
         />
         <img
           src={Terrasse}
-          className="border-solid  p-2 bg-black lg:bg-black lg:border-solid"
+          className="border-solid  p-1 lg:bg-black lg:border-solid bg-black"
           alt="Terrasse"
         />
         </div>
         <br></br>
         <br></br>
-        <div>
+
+        <div className='grid'>
       
-        <span className='text-2xl text-black col-span-2 pb-10 pr-8 pl-14'>
+        <span className='text-2xl text-black'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
           imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
           tincidunt mauris, porta feugiat odio. Quisque dui tellus, lobortis vel

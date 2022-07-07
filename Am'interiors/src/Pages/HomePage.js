@@ -32,21 +32,21 @@ function HomePage() {
         </button>
       </div>
       {/* END SWAP LANGUAGES */}
-      <div className="text-8xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4">
+      <div className="text-4xl text-white text-right border-r-8 border-b-8 border-orange-800 p-4 sm:text-6xl lg:text-8xl">
         {/* TITLE */}
-        <span className="font-title text-8xl text-white text-right">Am'in</span>
+        <span className="font-title">Am'in</span>
         terior
       </div>
       <br></br>
 
       <div className="grid grid-row-2 gap-1 bg-orange-50/80">
-        <div className="text-2xl text-black p-3 pt-2">
+        <div className="lg:text-2xl text-black p-3 pt-2 text-lg">
           <span className="text-3xl ml-3 text-black">•</span>
           <span className="text-3xl mr-4  ml-1 text-orange-800">•</span>
           {swapLanguageEN
             ? 'Interior Design'
             : "Décorateur d'intérieurs et d'extérieurs"}
-          <div className="float-right mr-6" type="button">
+          <div className="float-right" type="button">
             <Formulaire />
           </div>
         </div>

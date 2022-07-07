@@ -37,7 +37,8 @@ export default function Modal() {
   return (
     <>
       <button
-        className="bg-white hover:bg-orange-800 text-gray-800 font-bold uppercase text-sm px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 hover:animate-bounce"
+        className="bg-white hover:bg-orange-800 text-gray-800 font-bold text-xs  lg:uppercase lg:text-sm px-2 py-0.6
+        lg:px-4 lg:py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
         type="button"
         onClick={() => setShowModal(true)}
       >
