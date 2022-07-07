@@ -49,25 +49,29 @@ nav {
   }
   
   /* Now, the important thing is to make it responsive (for mobile screens), so add a media query: */
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     .list {
         flex-direction: column;
         height: auto;
+        text-align: center;
     }
   
     .items:nth-child(1){
-        border-top: 1px solid black;
-        margin-top: 50px;
+        border-top: auto solid black;
+        margin-top: auto;
+        margin-right: auto;
+        margin-left: auto;
     }
     .items {
         width: 100%;
         border-top: 1px solid black;
         text-align: center;
         margin-right: 0px;
-        padding: 50px 0;
+        padding: 0px 0;
     }
     .btn {
-        display: block;
+        display: table-column;
+        text-align: center;
       
     }
     
