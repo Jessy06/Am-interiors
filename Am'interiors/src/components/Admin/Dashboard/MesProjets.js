@@ -19,7 +19,7 @@ export default function MyProjects() {
   return (
     <div>
         <div className="text-orange-50/90 font-bold text-lg bg-black text-center p-4 uppercase "> Mes Projets </div>
-            <div className="flex flex-wrap space-auto-rows-auto"> 
+            <div className="flex flex-wrap space-auto-rows-auto place-content-center"> 
                 {myProjetList.map((val, key) => {
                     return (
                         <div className="hover:shadow-slate-700 hover:shadow-lg m-2">
