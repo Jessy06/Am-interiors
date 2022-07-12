@@ -6,6 +6,7 @@ const Projet = require("../models/Projet");
 const verify = require("../Middlewares/verifytoken");
 const { projetValidation } = require("../Middlewares/validation");
 const upload = require("../Middlewares/upload");
+const fs = require("fs")
 
 // GET ALL Projet
 router.get("/", async (req, res) => {
@@ -18,7 +19,7 @@ router.get("/", async (req, res) => {
 })
 
 // POST a new Projet
-router.post('/new', verify, upload.array("image[]", 10), async (req, res) => {
+router.post('/new', verify, upload.single('projetImages'), async (req, res) => {
      // Validate data before we make a new projet
    const {error} = projetValidation(req.body);
    if (error) return res.status(400).send({message:error.details[0].message} );
@@ -28,16 +29,16 @@ router.post('/new', verify, upload.array("image[]", 10), async (req, res) => {
      const descriptionFR = req.body.descriptionFR;
      const descriptionEN = req.body.descriptionEN;
      const lieu = req.body.lieu;
-    //  const images = {
-    //   data : req.files.filename,
-    //   contentType:"image/png"}
+     const images = {
+      data : fs.readFileSync("uploads/" + req.file.filename),
+      contentType:"image/png"}
  
      const projet = new Projet(
       {title:title, 
       descriptionFR: descriptionFR,
       descriptionEN: descriptionEN,
       lieu: lieu,
-      // images: images
+      images: images
     });
     
      try {
@@ -46,9 +47,10 @@ router.post('/new', verify, upload.array("image[]", 10), async (req, res) => {
      } catch(err) {
          console.log(err);
      }
+
+
  });
-
-
+  
  // UPDATE
 router.put("/:projetId", verify, async (req, res) => {
   try {

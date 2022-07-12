@@ -4,13 +4,10 @@ export default function Modal() {
   const [showModal, setShowModal] = React.useState(false)
   const setName = useState('')
 
-  // function to update state of name with
-  // value enter by user in form
- 
   const handleSubmit = (e) => {
     setName(e.target.value)
   }
-  <div className="p-14"></div>
+
 
   return (
     <>

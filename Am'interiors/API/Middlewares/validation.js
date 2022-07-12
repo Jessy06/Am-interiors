@@ -28,8 +28,8 @@ const projetValidation = (data) => {
         title:Joi.string().max(20).required(),
         descriptionFR:Joi.string().min(10).max(250).required(),
         descriptionEN:Joi.string().min(10).max(250).required(),
-        lieu: Joi.string().required()
-        // date:Joi.date().required,
+        lieu: Joi.string().required(),
+        images:Joi.string()
     })
     return schema.validate(data);
 }

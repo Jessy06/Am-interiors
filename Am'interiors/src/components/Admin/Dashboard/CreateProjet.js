@@ -45,7 +45,7 @@ export default function PostProjet() {
            
             <div className="grid grid-row-2 gap-5 rounded">
                 <div className="p-6 bg-blue-100 rounded"> ligne 1 </div>
-                    <form className="p-6 bg-blue-300 rounded">
+                    <form className="p-6 bg-blue-300 rounded" encType="multipart/form-data">
                         <div className="p-4 border-b-2 border-slate-200"> 
                             <span className="font-bold text-lg">
                                Créer un nouveau projet
@@ -91,8 +91,12 @@ export default function PostProjet() {
                                     placeholder="Lieu du projet"
                                     type="text"/>
                                     </label>
+                                    <label for=''> Images
+                                      < input 
+                                      type="file" multiple/>
+                                    </label>
                                     <button
-                                    type="button"
+                                    type="submit"
                                     className="item-center col-span-2 border-2 border-black"
                                     onClick={postProjet}> Créer </button>
                                 </div>

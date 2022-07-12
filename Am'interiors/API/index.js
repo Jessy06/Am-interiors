@@ -19,7 +19,7 @@ const serviceRoute = require('./Routes/Services');
 
 // ROUTES MIDDLEWARES
 app.use('/api/user', authRoute);
-app.use('/api/images', imagesRoute)
+// app.use('/api/images', imagesRoute)
 app.use('/api/admin', dashRoute);
 app.use('/api/admin/projets', projetRoute);
 app.use('/api/admin/inspirations', inspirationRoute);
