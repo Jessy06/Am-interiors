@@ -51,7 +51,7 @@ export default function PostInspiration() {
                     <form className="p-6 bg-neutral-300 rounded">
                         <div className="p-4 border-b-2 border-slate-200"> 
                             <span className="font-bold text-lg">
-                               Nouvelle Inspirations ?
+                               Nouvelle Inspirations 
                             </span>
                             <div>
                             <span className="text-sm">

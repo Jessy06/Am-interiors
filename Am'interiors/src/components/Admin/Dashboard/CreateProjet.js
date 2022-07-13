@@ -44,8 +44,8 @@ export default function PostProjet() {
             {/* First Column Create Projet*/}
            
             <div className="grid grid-row-2 gap-5 rounded">
-                <div className="p-6 bg-blue-100 rounded"> ligne 1 </div>
-                    <form className="p-6 bg-blue-300 rounded" encType="multipart/form-data">
+                <div className="p-6 bg-neutral-300 rounded"> ligne 1 </div>
+                    <form className="p-6 bg-neutral-300 rounded" encType="multipart/form-data">
                         <div className="p-4 border-b-2 border-slate-200"> 
                             <span className="font-bold text-lg">
                                Créer un nouveau projet
@@ -149,13 +149,13 @@ export default function PostProjet() {
     
             {/* Second Column */}
             <div className="grid grid-row-4 gap-5">
-                <div className="bg-red-300 rounded ">
+                <div className="bg-orange-800 rounded ">
                     <div className="text-sm italic font-bold">Nom de l'admin</div> 
                     <div className="text-sm italic">fonction de l'admin</div>
                     </div>
-                <div className="bg-red-200 row-span-4 rounded"> Previsualiser (si possible hein) </div>
-                <div className="bg-red-200 row-span-2 rounded"> Description page Studio </div>
-                <div className="bg-red-200  rounded"> voir tous les projets </div>
+                <div className="bg-orange-800 row-span-4 rounded"> Previsualiser (si possible hein) </div>
+                <div className="bg-orange-800 row-span-2 rounded"> Description page Studio </div>
+                <div className="bg-orange-800  rounded"> voir tous les projets </div>
                 </div>
         </div>
     )
