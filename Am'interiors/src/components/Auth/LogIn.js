@@ -43,7 +43,7 @@ try {
 
     return (
         <div className="container mx-auto">
-        <div className="flex justify-center px-6 my-10">
+        <div className="flex justify-center px-6 my-6">
           {LoginResult && (
             <div
               className="bg-black border-t border-b border-blue-500 text-blue-700 px-4 py-3 rounded-lg"
@@ -53,8 +53,8 @@ try {
             </div>
           )}
         </div>
-        <div className='h-screen flex bg-gray-bg1'>
-        <div className='w-full max-w-md m-auto bg-orange-800 rounded-lg border border-primaryBorder shadow-default py-12 px-14'>
+        <div className='h-screen flex bg-gray'>
+        <div className='w-full max-w-md m-auto bg-orange-800 rounded-lg border border-primaryBorder shadow-default py-10 px-10'>
         <img
           src={Logo}
           className=""

@@ -47,8 +47,8 @@ export default function PostInspiration() {
             {/* First Column Create inspiration*/}
            
             <div className="grid grid-row-2 gap-5 rounded">
-                <div className="p-6 bg-blue-100 rounded"> ligne 1 </div>
-                    <form className="p-6 bg-blue-300 rounded">
+                <div className="p-6 bg-neutral-300 rounded"> ligne 1 </div>
+                    <form className="p-6 bg-neutral-300 rounded">
                         <div className="p-4 border-b-2 border-slate-200"> 
                             <span className="font-bold text-lg">
                                Nouvelle Inspirations ?
@@ -104,13 +104,13 @@ export default function PostInspiration() {
                                     </label>
                                     <button
                                     type="button"
-                                    className="text-center col-span-2 border-2 border-black p-2"
+                                    className="text-center col-span-2 border-2 border-black p-2 hover:bg-orange-600"
                                     onClick={PostInspiration}> Créer </button>
                                 </div>
                             </div>
                             {CreateInspirationRes && (
                     <div
-                      className="bg-blue-100 border mt-2 flex border-blue-500 text-blue-700 px-4 py-3 rounded relative"
+                      className="bg-blue-100 border mt-2 flex border-orange-500 text-blue-700 px-4 py-3 rounded relative"
                       role="alert"
                     >
                       <svg
@@ -132,7 +132,7 @@ export default function PostInspiration() {
                   )}
                   {CreateInspirationErr && (
                     <div
-                      className="bg-red-100 border mt-2 flex border-red-400 text-red-700 px-4 py-3 rounded relative"
+                      className="bg-red-200 border mt-2 flex border-orange-400 text-orange-700 px-4 py-3 rounded relative"
                       role="alert"
                     >
                       <svg
@@ -156,13 +156,13 @@ export default function PostInspiration() {
     
             {/* Second Column */}
             <div className="grid grid-row-4 gap-5">
-                <div className="bg-red-300 rounded ">
+                <div className="bg-orange-800 rounded ">
                     <div className="text-sm italic font-bold">Nom de l'admin</div> 
                     <div className="text-sm italic">fonction de l'admin</div>
                     </div>
-                <div className="bg-red-200 row-span-4 rounded"> Previsualiser (si possible hein) </div>
-                <div className="bg-red-200 row-span-2 rounded"> Description page Inspiration </div>
-                <div className="bg-red-200  rounded"> voir tous les inspirations </div>
+                <div className="bg-orange-800 row-span-4 rounded"> Previsualiser (si possible hein) </div>
+                <div className="bg-orange-800 row-span-2 rounded"> Description page Inspiration </div>
+                <div className="bg-orange-800  rounded"> voir tous les inspirations </div>
                 </div>
         </div>
     )
