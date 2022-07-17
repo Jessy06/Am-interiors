@@ -26,8 +26,7 @@ const ProjetSchema = new mongoose.Schema ({
      },
 
     images: {
-        data: Buffer,
-        contentType: String
+      type: [String]
     }
 });
 

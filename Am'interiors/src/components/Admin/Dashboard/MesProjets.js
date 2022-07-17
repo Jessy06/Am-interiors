@@ -20,16 +20,16 @@ export default function MyProjects() {
     <div>
         <div className="text-orange-50/90 font-bold text-lg bg-black text-center p-4 uppercase "> Mes Projets </div>
             <div className="flex flex-wrap space-auto-rows-auto place-content-center"> 
-                {myProjetList.map((val, key) => {
+                {myProjetList.map((val) => {
                     return (
-                        <div className="hover:shadow-slate-700 hover:shadow-lg m-2">
+                        <div className="hover:shadow-slate-700 hover:shadow-lg hover:rounded-lg m-2">
                             <div>
                                 <img src={imageCard}
                                 className="h-48 w-auto rounded-t-lg"/>
                             </div>
-                    <div className="bg-black p-6 rounded-b-lg">
+                    <div className="bg-black p-6 rounded-b-lg inline-block w-72">
                         <div className="text-orange-50/90 uppercase font-bold text-2xl py-0.5">{val.title} </div>
-                        <div className="text-orange-50/90">{val.descriptionFR} </div>
+                        <div className="text-orange-50/90 ">{val.descriptionFR} </div> <br/>
                         <div className="text-orange-50/90">{val.descriptionEN} </div>
                         <div className="text-orange-50/90 italic text-sm text-right py-2">{val.lieu} </div>
                         <div className="flex flex-wrap mt-2">

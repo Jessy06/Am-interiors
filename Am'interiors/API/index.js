@@ -10,16 +10,14 @@ app.use(cors());
 
 // IMPORT ROUTES
 const authRoute = require('./Routes/auth');
-const dashRoute = require('./Routes/Images');
 const projetRoute = require('./Routes/Projet');
+const dashRoute = require('./Routes/Dashboard')
 const inspirationRoute = require('./Routes/Inspirations');
-const imagesRoute = require('./Routes/Images');
 const presentationRoute = require('./Routes/Presentation');
 const serviceRoute = require('./Routes/Services');
 
 // ROUTES MIDDLEWARES
 app.use('/api/user', authRoute);
-// app.use('/api/images', imagesRoute)
 app.use('/api/admin', dashRoute);
 app.use('/api/admin/projets', projetRoute);
 app.use('/api/admin/inspirations', inspirationRoute);
