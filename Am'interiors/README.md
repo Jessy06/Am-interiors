@@ -91,9 +91,42 @@ yarn start
 |   |   ├── PopUp
 |   |   |   └── Formulaire.js
 |   |   |
-|   |   ├── Images
-|   |   |   ├── Caroussel.js
-|   |   |   └── index.js
 |   |   |
-|   |   ├── Caroussel
-|   |   |   └── index.js
+|   ├── Images
+jpg
+|   |   |   ├── dash_106469.png
+|   |   |   ├── FlagFrance.png
+|   |   |   ├── FlagUk.png
+|   |   |   ├── ImageCard.png
+|   |   |   ├── imageInspirationCard.png
+|   |   |   ├── LeChaletAuron1.png
+|   |   |   ├── LeChaletAuron2.png
+|   |   |   ├── LeChaletAuron3.png
+|   |   |   ├── LeChaletAuron4.png
+|   |   |   ├── LeChaletAuron5.png
+|   |   |   ├── LeChaletAuron6.png
+|   |   |   ├── PlanchePresentationVillaDuCap1.png
+|   |   |   ├── PlanchePresentationVillaDuCap2.png
+|   |   |   ├── PlanchePresentationVillaDuCap3.png
+|   |   |   ├── PlanchePresentationVillaDuCap4.png  
+|   |   |   ├── Salon.png
+|   |   |   └── Terrasse.png
+|   |   |
+|   ├── pages admin
+|   |   |   ├── Adminboard.jsx
+|   |   |   ├── ContactPage.js
+|   |   |   ├── HomePage.js
+|   |   |   ├── InspirationsPage.js
+|   |   |   ├── LoginPage.js
+|   |   |   ├── PresentationPage.js
+|   |   |   └── StudioPage.js
+|   |
+|   ├── App.css
+|   ├── App.js
+|   └── index.js
+|
+├── .gitignore
+├── .package.json
+├── README.md
+└── tailwind.config.js
+```  

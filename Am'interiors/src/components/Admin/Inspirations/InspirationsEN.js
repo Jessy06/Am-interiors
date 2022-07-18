@@ -1,137 +1,86 @@
 import React from 'react'
 
 //Import Components
-import Peinture from '../../../Images/Peinture.jpg'
-import Thème1 from '../../Inspirations/Thème1'
-import Thème2 from '../../Inspirations/Thème2'
-import Thème3 from '../../Inspirations/Thème3'
-import Thème4 from '../../Inspirations/Thème4'
+import Auron1 from '../../../Images/LeChaletAuron1.png'
+import Auron2 from '../../../Images/LeChaletAuron2.png'
+import Auron3 from '../../../Images/LeChaletAuron3.png'
+import Auron4 from '../../../Images/LeChaletAuron4.png'
+import Auron5 from "../../../Images/LeChaletAuron5.png"
+import Auron6 from "../../../Images/LeChaletAuron6.png"
+import Villa1 from "../../../Images/PlancheInspirationVillaDuCap1.png"
+import Villa2 from "../../../Images/PlancheInspirationVillaDuCap2.png"
+import Villa3 from "../../../Images/PlancheInspirationVillaDuCap3.png"
+import Villa4 from "../../../Images/PlancheInspirationVillaDuCap4.png"
+import Presentation from "../../../Images/PlanchePresentationDeConcept.png"
 
 function InspirationsEN() {
   return (
-    <div>
-      <div className="text-2xl text-white p-1 pr-1 pb-1 pl-1 grid grid-rows-1">
-        <span className=" text-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
-          imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
-          tincidunt mauris, porta feugiat odio. Quisque dui tellus, lobortis vel
-          dui id, sollicitudin mollis ligula. Praesent aliquam auctor erat at
-          semper. Cras non euismod odio. Suspendisse et facilisis diam. Mauris a
-          neque tempor, mattis urna vel, tempus sapien. In id quam mattis,
-          tincidunt erat sit amet, hendrerit justo. Maecenas ut aliquet nisi, id
-          congue quam at el Vestibulum sit amet purus nunc. Maecenas vitae
-          imperdiet ex, tempor al accumsan justo. Quisque gravida est et mollis
-          commodo. Suspendisse odio magna, pellentesque vel massa eu, malesuada.
-        </span>
-      </div>
-      <br></br>
-      <hr></hr>
 
-      <div class="grid grid-rows-1 p-1 pr-1 pb-1 pl-1">
-        <br></br>
-        <div className="p-1 pr-1 pb-1 pl-1  grid grid-rows-2"></div>
+<div className='grid lg:grid-cols-1 gap-2 lg:place-items-center'>
+<img
+  src={Auron1}
+  className=""
+  alt="Auron1"
+/>
+<img
+  src={Auron2}
+  className=""
+  alt="Auron2"
+/>
+<img
+  src={Auron3}
+  className=""
+  alt="Auron3"
+/>
+<img
+  src={Auron4}
+  className=""
+  alt="Auron4"
+/>
+<img
+  src={Auron5}
+  className=""
+  alt="Auron5"
+/>
+<img
+  src={Auron6}
+  className=""
+  alt="Auron6"
+/>
+<img
+  src={Villa1}
+  className=""
+  alt="Villa1"
+/>
+<img
+  src={Villa2}
+  className=""
+  alt="Villa2"
+/>
+<img
+  src={Villa3}
+  className=""
+  alt="Villa3"
+/>
+<img
+  src={Villa4}
+  className=""
+  alt="Villa4"
+/>
+<div className='grid lg:grid-cols-1 items-center  lg:place-items-center'>
+<img
+  src={Presentation}
+  className=""
+  alt="PresentationConcept"
+  
+/>
+</div>
 
-        <span className="">
-          <div className="text-2xl text-white float-right">
-            Thème 1<br></br>
-            <img src={Peinture} className="float-left p-4" alt="Peinture" />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            facilisis imperdiet quam, eu commodo justo volutpat et. Pellentesque
-            vel tincidunt mauris, porta feugiat odio. Quisque dui tellus,
-            lobortis vel dui id, sollicitudin mollis ligula. Praesent aliquam
-            auctor erat at semper. Cras non euismod odio. Suspendisse et
-            facilisis diam. Mauris a neque tempor, mattis urna vel, tempus
-            sapien. In id quam mattis, tincidunt erat sit amet, hendrerit justo.
-            Maecenas ut aliquet nisi, id congue quam at el Vestibulum sit amet
-            purus nunc. Maecenas vitae imperdiet ex, tempor al accumsan justo.
-            Quisque gravida est et mollis commodo.
-            <br></br>
-            <br></br>
-            <div className="p-2 pr-2 pl-2 pb-2 ">
-              <Thème1 />
-            </div>
-          </div>
-        </span>
-      </div>
-      <br></br>
-      <hr></hr>
-      <br></br>
-      <div class="grid grid-rows-1 p-1 pr-1 pb-1 pl-1">
-        <span className="">
-          <div className="text-2xl text-white float-right">
-            Thème 2<br></br>
-            <img src={Peinture} className="float-left p-4" alt="Peinture" />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            facilisis imperdiet quam, eu commodo justo volutpat et. Pellentesque
-            vel tincidunt mauris, porta feugiat odio. Quisque dui tellus,
-            lobortis vel dui id, sollicitudin mollis ligula. Praesent aliquam
-            auctor erat at semper. Cras non euismod odio. Suspendisse et
-            facilisis diam. Mauris a neque tempor, mattis urna vel, tempus
-            sapien. In id quam mattis, tincidunt erat sit amet, hendrerit justo.
-            Maecenas ut aliquet nisi, id congue quam at el Vestibulum sit amet
-            purus nunc. Maecenas vitae imperdiet ex, tempor al accumsan justo.
-            Quisque gravida est et mollis commodo.
-            <br></br>
-            <br></br>
-            <div className="p-2 pr-2 pl-2 pb-2 ">
-              <Thème2 />
-            </div>
-          </div>
-        </span>
-      </div>
-      <br></br>
-      <hr></hr>
-      <br></br>
-      <div class="grid grid-rows-1 p-1 pr-1 pb-1 pl-1">
-        <span className="">
-          <div className="text-2xl text-white float-right">
-            Thème 3<br></br>
-            <img src={Peinture} className="float-left p-4" alt="Peinture" />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            facilisis imperdiet quam, eu commodo justo volutpat et. Pellentesque
-            vel tincidunt mauris, porta feugiat odio. Quisque dui tellus,
-            lobortis vel dui id, sollicitudin mollis ligula. Praesent aliquam
-            auctor erat at semper. Cras non euismod odio. Suspendisse et
-            facilisis diam. Mauris a neque tempor, mattis urna vel, tempus
-            sapien. In id quam mattis, tincidunt erat sit amet, hendrerit justo.
-            Maecenas ut aliquet nisi, id congue quam at el Vestibulum sit amet
-            purus nunc. Maecenas vitae imperdiet ex, tempor al accumsan justo.
-            Quisque gravida est et mollis commodo.
-            <br></br>
-            <br></br>
-            <div className="p-2 pr-2 pl-2 pb-2 ">
-              <Thème3 />
-            </div>
-          </div>
-        </span>
-      </div>
-      <br></br>
-      <hr></hr>
-      <br></br>
-      <div class="grid grid-rows-1 p-1 pr-1 pb-1 pl-1">
-        <span className="">
-          <div className="text-2xl text-white float-right">
-            Thème 4<br></br>
-            <img src={Peinture} className="float-left p-4" alt="Peinture" />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            facilisis imperdiet quam, eu commodo justo volutpat et. Pellentesque
-            vel tincidunt mauris, porta feugiat odio. Quisque dui tellus,
-            lobortis vel dui id, sollicitudin mollis ligula. Praesent aliquam
-            auctor erat at semper. Cras non euismod odio. Suspendisse et
-            facilisis diam. Mauris a neque tempor, mattis urna vel, tempus
-            sapien. In id quam mattis, tincidunt erat sit amet, hendrerit justo.
-            Maecenas ut aliquet nisi, id congue quam at el Vestibulum sit amet
-            purus nunc. Maecenas vitae imperdiet ex, tempor al accumsan justo.
-            Quisque gravida est et mollis commodo.
-            <br></br>
-            <br></br>
-            <div className="p-2 pr-2 pl-2 pb-2 ">
-              <Thème4 />
-            </div>
-          </div>
-        </span>
-      </div>
-    </div>
+</div>
+
+
+
+    
   )
 }
 export default InspirationsEN
