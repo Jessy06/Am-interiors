@@ -129,4 +129,4 @@ jpg
 ├── .package.json
 ├── README.md
 └── tailwind.config.js
-```  
+```    

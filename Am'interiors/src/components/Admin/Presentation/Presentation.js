@@ -9,6 +9,7 @@ function Presentation () {
         <div class="grid grid-rows-1 p-1 pr-1 pb-1 pl-1">
         <span className="">
           <div className="text-2xl text-white float-right">
+            
 
             <img src={photoprofil} className="float-left p-4" alt="Peinture" />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
