@@ -21,7 +21,7 @@ export default function Modal() {
         type="button"
         onClick={() => setShowModal(true)}
       >
-        Galerie Photos
+        MoodBoard
       </button>
       {showModal ? (
         <>
