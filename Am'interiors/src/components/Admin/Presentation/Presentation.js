@@ -8,7 +8,7 @@ function Presentation() {
     <div>
       <div class="grid grid-rows-1 p-1 pr-1 pb-1 pl-1">
         <span className="">
-          <div className="text-2xl text-white float-right">
+          <div className="text-l text-white float-right">
             <img src={photoprofil} className="float-left p-4" alt="Peinture" />
             Je m’appelle amin et je vous présente am’interior, ma petite société
             de décoration intérieure, qui est la pour vous épauler et vous

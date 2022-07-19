@@ -17,18 +17,6 @@ function Studio() {
 
   return (
     <div>
-      <div className="text-xl text-white text-justify">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
-      imperdiet quam, eu commodo justo volutpat et. Pellentesque vel tincidunt
-      mauris, porta feugiat odio. Quisque dui tellus, lobortis vel dui id,
-      sollicitudin mollis ligula. Praesent aliquam auctor erat at semper. Cras
-      non euismod odio. Suspendisse et facilisis diam. Mauris a neque tempor,
-      mattis urna vel, tempus sapien. In id quam mattis, tincidunt erat sit
-      amet, hendrerit justo. Maecenas ut aliquet nisi, id congue quam at el
-      Vestibulum sit amet purus nunc. Maecenas vitae imperdiet ex, tempor al
-      accumsan justo. Quisque gravida est et mollis commodo. Suspendisse odio
-      magna, pellentesque vel massa eu, malesuada.
-    </div>
       {projetList.map((val, key) => {
 
       return (  
