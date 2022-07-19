@@ -20,16 +20,6 @@ function HomeEN() {
       <br></br>
       <br></br>
     
-      <span className='text-2xl text-black col-span-2 pb-10 pr-8 pl-14'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis
-        imperdiet quam, eu commodo justo volutpat et. Pellentesque vel
-        tincidunt mauris, porta feugiat odio. Quisque dui tellus, lobortis vel
-        dui id, sollicitudin mollis ligula. Praesent aliquam auctor erat at
-        semper. Cras non euismod odio. Suspendisse et facilisis diam. Mauris a
-        neque tempor, mattis urna vel, tempus sapien. In id quam mattis,
-        tincidunt erat sit amet, hendrerit justo.
-      </span>
-      <br></br>
       </div>
         </div>
   )

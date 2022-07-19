@@ -24,8 +24,7 @@ function Contact() {
             <h2 class="text-xl md:text-2xl mb-2 text-orange-800 underline underline-offset-8">
               Décoration d'intérieur et extérieur
             </h2>
-            <br></br>
-            <p class="text-black">Explication service</p>
+           
           </div>
         </div>
 
@@ -42,8 +41,7 @@ function Contact() {
             <h2 class="text-xl md:text-2xl mb-2 text-orange-800 underline underline-offset-8">
               Conseil en décoration
             </h2>
-            <br></br>
-            <p class="text-black">Explication service</p>
+            
           </div>
         </div>
 
@@ -60,8 +58,7 @@ function Contact() {
             <h2 class="text-xl md:text-2xl mb-2 text-orange-800 underline underline-offset-8">
               Shopping List
             </h2>
-            <br></br>
-            <p class="text-black">Explication service</p>
+          
           </div>
         </div>
       </div>
@@ -80,8 +77,7 @@ function Contact() {
             <h2 class="text-xl md:text-2xl mb-2 text-orange-800 underline underline-offset-8">
               Réalisation de plan de conseil
             </h2>
-            <br></br>
-            <p class="text-black">Explication service</p>
+            
           </div>
         </div>
 
@@ -98,8 +94,6 @@ function Contact() {
             <h2 class="text-xl md:text-2xl mb-2 text-orange-800 underline underline-offset-8">
               Aménagement sur plan 3D
             </h2>
-            <br></br>
-            <p class="text-black">Explication service</p>
           </div>
         </div>
 
@@ -116,8 +110,7 @@ function Contact() {
             <h2 class="text-xl md:text-2xl mb-2 text-orange-800 underline underline-offset-8">
               Moodboard
             </h2>
-            <br></br>
-            <p class="text-black">Explication service</p>
+            
           </div>
         </div>
       </div>

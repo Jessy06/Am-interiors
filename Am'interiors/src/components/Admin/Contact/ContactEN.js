@@ -6,7 +6,7 @@ function ContactEN() {
       <div className="text-3xl p-1 pr-2 pb-10 pl-1 mr-6 ml-6">
         <span className=" text-orange-800">•</span>
         <span className="text-white text-2xl mr-3 ml-3 mt-3">
-          Services Proposés
+        Proposed services
         </span>
       </div>
 
@@ -22,10 +22,8 @@ function ContactEN() {
           />
           <div class="p-7">
             <h2 class="text-xl md:text-2xl mb-2 text-orange-800 underline underline-offset-8">
-              Décoration d'intérieur et extérieur
+            Interior and exterior decoration
             </h2>
-            <br></br>
-            <p class="text-black">Explication service</p>
           </div>
         </div>
 
@@ -40,10 +38,9 @@ function ContactEN() {
           />
           <div class="p-7">
             <h2 class="text-xl md:text-2xl mb-2 text-orange-800 underline underline-offset-8">
-              Conseil en décoration
+            Decoration advice
             </h2>
-            <br></br>
-            <p class="text-black">Explication service</p>
+            
           </div>
         </div>
 
@@ -60,8 +57,6 @@ function ContactEN() {
             <h2 class="text-xl md:text-2xl mb-2 text-orange-800 underline underline-offset-8">
               Shopping List
             </h2>
-            <br></br>
-            <p class="text-black">Explication service</p>
           </div>
         </div>
       </div>
@@ -78,10 +73,9 @@ function ContactEN() {
           />
           <div class="p-7">
             <h2 class="text-xl md:text-2xl mb-2 text-orange-800 underline underline-offset-8">
-              Réalisation de plan de conseil
+            Realization of consulting plan
             </h2>
-            <br></br>
-            <p class="text-black">Explication service</p>
+            
           </div>
         </div>
 
@@ -96,10 +90,8 @@ function ContactEN() {
           />
           <div class="p-7">
             <h2 class="text-xl md:text-2xl mb-2 text-orange-800 underline underline-offset-8">
-              Aménagement sur plan 3D
+            Layout on 3D plan
             </h2>
-            <br></br>
-            <p class="text-black">Explication service</p>
           </div>
         </div>
 
@@ -116,8 +108,7 @@ function ContactEN() {
             <h2 class="text-xl md:text-2xl mb-2 text-orange-800 underline underline-offset-8">
               Moodboard
             </h2>
-            <br></br>
-            <p class="text-black">Explication service</p>
+           
           </div>
         </div>
       </div>
@@ -125,10 +116,9 @@ function ContactEN() {
       <br></br>
       <br></br>
 
-      <div className="text-2xl  p-1 pr-1 pb-1 pl-1 mr-2 ml-6 ">
+      <div className="text-xl  p-1 pr-1 pb-1 pl-1 mr-2 ml-6 ">
         <span className="text-white">
-          Pour toutes demandes n'hésitez pas à cliquer sur le bouton "work with
-          me" en haut de la page et remplir le formulaire
+        For all requests, do not hesitate to click on the "work with me" button at the top of the page and fill out the form.
         </span>
       </div>
     </div>
